@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* VARIÁVEIS */
+:root{
+    --verde-principal: #00995D;
+    --fundo-claro:#f5f5f5;
+    --fundo-verde:#a3e5d0;
+}
+
+/* DVR / NVR */
+
+main> h1{
+    text-align: center;
+}
+
+div.bloco_respostas{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+}
+
+details{
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid var(--verde-principal);
+    border-radius: 5px;
+
+}
+
+details p{
+    color: var(--verde-principal);
+    margin: 15px 0px;
+}
+
+div.bloco_respostas{
+    width: 100%;
+}
+
+div.bloco_respostas textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+div.bloco_respostas button, div.tutorial > button{
+    padding: 10px;
+    margin: 5px 0px 5px 5px;
+    background-color: var(--verde-principal);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.bloco_respostas button:hover, div.tutorial > button:hover{
+    background-color: var(--fundo-claro);
+    color: var(--verde-principal);
+}
+
+div.imagens{
+    margin-top: 15px;
+}
+
+img{
+    border: 1px solid var(--verde-principal);
+}
+
+div.erros{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    width: 100%;
+}
+
+div.tutorial{
+    display: flex;
+    align-items: center;
+}

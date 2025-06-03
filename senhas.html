@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/senha-gravadores.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo Intelbras">
+        <nav>
+            <ul>
+                <li><a href="">🔐 Recuperação de Senha</a></li>
+                <li><a href="">📋 Atendimentos Gerais</a></li>
+                <li><a href="">⚙️ Processos Internos</a></li>
+                <li><a href="">🖼️ Galeria de Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>🔐 Recuperação de Senha</h1>
+        <details>
+            <summary><strong>DVR / NVR</strong></summary>
+            <p><strong>PASSO 1 - Solicitação de informações! (Modelo/NS/Versão/Data)</strong></p>
+            <div class="bloco_respostas"> 
+                <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">Clique com o botão direito do mouse e acesse o menu principal. Se aparecer o padrão de desbloqueio, selecione a opção "Esqueci o padrão". Em seguida, envie uma foto das informações do gravador seguindo o exemplo mostrado na imagem.
+                </textarea>
+                <button><strong>COPIAR</strong></button>
+            </div>
+            <div class="imagens">
+                <img src="imagens/recuperação_senha/DVR-NVR/layout_gravador_novo.png" alt="Layout Novo">
+                <img src="imagens/recuperação_senha/DVR-NVR/layout_gravador_antigo.png" alt="Layout Antigo">
+            </div>
+            <hr>
+            <p><strong>PASSO 2- Solicitação da data do DVR!</strong></p>
+            <div class="bloco_respostas"> 
+                <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">Consegue encaminhar uma foto da data que apresenta no canto superior direito do gravador?</textarea>
+                <button><strong>COPIAR</strong></button>
+            </div>
+            <div class="imagens">
+               <img src="imagens/recuperação_senha/DVR-NVR/data.png" alt="Data do DVR">
+            </div>
+            <hr>
+            <p><strong>PASSO 3- Enviar senha para o cliente!</strong></p>
+            <div class="bloco_respostas"> 
+                <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">Pode acessar o gravador com esta senha: XXXXXXXX e usuário admin!
+
+Caso dê “usuário bloqueado” ou “conta bloqueada”, reinicie o equipamento para desbloquear pois se não mesmo com a senha correta ele não irá entrar.
+
+Após logar acesse Menu Principal > Sistema > Conta, clique no botão “editar” ou “modificar” do lado do usuário admin e altere a senha do usuário admin. A senha antiga é a numeração. Faça isto pois esta é uma senha provisória que dura no prazo de 1 dia.
+
+Tutorial Modificar Senha
+https://youtube.com/clip/UgkxjzIt-XWW_FYuSKqRotqnkJ7FxpoCUvue?si=9e2VzKmWYX_Az9c_
+
+                </textarea>
+                <button><strong>COPIAR</strong></button>
+            </div>
+            <hr>
+            <p><strong>Possíveis ERROS!</strong></p>
+            <div class="bloco_respostas"> 
+                <div class="erros">
+                    <p>Cliente sem monitor</p>
+                    <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">Por questão de segurança, a senha gerada só é válida no acesso local, via monitor e mouse no próprio gravador.  Nesta situação, você pode tentar acessar a interface web do gravador e clicar no botão "Esqueci a senha" ou "Recuperar senha". Em seguida, enviar o código de recuperação para o e-mail cadastrado, caso você não tenha acesso ao e-mail, verificarei se ele chega por aqui, para depois enviá-lo para você.
+                    </textarea>
+                    <button><strong>COPIAR</strong></button>
+                </div>
+                <div class="erros">
+                    <p>Data do gravador não é exibida</p>
+                    <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">Como a data do gravador não está sendo exibida no canto superior da imagem, não conseguiremos gerar a senha corretamente. Nesse caso, posso tentar gerar a senha com base na data atual e na data padrão do gravador. Se essas senhas não funcionarem, podemos tentar pelo e-mail cadastrado, caso também não dê o ideal seria encaminhar o gravador para uma assistência técnica para realizar o reset físico.
+
+Consegue clicar no botão "Esqueceu a senha" ou no símbolo de cadeado ao lado do usuário para verificar se há algum e-mail cadastrado para recuperação de senha? Mesmo que você não tenha acesso a este e-mail, basta você enviar o código e eu posso interceptá-lo por aqui e enviá-lo para você realizar a recuperação. Para isso, o gravador precisa estar conectado à rede.
+                    </textarea>
+                    <button><strong>COPIAR</strong></button>
+                </div>
+                <div class="erros">
+                    <p>NVD com firmware abaixo de 2020</p>
+                    <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">Como este NVD está em uma versão de firmware mais antiga a senha gerada não irá funcionar, neste caso o senhor pode tentar enviar o e-mail com o código de recuperação através do botão “esqueci a minha senha” ou “recuperar a senha”, mesmo que o senhor não tenha acesso ao e-mail, você pode encaminhar que eu intercepto o código por aqui e encaminho para o senhor.
+
+OBS: Para enviar o e-mail o gravador precisa estar na rede.
+                    </textarea>
+                    <button><strong>COPIAR</strong></button>
+                </div>
+                <div class="erros">
+                    <p>Cliente tentando dar padrão de fábrica com a senha provisória</p>
+                    <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">A senha gerada pelo bot não serve para restaurar as configurações de fábrica no gravador. Por favor, vá até a aba “conta” do gravador e altere a senha para uma que seja válida. Após a alteração, você poderá usar essa nova senha para restaurar as configurações de fábrica. No entanto, se o seu objetivo for apenas redefinir a senha, não é necessário restaurar as configurações de fábrica.
+
+Tutorial Modificar Senha
+https://youtube.com/clip/UgkxjzIt-XWW_FYuSKqRotqnkJ7FxpoCUvue?si=9e2VzKmWYX_Az9c_
+                    </textarea>
+                    <button><strong>COPIAR</strong></button>
+                </div>
+            </div>
+            <hr>
+            <p><strong>Imagens e Tutoriais úteis</strong></p>
+            <div class="imagens">
+                <img src="imagens/recuperação_senha/DVR-NVR/util1.png" alt="Botão de Reset DVR">
+                <img src="imagens/recuperação_senha/DVR-NVR/util2.png" alt="Botão de Reset NVR">
+            </div>
+            <div class="tutorial">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UDHGJgvRGe4?si=Y5OjfPzHCZcbVkIh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button>COPIAR LINK</button>
+            </div>
+
+        </details>
+
+
+
+
+
+
+
+        <details>
+            <summary><strong>Câmera IP</strong></summary>
+
+        </details>
+        <details>
+            <summary><strong>Equipamentos Jufeng</strong></summary>
+
+        </details>
+    </main>
+</body>
+</html>
