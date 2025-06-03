@@ -134,33 +134,34 @@ https://youtube.com/clip/UgkxjzIt-XWW_FYuSKqRotqnkJ7FxpoCUvue?si=9e2VzKmWYX_Az9c
       const textarea = botao.previousElementSibling;
 
       if (textarea && textarea.tagName.toLowerCase() === "textarea") {
-        // Seleciona o conteúdo do textarea
-        textarea.select();
-        textarea.setSelectionRange(0, 99999); // Para compatibilidade com mobile
+  // Seleciona o conteúdo do textarea
+  textarea.select();
+  textarea.setSelectionRange(0, 99999); // Compatibilidade com mobile
 
-        // Copia o texto
-        document.execCommand("copy");
+  // Copia o texto
+  document.execCommand("copy");
 
-        // Feedback opcional
-        botao.textContent = "✅ Copiado!";
-        setTimeout(() => {
-          botao.textContent = textoOriginal;
-        }, 2000);
-      } else if (botao.textContent.includes("LINK")) {
-        // Caso seja botão de copiar link de vídeo
-        const iframe = botao.previousElementSibling;
-        const url = iframe?.src;
+  // Feedback opcional
+  botao.textContent = "✅ Copiado!";
+  setTimeout(() => {
+    botao.textContent = textoOriginal;
+  }, 2000);
 
-        if (url) {
-          navigator.clipboard.writeText(url)
-            .then(() => {
-              botao.textContent = "✅ Link copiado!";
-              setTimeout(() => {
-                botao.textContent = "📋 Copiar Link";
-              }, 2000);
-            });
-        }
-      }
+} else if (botao.textContent.includes("LINK")) {
+  // Caso seja botão de copiar link de vídeo
+  const link = 'https://www.youtube.com/watch?v=UDHGJgvRGe4';
+  
+  navigator.clipboard.writeText(link)
+    .then(() => {
+      botao.textContent = "✅ Link copiado!";
+      setTimeout(() => {
+        botao.textContent = textoOriginal;
+      }, 2000);
+    })
+    .catch(err => {
+      alert("Erro ao copiar o link: " + err);
+    });
+}
     });
   });
 </script>
