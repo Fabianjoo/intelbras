@@ -22,12 +22,14 @@ div.bloco_respostas{
 }
 
 details{
-    cursor: pointer;
     padding: 10px;
     margin-top: 10px;
-    border: 2px solid var(--verde-principal);
+    border: 3px solid var(--verde-principal);
     border-radius: 5px;
 
+}
+summary{
+    cursor: pointer;
 }
 
 details p{
@@ -63,8 +65,8 @@ div.imagens{
     margin-top: 15px;
 }
 
-img{
-    border: 1px solid var(--verde-principal);
+.img_copiavel{
+    border: 2px solid var(--verde-principal)
 }
 
 div.erros{
@@ -76,7 +78,30 @@ div.erros{
     width: 100%;
 }
 
+.erros > p{
+    margin-top: 0px;
+}
+
 div.tutorial{
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
+
+.pdf{
+    background-color: var(--verde-principal);
+    width: 40%;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 2px solid var(--verde-principal);
+}
+
+.pdf:hover{
+    background-color: var(--fundo-claro);
+    color: var(--verde-principal);
+    border: 2px solid var(--verde-principal);
+}
+
+/* CÂMERA IP */

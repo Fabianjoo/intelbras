@@ -22,9 +22,9 @@ setTimeout(() => {
   botao.textContent = textoOriginal;
 }, 2000);
 
-} else if (botao.textContent.includes("LINK")) {
+} else if (botao.textContent.includes("1")) {
 // Caso seja botão de copiar link de vídeo
-const link = 'https://www.youtube.com/watch?v=UDHGJgvRGe4';
+const link = 'Tutorial Recuperar Senha de Gravador: https://www.youtube.com/watch?v=UDHGJgvRGe4';
 
 navigator.clipboard.writeText(link)
   .then(() => {
@@ -36,6 +36,20 @@ navigator.clipboard.writeText(link)
   .catch(err => {
     alert("Erro ao copiar o link: " + err);
   });
-}
+}else if (botao.textContent.includes("2")) {
+  // Caso seja botão de copiar link de vídeo
+  const link = 'Tutorial Recuperar Senha de Câmera IP: https://www.youtube.com/watch?v=fv3F_IYmAgE&t=57s';
+  
+  navigator.clipboard.writeText(link)
+    .then(() => {
+      botao.textContent = "✅ Link copiado!";
+      setTimeout(() => {
+        botao.textContent = textoOriginal;
+      }, 2000);
+    })
+    .catch(err => {
+      alert("Erro ao copiar o link: " + err);
+    });
+  }
   });
 });
