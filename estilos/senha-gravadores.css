@@ -96,6 +96,7 @@ div.tutorial{
     border-radius: 5px;
     margin-top: 15px;
     border: 2px solid var(--verde-principal);
+    cursor: pointer;
 }
 
 .pdf:hover{
