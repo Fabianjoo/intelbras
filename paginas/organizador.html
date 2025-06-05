@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Organizador de Categorias</title>
+  <link rel="stylesheet" href="../estilos/style.css" />
+  <link rel="stylesheet" href="../estilos/organizador.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../imagens/logo.png" alt="Logo Intelbras" /></a>
+    <nav>
+      <ul>
+        <li><a href="../paginas/senhas.html">🔐 Recuperação de Senha</a></li>
+        <li><a href="">📋 Atendimentos Gerais</a></li>
+        <li><a href="">✉️ E-mail</a></li>
+        <li><a href="">🧠 FCA</a></li>
+        <li><a href="">⚙️ Processos Internos</a></li>
+        <li><a href="">🖼️ Galeria de Fotos</a></li>
+        <li style="background-color: white;"><a href="#">💬 Organizador de Respostas</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>💬 Organizador de Respostas</h1>
+    <div class="input-container">
+      <input type="text" id="nomePasta" placeholder="Nome da nova pasta" />
+      <button id="btn-criar" onclick="criarPasta()">Criar Pasta</button>
+    </div>
+    <div id="pastasContainer"></div>
+  </main>
+
+  <script src="../scripts/organizador.js"></script>
+
+  
+</body>
+</html>

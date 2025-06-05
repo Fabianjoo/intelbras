@@ -38,6 +38,10 @@ header{
     margin-bottom: 15px;
 }
 
+header > a > img{
+    height: 100%;
+}
+
 div#logo > img{
     height: 30vh;
     width: 30vw;
