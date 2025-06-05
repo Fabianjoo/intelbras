@@ -40,7 +40,7 @@ h1 {
   .copiar-btn {
     padding: 2px;
     background-color: var(--verde-principal);
-    margin-top: 10px;
+    margin: 10px 0px 10px 0px;
     border: 2px solid black;
     border-radius: 5px;
     cursor: pointer;
