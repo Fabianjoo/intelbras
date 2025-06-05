@@ -1,7 +1,7 @@
 function criarPasta() {
     const nome = document.getElementById('nomePasta').value.trim();
     if (!nome) {
-      alert('Digite o nome da pasta.');
+      alert('[ERRO] Digite o nome da pasta!');
       return;
     }
   
