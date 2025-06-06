@@ -1,5 +1,7 @@
-function criarPasta() {
-  const nome = document.getElementById('nomePasta').value.trim();
+let carregandoDoStorage = false;
+
+function criarPasta(nomePasta = '') {
+  const nome = nomePasta || document.getElementById('nomePasta').value.trim();
   if (!nome) {
     alert('[ERRO] Digite o nome da pasta!');
     return;
@@ -32,7 +34,7 @@ function criarPasta() {
 
   botaoAdicionarTexto.onclick = () => adicionarTexto(containerTextos);
   botaoExcluirPasta.onclick = () => {
-    if (confirm(`Excluir a pasta "${nome}" e todos os seus textos?`)) {
+    if (confirm(`Excluir a pasta "${summary.textContent}" e todos os seus textos?`)) {
       details.remove();
       salvarPastasNoStorage();
     }
@@ -45,9 +47,9 @@ function criarPasta() {
   details.appendChild(containerTextos);
 
   document.getElementById('pastasContainer').appendChild(details);
-  document.getElementById('nomePasta').value = '';
+  if (!nomePasta) document.getElementById('nomePasta').value = '';
 
-  salvarPastasNoStorage();
+  if (!carregandoDoStorage) salvarPastasNoStorage();
 }
 
 function adicionarTexto(container, titulo = '', texto = '') {
@@ -90,7 +92,7 @@ function adicionarTexto(container, titulo = '', texto = '') {
   bloco.appendChild(excluirTextoBtn);
   container.appendChild(bloco);
 
-  salvarPastasNoStorage();
+  if (!carregandoDoStorage) salvarPastasNoStorage();
 }
 
 function salvarPastasNoStorage() {
@@ -110,7 +112,9 @@ function salvarPastasNoStorage() {
     pastas.push({ nome, textos });
   });
 
-  localStorage.setItem('pastas', JSON.stringify(pastas));
+  if (pastas.length > 0) {
+    localStorage.setItem('pastas', JSON.stringify(pastas));
+  }
 }
 
 function carregarPastasDoStorage() {
@@ -120,6 +124,8 @@ function carregarPastasDoStorage() {
   const pastas = JSON.parse(pastasStr);
   const pastasContainer = document.getElementById('pastasContainer');
   pastasContainer.innerHTML = '';
+
+  carregandoDoStorage = true;
 
   pastas.forEach(pasta => {
     const details = document.createElement('details');
@@ -156,8 +162,8 @@ function carregarPastasDoStorage() {
     };
 
     details.appendChild(summary);
-    details.appendChild(botaoAdicionarTexto);
     details.appendChild(botaoEditarNome);
+    details.appendChild(botaoAdicionarTexto);
     details.appendChild(botaoExcluirPasta);
     details.appendChild(containerTextos);
 
@@ -167,6 +173,8 @@ function carregarPastasDoStorage() {
 
     pastasContainer.appendChild(details);
   });
+
+  carregandoDoStorage = false;
 }
 
 window.onload = carregarPastasDoStorage;
