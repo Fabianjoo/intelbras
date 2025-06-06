@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-/* VARIÁVEIS */
-:root{
-    --verde-principal: #00995D;
-    --fundo-claro:#f5f5f5;
-    --fundo-verde:#a3e5d0;
-}
-
 /* DVR / NVR */
 
 main> h1{
