@@ -9,6 +9,17 @@ function criarPasta() {
   const summary = document.createElement('summary');
   summary.textContent = nome;
 
+  const botaoEditarNome = document.createElement('button');
+  botaoEditarNome.textContent = '✏️ Editar Nome';
+  botaoEditarNome.className = 'editar-nome';
+  botaoEditarNome.onclick = () => {
+    const novoNome = prompt('Editar nome da pasta:', summary.textContent);
+    if (novoNome && novoNome.trim()) {
+      summary.textContent = novoNome.trim();
+      salvarPastasNoStorage();
+    }
+  };
+
   const botaoAdicionarTexto = document.createElement('button');
   botaoAdicionarTexto.textContent = '📝 Adicionar Texto';
   botaoAdicionarTexto.className = 'novo-texto';
@@ -28,6 +39,7 @@ function criarPasta() {
   };
 
   details.appendChild(summary);
+  details.appendChild(botaoEditarNome);
   details.appendChild(botaoAdicionarTexto);
   details.appendChild(botaoExcluirPasta);
   details.appendChild(containerTextos);
@@ -38,18 +50,25 @@ function criarPasta() {
   salvarPastasNoStorage();
 }
 
-function adicionarTexto(container) {
+function adicionarTexto(container, titulo = '', texto = '') {
   const bloco = document.createElement('div');
   bloco.className = 'bloco_respostas';
 
+  const inputTitulo = document.createElement('input');
+  inputTitulo.type = 'text';
+  inputTitulo.placeholder = 'Título da resposta pronta!';
+  inputTitulo.value = titulo;
+  inputTitulo.className = 'titulo-texto';
+  inputTitulo.addEventListener('input', salvarPastasNoStorage);
+
   const textarea = document.createElement('textarea');
   textarea.placeholder = "Digite aqui a sua resposta pronta!";
-  textarea.addEventListener('input', salvarPastasNoStorage); // salva ao digitar
+  textarea.value = texto;
+  textarea.addEventListener('input', salvarPastasNoStorage);
 
   const copiarBtn = document.createElement('button');
   copiarBtn.textContent = '📋 Copiar';
   copiarBtn.className = 'copiar-btn';
-
   copiarBtn.onclick = () => {
     textarea.select();
     document.execCommand('copy');
@@ -65,6 +84,7 @@ function adicionarTexto(container) {
     }
   };
 
+  bloco.appendChild(inputTitulo);
   bloco.appendChild(textarea);
   bloco.appendChild(copiarBtn);
   bloco.appendChild(excluirTextoBtn);
@@ -80,9 +100,13 @@ function salvarPastasNoStorage() {
   pastasContainer.querySelectorAll('details').forEach(details => {
     const nome = details.querySelector('summary').textContent;
     const textos = [];
-    details.querySelectorAll('.bloco_respostas textarea').forEach(textarea => {
-      textos.push(textarea.value);
+
+    details.querySelectorAll('.bloco_respostas').forEach(bloco => {
+      const titulo = bloco.querySelector('.titulo-texto').value;
+      const texto = bloco.querySelector('textarea').value;
+      textos.push({ titulo, texto });
     });
+
     pastas.push({ nome, textos });
   });
 
@@ -101,6 +125,17 @@ function carregarPastasDoStorage() {
     const details = document.createElement('details');
     const summary = document.createElement('summary');
     summary.textContent = pasta.nome;
+
+    const botaoEditarNome = document.createElement('button');
+    botaoEditarNome.textContent = '✏️ Editar Nome';
+    botaoEditarNome.className = 'editar-nome';
+    botaoEditarNome.onclick = () => {
+      const novoNome = prompt('Editar nome da pasta:', summary.textContent);
+      if (novoNome && novoNome.trim()) {
+        summary.textContent = novoNome.trim();
+        salvarPastasNoStorage();
+      }
+    };
 
     const botaoAdicionarTexto = document.createElement('button');
     botaoAdicionarTexto.textContent = '📝 Adicionar Texto';
@@ -122,40 +157,12 @@ function carregarPastasDoStorage() {
 
     details.appendChild(summary);
     details.appendChild(botaoAdicionarTexto);
+    details.appendChild(botaoEditarNome);
     details.appendChild(botaoExcluirPasta);
     details.appendChild(containerTextos);
 
-    pasta.textos.forEach(texto => {
-      const bloco = document.createElement('div');
-      bloco.className = 'bloco_respostas';
-
-      const textarea = document.createElement('textarea');
-      textarea.placeholder = "Digite aqui a sua resposta pronta!";
-      textarea.value = texto;
-      textarea.addEventListener('input', salvarPastasNoStorage); // salva ao digitar
-
-      const copiarBtn = document.createElement('button');
-      copiarBtn.textContent = '📋 Copiar';
-      copiarBtn.className = 'copiar-btn';
-      copiarBtn.onclick = () => {
-        textarea.select();
-        document.execCommand('copy');
-      };
-
-      const excluirTextoBtn = document.createElement('button');
-      excluirTextoBtn.textContent = '❌ Excluir Texto';
-      excluirTextoBtn.className = 'excluir-texto';
-      excluirTextoBtn.onclick = () => {
-        if (confirm('Excluir este texto?')) {
-          bloco.remove();
-          salvarPastasNoStorage();
-        }
-      };
-
-      bloco.appendChild(textarea);
-      bloco.appendChild(copiarBtn);
-      bloco.appendChild(excluirTextoBtn);
-      containerTextos.appendChild(bloco);
+    pasta.textos.forEach(textoObj => {
+      adicionarTexto(containerTextos, textoObj.titulo, textoObj.texto);
     });
 
     pastasContainer.appendChild(details);

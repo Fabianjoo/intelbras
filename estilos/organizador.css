@@ -5,7 +5,7 @@ h1 {
     margin-bottom: 15px;
   }
 
-  #nomePasta {
+  #nomePasta,{
     padding: 5px;
   }
 
@@ -28,13 +28,19 @@ h1 {
     font-weight: bold;
   }
 
-  .novo-texto {
+  .novo-texto, .editar-nome{
     padding: 10px;
     margin: 5px 0px 5px 5px;
     background-color: var(--verde-principal);
     color: white;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .titulo-texto{
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 100%;
   }
 
   .copiar-btn {
@@ -48,7 +54,7 @@ h1 {
   }
 
   .copiar-btn:hover,
-  #btn-criar:hover, .novo-texto:hover {
+  #btn-criar:hover, .novo-texto:hover, .editar-nome:hover {
     background-color: var(--fundo-claro);
     color: var(--verde-principal);
   }
