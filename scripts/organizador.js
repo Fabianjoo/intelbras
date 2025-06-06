@@ -156,7 +156,6 @@ function carregarPastasDoStorage() {
     botaoExcluirPasta.className = 'excluir-pasta';
 
     const containerTextos = document.createElement('div');
-    const hr = document.createElement('hr');
 
     botaoAdicionarTexto.onclick = () => {
       adicionarTexto(containerTextos);
@@ -174,7 +173,6 @@ function carregarPastasDoStorage() {
     details.appendChild(botaoAdicionarTexto);
     details.appendChild(botaoEditarNome);
     details.appendChild(botaoExcluirPasta);
-    details.appendChild(hr);
     details.appendChild(containerTextos);
 
     pasta.textos.forEach(textoObj => {
