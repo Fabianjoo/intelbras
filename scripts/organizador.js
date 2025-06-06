@@ -32,6 +32,8 @@ function criarPasta(nomePasta = '') {
 
   const containerTextos = document.createElement('div');
 
+  const hr = document.createElement('hr');
+
   botaoAdicionarTexto.onclick = () => adicionarTexto(containerTextos);
   botaoExcluirPasta.onclick = () => {
     if (confirm(`Excluir a pasta "${summary.textContent}" e todos os seus textos?`)) {
@@ -41,9 +43,10 @@ function criarPasta(nomePasta = '') {
   };
 
   details.appendChild(summary);
-  details.appendChild(botaoEditarNome);
   details.appendChild(botaoAdicionarTexto);
+  details.appendChild(botaoEditarNome);
   details.appendChild(botaoExcluirPasta);
+  details.appendChild(hr);
   details.appendChild(containerTextos);
 
   document.getElementById('pastasContainer').appendChild(details);

@@ -5,7 +5,7 @@ h1 {
     margin-bottom: 15px;
   }
 
-  #nomePasta,{
+  #nomePasta{
     padding: 5px;
   }
 
@@ -39,7 +39,7 @@ h1 {
 
   .titulo-texto{
     padding: 5px;
-    margin-bottom: 5px;
+    margin: 5px 0px 5px 0px;
     width: 100%;
   }
 
