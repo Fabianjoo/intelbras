@@ -31,14 +31,17 @@ function criarPasta(nomePasta = '') {
   botaoExcluirPasta.className = 'excluir-pasta';
 
   const containerTextos = document.createElement('div');
-
   const hr = document.createElement('hr');
 
-  botaoAdicionarTexto.onclick = () => adicionarTexto(containerTextos);
+  botaoAdicionarTexto.onclick = () => {
+    adicionarTexto(containerTextos);
+    salvarPastasNoStorage();
+  };
+
   botaoExcluirPasta.onclick = () => {
     if (confirm(`Excluir a pasta "${summary.textContent}" e todos os seus textos?`)) {
       details.remove();
-      salvarPastasNoStorage();
+      salvarPastasNoStorage(); // <-- Aqui garante a atualização
     }
   };
 
@@ -67,7 +70,7 @@ function adicionarTexto(container, titulo = '', texto = '') {
   inputTitulo.addEventListener('input', salvarPastasNoStorage);
 
   const textarea = document.createElement('textarea');
-  textarea.placeholder = "Digite aqui a sua resposta pronta!";
+  textarea.placeholder = 'Digite aqui a sua resposta pronta!';
   textarea.value = texto;
   textarea.addEventListener('input', salvarPastasNoStorage);
 
@@ -85,7 +88,7 @@ function adicionarTexto(container, titulo = '', texto = '') {
   excluirTextoBtn.onclick = () => {
     if (confirm('Excluir este texto?')) {
       bloco.remove();
-      salvarPastasNoStorage();
+      salvarPastasNoStorage(); // <-- Aqui também salva após remoção
     }
   };
 
@@ -115,9 +118,7 @@ function salvarPastasNoStorage() {
     pastas.push({ nome, textos });
   });
 
-  if (pastas.length > 0) {
-    localStorage.setItem('pastas', JSON.stringify(pastas));
-  }
+  localStorage.setItem('pastas', JSON.stringify(pastas));
 }
 
 function carregarPastasDoStorage() {
@@ -155,19 +156,25 @@ function carregarPastasDoStorage() {
     botaoExcluirPasta.className = 'excluir-pasta';
 
     const containerTextos = document.createElement('div');
+    const hr = document.createElement('hr');
 
-    botaoAdicionarTexto.onclick = () => adicionarTexto(containerTextos);
+    botaoAdicionarTexto.onclick = () => {
+      adicionarTexto(containerTextos);
+      salvarPastasNoStorage();
+    };
+
     botaoExcluirPasta.onclick = () => {
       if (confirm(`Excluir a pasta "${pasta.nome}" e todos os seus textos?`)) {
         details.remove();
-        salvarPastasNoStorage();
+        salvarPastasNoStorage(); // <-- Atualiza o localStorage
       }
     };
 
     details.appendChild(summary);
-    details.appendChild(botaoEditarNome);
     details.appendChild(botaoAdicionarTexto);
+    details.appendChild(botaoEditarNome);
     details.appendChild(botaoExcluirPasta);
+    details.appendChild(hr);
     details.appendChild(containerTextos);
 
     pasta.textos.forEach(textoObj => {
