@@ -25,6 +25,7 @@ ul{
 
 html, body{
    background-color: var(--fundo-verde);
+   background: url(../imagens/background.png) center / cover no-repeat;
    min-height: 100vh;
 }
 
