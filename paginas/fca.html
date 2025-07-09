@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <title>Organizador de Respostas</title>
-  <link rel="stylesheet" href="../estilos/style.css" />
+  <link rel="stylesheet" href="../estilos/style.css">
   <link rel="stylesheet" href="../estilos/fca.css">
+  <link rel="stylesheet" href="../estilos/senha.css">
 </head>
 <body>
   <header>
@@ -23,8 +24,9 @@
   </header>
 
   <main>
+    <!-- FERRAMENTA GERADOR DE FCA -->
     <section class="ferramenta">
-      <h1>🧠 Gerador de FCA</h1>
+      <h1>🧠 Gerador de FCA / FCA's já Prontos</h1>
 
       <div class="modelo">
         <label for="modelo">Modelo:</label>
@@ -61,8 +63,84 @@
 
       <div id="resultado"></div>
     </section>
+
+
+
+
+
+
+    <!-- FCAs ja prontos -->
+    <section>
+        <details>
+            <summary><strong>FCA's já Prontos</strong></summary>
+            <p><strong>🟢 Cliente alega cloud Desconectado</strong></p>
+            <div class="bloco_respostas"> 
+                <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">MODELO:
+
+FATO:
+    • Cliente alega que o gravador está com o Intelbras Cloud Desconectado
+                    
+CAUSA:
+    • Situação Alegada
+                    
+AÇÃO:
+    • Gravador atualizado e restaurado para as configurações de fábrica.
+    • Configurado o gravador para obter IP via DHCP.
+    • Realizado teste de ping para o gateway da rede e...
+    • Realizado teste de ping para o DNS do Google e...
+    • Alterada a faixa de portas do Intelbras Cloud e reiniciado o gravador.
+    • Alterado para o DNS do Google e reiniciado o gravador.
+    • Alterado para o DNS da OpenDNS e reiniciado o gravador.
+    • Orientado a testar o gravador em outra rede para avaliar o comportamento.
+    • Orientado a verificar possíveis bloqueios de firewall na rede local ou bloqueios na conexão P2P.
+                                                       
+INFORMAÇÕES ADICIONAIS:</textarea>
+                <button><strong>COPIAR</strong></button>
+            </div>
+
+            <p><strong>🟢 Cliente quer recuperar senha de DVR</strong></p>
+            <div class="bloco_respostas"> 
+                <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">MODELO:
+
+FATO:
+    • Cliente solicitou suporte para recuperação de senha do DVR.
+                    
+CAUSA:
+    • Esquecimento de senha de acesso ao equipamento.
+                    
+AÇÃO:
+    • Orientado o cliente a realizar a recuperação via WhatsApp e explicado como funciona o processo de geração da senha provisória.
+    • Indicado tutorial no YouTube com o passo a passo para a recuperação.
+                    
+INFORMAÇÕES ADICIONAIS:</textarea>
+                <button><strong>COPIAR</strong></button>
+            </div>
+
+            <p><strong>🟢 Cliente quer recuperar senha de Câmera IP</strong></p>
+            <div class="bloco_respostas"> 
+                <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">MODELO:
+
+FATO:
+    • Cliente solicitou recuperação de senha de câmera IP.
+                    
+CAUSA:
+    • Esquecimento de senha de acesso.
+                    
+AÇÃO:
+    • Orientado a realizar a recuperação através do e-mail cadastrado na interface web da câmera.
+    • Caso não tenha acesso ao e-mail, orientado a realizar o procedimento via WhatsApp para interceptação do código de recuperação.
+                    
+INFORMAÇÕES ADICIONAIS:
+                    
+                    </textarea>
+                <button><strong>COPIAR</strong></button>
+            </div>
+        </details>
+    </section>
   </main>
 
   <script src="../scripts/gerador_fca.js"></script>
+  <script src="../scripts/botao_copiar.js"></script>
+  <script src="../scripts/local_storage.js"></script>
 </body>
 </html>
