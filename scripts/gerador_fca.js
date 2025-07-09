@@ -91,7 +91,7 @@ ${info}`;
   navigator.clipboard.writeText(resultado)
     .then(() => {
       const mensagem = document.getElementById("mensagem");
-      mensagem.textContent = "✅ FCA criada e copiada para a área de transferência";
+      mensagem.textContent = "✅ FCA gerado e copiado para a área de transferência!";
       setTimeout(() => mensagem.textContent = "", 3000);
     })
     .catch(err => {
