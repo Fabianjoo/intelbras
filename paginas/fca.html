@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Organizador de Respostas</title>
+  <link rel="stylesheet" href="../estilos/style.css" />
+  <style>
+    .ferramenta {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .ferramenta > h1{
+        text-align: center;
+    }
+
+    .ferramenta div {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    .ferramenta textarea {
+      background-color: var(--fundo-verde, #f0f0f0);
+      margin-top: 5px;
+      padding: 5px;
+      font-size: 14px;
+      resize: none;
+    }
+
+    div.acao > textarea {
+      height: 100px;
+    }
+
+    .sugestoes {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: white;
+      border: 1px solid #ccc;
+      max-height: 150px;
+      overflow-y: auto;
+      list-style: none;
+      padding: 0;
+      margin: 2px 0 0;
+      z-index: 1000;
+      display: none;
+    }
+
+    .sugestoes li {
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .sugestoes li:hover {
+      background-color: #eee;
+    }
+
+    #resultado {
+      white-space: pre-line;
+      background: #e7ffe7;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    #mensagem {
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    div.botao{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    div.botao > p{
+        width: 100%;
+        text-align: center;
+    }
+
+    #criar_fca{
+        width: 400px;
+        margin-right: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid black;
+        background-color: var(--verde-principal);
+        cursor: pointer;
+        color: white;
+    }
+
+    #criar_fca:hover{
+        background-color: var(--fundo-claro);
+        color: var(--verde-principal);
+    }
+
+    #limpar{
+        width: 400px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #limpar:hover{
+        background-color: white;
+        color: red;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="../imagens/logo.png" alt="Logo Intelbras" /></a>
+    <nav>
+      <ul>
+        <li><a href="senhas.html">🔐 Recuperação de Senha</a></li>
+        <li><a href="">📋 Atendimentos Gerais</a></li>
+        <li><a href="">✉️ E-mail</a></li>
+        <li style="background-color: white;"><a href="">🧠 FCA</a></li>
+        <li><a href="">⚙️ Processos Internos</a></li>
+        <li><a href="">🖼️ Galeria de Fotos</a></li>
+        <li><a href="organizador.html">💬 Organizador de Respostas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="ferramenta">
+      <h1>🧠 Gerador de FCA</h1>
+
+      <div class="modelo">
+        <label for="modelo">Modelo:</label>
+        <textarea id="modelo" placeholder="Digite o modelo..."></textarea>
+      </div>
+
+      <div class="fato">
+        <label for="fato">Fato:</label>
+        <textarea id="fato" placeholder="Digite o fato..."></textarea>
+        <ul id="sugestoes-fato" class="sugestoes"></ul>
+      </div>
+
+      <div class="causa">
+        <label for="causa">Causa:</label>
+        <textarea id="causa" placeholder="Digite a causa..."></textarea>
+        <ul id="sugestoes-causa" class="sugestoes"></ul>
+      </div>
+
+      <div class="acao">
+        <label for="acao">Ação:</label>
+        <textarea id="acao" placeholder="Digite a ação..."></textarea>
+      </div>
+
+      <div class="info">
+        <label for="info">Informações adicionais:</label>
+        <textarea id="info" placeholder="Digite as informações adicionais... (Modelo/Firmware/Versão/Contato com cliente)"></textarea>
+      </div>
+
+      <div class="botao">
+        <button id="criar_fca" onclick="criarFCA()">Criar FCA</button>
+        <button id="limpar" onclick="limparCampos()">Limpar</button>
+        <p id="mensagem"></p>
+      </div>
+
+      <div id="resultado"></div>
+    </section>
+  </main>
+
+  <script>
+  const sugestoesFato = [
+  "Cliente alega que o gravador não liga",
+  "Cliente alega que o gravador está sem acesso remoto",
+  "Cliente alega que o gravador está com o Intelbras Cloud Desconectado",
+  "Cliente alega que o gravador está com o Intelbras Cloud conectado, mas sem acesso remoto",
+  "Cliente alega que esqueceu a senha do gravador",
+  "Cliente alega que o gravador está apresentando ERRO no HD",
+  "Cliente alega que esqueceu a senha da câmera IP",
+  "Câmera IP - sem imagem",
+  "Câmera IP - fora da rede"
+];
+
+const sugestoesCausa = [
+  "Situação Alegada",
+  "Especificação",
+  "Configuração"
+];
+
+function configurarSugestoes(textareaId, listaId, opcoes) {
+  const campo = document.getElementById(textareaId);
+  const lista = document.getElementById(listaId);
+
+  campo.addEventListener("input", () => mostrarSugestoes(campo, lista, opcoes));
+  campo.addEventListener("focus", () => mostrarSugestoes(campo, lista, opcoes));
+
+  document.addEventListener("click", (e) => {
+    if (!document.getElementById(textareaId).parentElement.contains(e.target)) {
+      lista.style.display = "none";
+    }
+  });
+}
+
+function mostrarSugestoes(campo, lista, opcoes) {
+  const valor = campo.value.toLowerCase();
+  lista.innerHTML = "";
+
+  const filtradas = opcoes.filter(op => op.toLowerCase().includes(valor));
+  if (filtradas.length === 0) {
+    lista.style.display = "none";
+    return;
+  }
+
+  filtradas.forEach(op => {
+    const li = document.createElement("li");
+    li.textContent = op;
+    li.addEventListener("click", () => {
+      campo.value = op;
+      lista.style.display = "none";
+    });
+    lista.appendChild(li);
+  });
+
+  lista.style.display = "block";
+}
+
+// Função que mantém espaços e quebras e adiciona tab + bullet para indentação
+function adicionarMarcador(texto) {
+  return texto
+    .split('\n')
+    .map(linha => linha === "" ? "" : `\t• ${linha}`)  // mantém linha vazia, adiciona tab + bullet nas demais
+    .join('\n');
+}
+
+function criarFCA() {
+  const modelo = adicionarMarcador(document.getElementById("modelo").value);
+  const fato = adicionarMarcador(document.getElementById("fato").value);
+  const causa = adicionarMarcador(document.getElementById("causa").value);
+  const acao = adicionarMarcador(document.getElementById("acao").value);
+  const info = adicionarMarcador(document.getElementById("info").value);
+
+  const resultado =
+`MODELO:
+${modelo}
+
+FATO:
+${fato}
+
+CAUSA:
+${causa}
+
+AÇÃO:
+${acao}
+
+INFORMAÇÕES ADICIONAIS:
+${info}`;
+
+  document.getElementById("resultado").textContent = resultado;
+
+  navigator.clipboard.writeText(resultado)
+    .then(() => {
+      const mensagem = document.getElementById("mensagem");
+      mensagem.textContent = "✅ FCA criada e copiada para a área de transferência";
+      setTimeout(() => mensagem.textContent = "", 3000);
+    })
+    .catch(err => {
+      document.getElementById("mensagem").textContent = "Erro ao copiar FCA.";
+      console.error("Erro ao copiar: ", err);
+    });
+}
+
+function limparCampos() {
+  ["modelo", "fato", "causa", "acao", "info"].forEach(id => {
+    document.getElementById(id).value = "";
+  });
+  document.getElementById("resultado").textContent = "";
+  document.getElementById("mensagem").textContent = "";
+}
+
+configurarSugestoes("fato", "sugestoes-fato", sugestoesFato);
+configurarSugestoes("causa", "sugestoes-causa", sugestoesCausa);
+
+  </script>
+</body>
+</html>
