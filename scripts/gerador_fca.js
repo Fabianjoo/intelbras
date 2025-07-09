@@ -14,7 +14,8 @@ const sugestoesFato = [
 const sugestoesCausa = [
   "Situação Alegada",
   "Especificação",
-  "Configuração"
+  "Configuração",
+  "Solicitação de Arquivo/Procedimento"
 ];
 
 function configurarSugestoes(textareaId, listaId, opcoes) {
