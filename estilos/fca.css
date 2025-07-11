@@ -18,6 +18,10 @@
     position: relative;
   }
 
+  div > label{
+    font-weight: bold;
+  }
+
   .ferramenta textarea {
     background-color: var(--fundo-verde, #f0f0f0);
     margin-top: 5px;
