@@ -4,11 +4,10 @@ const sugestoesFato = [
   "Cliente alega que o gravador está com o Intelbras Cloud Desconectado",
   "Cliente alega que o gravador está com o Intelbras Cloud conectado, mas sem acesso remoto",
   "Cliente alega que esqueceu a senha do gravador",
-  "Cliente alega que o gravador está apresentando ERRO no HD",
-  "Cliente alega que esqueceu a senha da câmera IP",
+  "Cliente alega que esqueceu a senha da Câmera IP",
+  "Cliente solicitou suporte para recuperação de senha da Câmera IP",
   "Cliente solicitou suporte para recuperação de senha do DVR",
-  "Câmera IP - sem imagem",
-  "Câmera IP - fora da rede"
+  "Cliente alega que o gravador está apresentando ERRO no HD",
 ];
 
 const sugestoesCausa = [
