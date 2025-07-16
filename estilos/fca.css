@@ -7,8 +7,9 @@
     padding: 20px;
   }
 
-  .ferramenta > h1{
+  section > h1{
       text-align: center;
+      font-size: 1.5em;
   }
 
   .ferramenta div {
