@@ -8,6 +8,20 @@ const sugestoesFato = [
   "Cliente solicitou suporte para recuperação de senha da Câmera IP",
   "Cliente solicitou suporte para recuperação de senha do DVR",
   "Cliente alega que o gravador está apresentando ERRO no HD",
+  "Cliente relatou que o gravador não está reconhecendo o HD",
+  "Cliente solicitou auxílio para cadastrar o equipamento no Sim Next",
+  "Cliente solicitou auxílio para cadastrar o equipamento no aplicativo iSIC Lite.",
+  "Cliente solicitou auxílio para cadastrar a câmera Mibo no software Sim Next",
+  "Cliente solicitou ajuda para cadastrar uma câmera Hikvision no gravador, alegando que não está conseguindo realizar o procedimento",
+  "Cliente relatou que a câmera estava sem audio/som e gostaria de ativar",
+  "Cliente relatou que a câmera Full Color estava com o LED piscando e solicitou desativação",
+  "Cliente solicitou auxílio para configurar o gravador para gravação por detecção de movimento",
+  "Cliente solicitou auxílio para configurar o gravador para gravação por Regular",
+  "Cliente relatou que não estava conseguindo vincular a conta Intelbras no Sim Next",
+  "Cliente relatou que não estava conseguindo instalar o Sim Next",
+  "Cliente relatou que o mouse parou de funcionar no gravador",
+  "Cliente solicitou assistência técnica em sua região",
+  "Cliente queria acionar a garantia do produto"
 ];
 
 const sugestoesCausa = [
