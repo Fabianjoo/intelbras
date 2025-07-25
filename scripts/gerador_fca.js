@@ -12,6 +12,7 @@ const sugestoesFato = [
   "Cliente solicitou auxílio para cadastrar o equipamento no Sim Next",
   "Cliente solicitou auxílio para cadastrar o equipamento no aplicativo iSIC Lite.",
   "Cliente solicitou auxílio para cadastrar a câmera Mibo no software Sim Next",
+  "Cliente solicitou auxílio para cadastrar a câmera no gravador",
   "Cliente solicitou ajuda para cadastrar uma câmera Hikvision no gravador, alegando que não está conseguindo realizar o procedimento",
   "Cliente relatou que a câmera estava sem audio/som e gostaria de ativar",
   "Cliente relatou que a câmera Full Color estava com o LED piscando e solicitou desativação",
@@ -21,7 +22,16 @@ const sugestoesFato = [
   "Cliente relatou que não estava conseguindo instalar o Sim Next",
   "Cliente relatou que o mouse parou de funcionar no gravador",
   "Cliente solicitou assistência técnica em sua região",
-  "Cliente queria acionar a garantia do produto"
+  "Cliente queria acionar a garantia do produto",
+  "Cliente gostaria de atualizar o firmware do gravador",
+  "Cliente gostaria de saber qual é a última versão de firmware disponível para o gravador",
+  "Cliente gostaria de configurar a inteligência de vídeo de linha e cerca virtual",
+  "Cliente gostaria de configurar a inteligência de vídeo de detecção inteligente",
+  "Cliente gostaria de configurar a inteligência de vídeo de reconhecimento facial",
+  "Cliente gostaria de acionar uma sirene com o multibox",
+  "Cliente gostaria de acionar uma porta com eletroimã utilizando multibox",
+  "Cliente alega que o gravador não está gravando por detecção de movimento",
+  "Cliente alega que não consegue cadastrar câmera no gravador",
 ];
 
 const sugestoesCausa = [
