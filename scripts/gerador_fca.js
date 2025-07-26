@@ -31,7 +31,9 @@ const sugestoesFato = [
   "Cliente gostaria de acionar uma sirene com o multibox",
   "Cliente gostaria de acionar uma porta com eletroimã utilizando multibox",
   "Cliente alega que o gravador não está gravando por detecção de movimento",
-  "Cliente alega que não consegue cadastrar câmera no gravador"
+  "Cliente alega que não consegue cadastrar câmera no gravador",
+  "Cliente alega que não consegue cadastrar o gravador no Sim Next",
+  "Cliente alega que não consegue cadastrar o gravador no Isic Lite"
 ];
 
 const sugestoesCausa = [
