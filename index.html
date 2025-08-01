@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Central de Respostas Prontas</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/index.css">
 </head>
 <body>
     <header>
@@ -27,8 +28,17 @@
             <li>Esse site é muito ruim, mas me ajuda muito</li>
             <li>menus em contruçao: recuperaçao de senha, fca, organizador de respostas</li>
         </ul>
-        
+
+        <div id="buttons">
+            <label for="exportar" class="export_label">Exportar LocalStorage</label>
+            <button id="exportar"></button>
+            
+            <label for="importar" class="import_label">Importar LocalStorage</label>
+            <input type="file" id="importar" accept=".json">
+        </div>
         
     </main>
+
+    <script src="scripts/local_storage/import_export_storage.js"></script>
 </body>
 </html>
