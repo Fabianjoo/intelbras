@@ -13,6 +13,7 @@ const sugestoesFato = [
   "Cliente solicitou auxílio para cadastrar o equipamento no Sim Play",
   "Cliente solicitou auxílio para cadastrar o equipamento no aplicativo iSIC Lite.",
   "Cliente solicitou auxílio para cadastrar a câmera Mibo no software Sim Next",
+  "Cliente solicitou auxílio para cadastrar a câmera Mibo no Gravador",
   "Cliente solicitou auxílio para cadastrar a câmera no gravador",
   "Cliente solicitou ajuda para cadastrar uma câmera Hikvision no gravador, alegando que não está conseguindo realizar o procedimento",
   "Cliente relatou que a câmera estava sem audio/som e gostaria de ativar",
