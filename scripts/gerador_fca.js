@@ -7,6 +7,7 @@ const sugestoesFato = [
   "Cliente alega que esqueceu a senha da Câmera IP",
   "Cliente solicitou suporte para recuperação de senha da Câmera IP",
   "Cliente solicitou suporte para recuperação de senha do DVR",
+  "Cliente solicitou suporte para recuperação de senha do Sim Next",
   "Cliente alega que o gravador está apresentando ERRO no HD",
   "Cliente relatou que o gravador não está reconhecendo o HD",
   "Cliente solicitou auxílio para cadastrar o equipamento no Sim Next",
@@ -34,6 +35,7 @@ const sugestoesFato = [
   "Cliente gostaria de acionar uma porta com eletroimã utilizando multibox",
   "Cliente alega que o gravador não está gravando por detecção de movimento",
   "Cliente alega que não consegue cadastrar a câmera no gravador",
+  "Cliente alega que não consegue cadastrar a câmera Mibo no gravador",
   "Cliente alega que não consegue cadastrar o gravador no Sim Next",
   "Cliente alega que não consegue cadastrar o gravador no Sim Play",
   "Cliente alega que não consegue cadastrar o gravador no Isic Lite",
@@ -42,6 +44,7 @@ const sugestoesFato = [
   "Cliente solicitou auxílio para configurar um tour",
   "Cliente solicitou liberação de aplicativo na loja de aplicativos de outra região",
   "Cliente alega que o gravador não está inicializando",
+  "Cliente gostaria de saber se havia aplicativo de monitoramento para Smart TV",
 ];
 
 const sugestoesCausa = [
