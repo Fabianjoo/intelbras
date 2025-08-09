@@ -43,6 +43,7 @@ const sugestoesFato = [
   "Cliente solicitou liberação de aplicativo na loja de aplicativos de outra região",
   "Cliente alega que o gravador não está inicializando",
   "Cliente gostaria de saber se havia aplicativo de monitoramento para Smart TV",
+  "Cliente gostaria de configurar o espelhamento entre gravadores",
 ];
 
 const sugestoesCausa = [
