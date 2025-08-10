@@ -77,12 +77,6 @@ div.erros{
     margin-top: 0px;
 }
 
-div.tutorial{
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
 .pdf{
     background-color: var(--verde-principal);
     width: 40%;
@@ -99,5 +93,3 @@ div.tutorial{
     color: var(--verde-principal);
     border: 2px solid var(--verde-principal);
 }
-
-/* CÂMERA IP */
