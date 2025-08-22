@@ -7,7 +7,7 @@
  display: none;
 }
 
-.export_label{
+.export_label, #limpar{
     margin-right: 10px;
     background-color: red;
     border: 2px solid black;
@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 
-.export_label:hover{
+.export_label:hover, #limpar:hover{
     background-color: white;
     color: red;
 }
@@ -27,6 +27,7 @@
 }
 
 .import_label{
+    margin-right: 10px;
     padding: 10px;
     border-radius: 5px;
     border: 2px solid black;
