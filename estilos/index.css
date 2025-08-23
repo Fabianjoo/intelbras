@@ -1,6 +1,11 @@
 /* BOTÕES DE EXPORTAR E IMPORTAR LOCAL STORAGE */
 #buttons{
     margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#video{
+    margin-bottom: 30px; 
 }
 
 #exportar{
