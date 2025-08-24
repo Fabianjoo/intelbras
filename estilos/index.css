@@ -68,6 +68,9 @@
 
 
 details{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     padding: 5px;
     width: 220px;
     margin: 10px;
