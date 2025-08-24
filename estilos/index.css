@@ -1,3 +1,9 @@
+.principal{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
 /* BOTÕES DE EXPORTAR E IMPORTAR LOCAL STORAGE */
 #buttons{
     margin-top: 50px;
