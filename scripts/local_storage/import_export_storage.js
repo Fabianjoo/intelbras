@@ -46,8 +46,8 @@ document.getElementById("importar").addEventListener("change", (event) => {
 
 const botaoLimpar = document.getElementById("limpar");
 botaoLimpar.addEventListener("click", () => {
-  if (confirm("Tem certeza que deseja limpar todo o localStorage? Isso não pode ser desfeito!")) {
+  if (confirm("Tem certeza que deseja limpar todo o Cache? Isso não pode ser desfeito!")) {
     localStorage.clear();
-    alert("✅ LocalStorage limpo com sucesso!");
+    alert("✅ Cache limpo com sucesso!");
   }
 });
