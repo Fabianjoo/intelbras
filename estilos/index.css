@@ -18,7 +18,7 @@
  display: none;
 }
 
-.export_label, #limpar{
+.export_label{
     margin-right: 10px;
     background-color: red;
     border: 2px solid black;
@@ -52,3 +52,31 @@
     color: var(--verde-principal);
 }
 
+#limpar{
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#limpar:hover{
+    background-color: white;
+    color: red;
+}
+
+
+details{
+    padding: 5px;
+    width: 220px;
+    margin: 10px;
+    border: 3px solid red;
+
+
+}
+summary{
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
