@@ -170,10 +170,19 @@ window.onload = () => {
   ["fato", "causa"].forEach(chave => {
     const botao = document.getElementById("salvar-" + chave);
     const campo = document.getElementById(chave);
+
     botao.addEventListener("click", () => {
-      salvarSugestao(chave, campo.value);
-      botao.textContent = "✅ Salvo";
-      setTimeout(() => botao.textContent = "⭐ Salvar", 2000);
+      if (campo.value.trim() !== "") {
+        salvarSugestao(chave, campo.value);
+        botao.textContent = "✅ Salvo";
+        setTimeout(() => botao.textContent = "⭐ Salvar", 2000);
+      } else {
+        document.getElementById("sugestoes-fato").style.display = "none";
+        document.getElementById("sugestoes-causa").style.display = "none";
+
+        botao.textContent = "❌ Campo vazio";
+        setTimeout(() => botao.textContent = "⭐ Salvar", 2000);
+      }
     });
   });
-};
+}; 
