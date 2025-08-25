@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    <div class="asset-search" style="margin-top:20px; padding:10px; border:1px solid #ccc; border-radius:5px;">
+        <h2>Consulta de Número de Série (Salesforce)</h2>
+        <label for="serialNumber">Número de Série:</label>
+        <input type="text" id="serialNumber" placeholder="Digite o número de série">
+        <button id="consultButton">Consultar</button>
+        <div id="result" style="margin-top:10px; font-weight:bold;"></div>
+    </div>
+    
+    <script>
+    document.getElementById('consultButton').addEventListener('click', async () => {
+        const serial = document.getElementById('serialNumber').value.trim();
+        const resultDiv = document.getElementById('result');
+    
+        if (!serial) {
+            resultDiv.textContent = "Digite um número de série!";
+            resultDiv.style.color = "red";
+            return;
+        }
+    
+        try {
+            // Pega o token CSRF se necessário (geralmente está em _csrf ou na tag <meta>)
+            const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || '';
+    
+            const payload = {
+                "action": "NomeDoMetodoApex", // Substitua pelo método Apex correto que consulta número de série
+                "params": { serialNumber: serial }
+            };
+    
+            const response = await fetch('https://intelbras.lightning.force.com/aura?r=86&aura.ApexAction.execute=1', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-csrf-token': csrfToken
+                },
+                body: JSON.stringify(payload),
+                credentials: 'include' // importante para enviar cookies de sessão
+            });
+    
+            if (!response.ok) throw new Error(`Erro na requisição: ${response.status}`);
+    
+            const data = await response.json();
+            console.log(data);
+            resultDiv.textContent = JSON.stringify(data, null, 2);
+            resultDiv.style.color = "green";
+        } catch (err) {
+            console.error(err);
+            resultDiv.textContent = "Erro ao consultar número de série. Veja o console para detalhes.";
+            resultDiv.style.color = "red";
+        }
+    });
+    </script>
+    
+</body>
+</html>
