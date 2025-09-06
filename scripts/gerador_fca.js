@@ -120,21 +120,19 @@ function criarFCA() {
   const acao = adicionarMarcador(document.getElementById("acao").value);
   const info = adicionarMarcador(document.getElementById("info").value);
 
-  const resultado =
-`MODELO:
-${modelo}
+  let resultado = "";
 
-FATO:
-${fato}
+  if (modelo.trim() !== "") {
+    resultado += `MODELO:\n${modelo}\n\n`;
+  }
 
-CAUSA:
-${causa}
+  resultado += `FATO:\n${fato}\n\n`;
+  resultado += `CAUSA:\n${causa}\n\n`;
+  resultado += `AÇÃO:\n${acao}\n\n`;
 
-AÇÃO:
-${acao}
-
-INFORMAÇÕES ADICIONAIS:
-${info}`;
+  if (info.trim() !== "") {
+    resultado += `INFORMAÇÕES ADICIONAIS:\n${info}`;
+  }
 
   document.getElementById("resultado").textContent = resultado;
 
