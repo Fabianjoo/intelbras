@@ -12,30 +12,33 @@ async function enviarTexto(texto) {
     }
 
     const data = await response.json();
-    console.log("Resposta do servidor:", data);
-    return data;
+    console.log("Resposta API:", data);
+    return data.resultado;
   } catch (error) {
     console.error("Erro no frontend:", error);
     return null;
   }
 }
 
-// exemplo para botão de reformular no campo "fato"
-document.addEventListener("DOMContentLoaded", () => {
-  const btns = document.querySelectorAll(".btn-reformular");
+document.querySelectorAll(".btn-reformular").forEach(btn => {
+  btn.addEventListener("click", async (e) => {
+    // acha o textarea que está no mesmo bloco do botão
+    const textarea = e.target.closest("div").querySelector("textarea");
 
-  btns.forEach(btn => {
-    btn.addEventListener("click", async (e) => {
-      const textarea = e.target.closest("div").querySelector("textarea");
-      const texto = textarea.value.trim();
+    if (!textarea) {
+      console.error("Textarea não encontrado!");
+      return;
+    }
 
-      if (!texto) return alert("Digite algo para reformular!");
+    const texto = textarea.value.trim();
+    if (!texto) {
+      alert("Digite algo para reformular!");
+      return;
+    }
 
-      const resultado = await enviarTexto(texto);
-
-      if (resultado && resultado.resultado) {
-        textarea.value = resultado.resultado;
-      }
-    });
+    const resultado = await enviarTexto(texto);
+    if (resultado) {
+      textarea.value = resultado; // substitui o texto reformulado
+    }
   });
 });
