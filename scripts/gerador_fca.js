@@ -184,3 +184,37 @@ window.onload = () => {
     });
   });
 }; 
+
+
+
+document.querySelectorAll(".reformular").forEach(botao => {
+  botao.addEventListener("click", async () => {
+    const targetId = botao.getAttribute("data-target");
+    const textarea = document.getElementById(targetId);
+    const textoOriginal = textarea.value;
+
+    if (!textoOriginal.trim()) {
+      alert("Digite algo antes de reformular!");
+      return;
+    }
+
+    botao.innerText = "⏳ Reformulando...";
+    botao.disabled = true;
+
+    try {
+      const resposta = await fetch("/api/reformular", {
+        method: "POST",
+        body: JSON.stringify({ texto: textoOriginal })
+      });
+
+      const data = await resposta.json();
+      textarea.value = data.texto;
+    } catch (err) {
+      alert("Erro ao reformular. Tente novamente.");
+    }
+
+    botao.innerText = "🔄 Reformular";
+    botao.disabled = false;
+  });
+});
+
