@@ -8,13 +8,17 @@ export default async function handler(req, res) {
   try {
     const { texto } = req.body;
 
+    if (!texto) {
+      return res.status(400).json({ error: "O campo 'texto' é obrigatório" });
+    }
+
     const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
     const completion = await client.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
         { role: "system", content: "Você é um assistente que reformula frases de forma clara e profissional." },
-        { role: "user", content: `Reformule o seguinte texto: "${texto}"` }
+        { role: "user", content: `Reformule o seguinte texto: "${texto}"` },
       ],
     });
 
@@ -23,6 +27,6 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error("Erro:", error);
-    res.status(500).json({ error: "Erro ao reformular o texto" });
+    res.status(500).json({ error: error.message || "Erro ao reformular o texto" });
   }
 }
