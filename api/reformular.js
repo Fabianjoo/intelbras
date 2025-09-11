@@ -6,23 +6,23 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { texto } = JSON.parse(req.body);
+    const { texto } = req.body;
 
     const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
     const completion = await client.chat.completions.create({
-      model: "gpt-4o-mini", // modelo rápido e barato
+      model: "gpt-4o-mini",
       messages: [
         { role: "system", content: "Você é um assistente que reformula frases de forma clara e profissional." },
         { role: "user", content: `Reformule o seguinte texto: "${texto}"` }
-      ]
+      ],
     });
 
     const resposta = completion.choices[0].message.content;
-    res.status(200).json({ texto: resposta });
+    res.status(200).json({ resposta });
 
   } catch (error) {
-    console.error(error);
+    console.error("Erro:", error);
     res.status(500).json({ error: "Erro ao reformular o texto" });
   }
 }
