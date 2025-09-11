@@ -1,32 +1,26 @@
-import OpenAI from "openai";
-
+// pages/api/reformular.js
 export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Método não permitido" });
-  }
-
-  try {
-    const { texto } = req.body;
-
-    if (!texto) {
-      return res.status(400).json({ error: "O campo 'texto' é obrigatório" });
+    try {
+      if (req.method !== "POST") {
+        return res.status(405).json({ error: "Método não permitido" });
+      }
+  
+      // Log para debug no Function Log do Vercel
+      console.log("Request body:", req.body);
+  
+      const { texto } = req.body;
+  
+      if (!texto || typeof texto !== "string") {
+        return res.status(400).json({ error: "Campo 'texto' é obrigatório" });
+      }
+  
+      // Exemplo de lógica simples (aqui você coloca a chamada para IA ou o que precisar)
+      const resposta = `Texto reformulado: ${texto.toUpperCase()}`;
+  
+      return res.status(200).json({ sucesso: true, resultado: resposta });
+    } catch (error) {
+      console.error("Erro interno:", error);
+      return res.status(500).json({ error: "Erro interno no servidor" });
     }
-
-    const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-
-    const completion = await client.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages: [
-        { role: "system", content: "Você é um assistente que reformula frases de forma clara e profissional." },
-        { role: "user", content: `Reformule o seguinte texto: "${texto}"` },
-      ],
-    });
-
-    const resposta = completion.choices[0].message.content;
-    res.status(200).json({ resposta });
-
-  } catch (error) {
-    console.error("Erro:", error);
-    res.status(500).json({ error: error.message || "Erro ao reformular o texto" });
   }
-}
+  

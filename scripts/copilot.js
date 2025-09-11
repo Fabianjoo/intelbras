@@ -1,30 +1,43 @@
-document.querySelectorAll(".reformular").forEach(btn => {
-  btn.addEventListener("click", async () => {
-    const targetId = btn.getAttribute("data-target");
-    const textarea = document.getElementById(targetId);
-    const texto = textarea.value;
+// copilot.js
+async function enviarTexto(texto) {
+  try {
+    const response = await fetch("/api/reformular", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ texto }),
+    });
 
-    // Onde mostrar a resposta (pode ser um <ul> ou <textarea>)
-    let saida = textarea.nextElementSibling; // pega o próximo elemento após o textarea
-    if (!saida) {
-      saida = document.createElement("div");
-      textarea.insertAdjacentElement("afterend", saida);
+    if (!response.ok) {
+      // Pega o erro como texto (para não quebrar no JSON inválido)
+      const errorText = await response.text();
+      throw new Error(`Erro ${response.status}: ${errorText}`);
     }
 
-    saida.innerText = "⏳ Processando...";
+    const data = await response.json();
+    console.log("Resposta do servidor:", data);
 
-    try {
-      const response = await fetch("/api/reformular", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ texto }),
-      });
+    return data;
+  } catch (error) {
+    console.error("Erro no frontend:", error);
+    alert("Falha ao processar requisição. Veja o console para detalhes.");
+    return null;
+  }
+}
 
-      const data = await response.json();
-      saida.innerText = data.resposta || "⚠️ Nenhuma resposta recebida";
-    } catch (error) {
-      console.error(error);
-      saida.innerText = "❌ Erro ao conectar com o servidor";
-    }
-  });
+// Exemplo de uso:
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("btnEnviar");
+  const input = document.getElementById("inputTexto");
+
+  if (btn && input) {
+    btn.addEventListener("click", async () => {
+      const texto = input.value.trim();
+      if (!texto) return alert("Digite algo primeiro!");
+
+      const resultado = await enviarTexto(texto);
+      if (resultado && resultado.resultado) {
+        alert("Resultado: " + resultado.resultado);
+      }
+    });
+  }
 });
