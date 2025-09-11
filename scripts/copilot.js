@@ -20,13 +20,18 @@ async function enviarTexto(texto) {
   }
 }
 
-document.querySelectorAll(".btn-reformular").forEach(btn => {
+// Seleciona todos os botões de reformular
+document.querySelectorAll(".reformular").forEach(btn => {
   btn.addEventListener("click", async (e) => {
-    // acha o textarea que está no mesmo bloco do botão
-    const textarea = e.target.closest("div").querySelector("textarea");
+    const targetId = e.target.dataset.target; // pega o data-target do botão
+    if (!targetId) {
+      console.error("Data-target não definido!");
+      return;
+    }
 
+    const textarea = document.getElementById(targetId);
     if (!textarea) {
-      console.error("Textarea não encontrado!");
+      console.error(`Textarea com id "${targetId}" não encontrado!`);
       return;
     }
 
@@ -37,8 +42,12 @@ document.querySelectorAll(".btn-reformular").forEach(btn => {
     }
 
     const resultado = await enviarTexto(texto);
+    console.log("Texto reformulado recebido:", resultado);
+
     if (resultado) {
       textarea.value = resultado; // substitui o texto reformulado
+    } else {
+      alert("Não foi possível reformular o texto. Confira o console.");
     }
   });
 });
