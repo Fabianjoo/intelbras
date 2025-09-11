@@ -1,33 +1,33 @@
-import OpenAI from "openai";
-
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
+// pages/api/reformular.js
 export default async function handler(req, res) {
-  try {
-    if (req.method !== "POST") return res.status(405).json({ error: "Método não permitido" });
-
-    const { texto } = req.body;
-    if (!texto) return res.status(400).json({ error: "Campo 'texto' é obrigatório" });
-
-    // Aqui pedimos explicitamente ao modelo para reescrever de forma clara e legível
-    const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages: [
-        {
-          role: "system",
-          content: "Você é um assistente que reescreve textos, corrigindo erros, melhorando a clareza, a gramática e a formatação, mantendo todas as informações importantes."
-        },
-        { role: "user", content: texto }
-      ]
-    });
-
-    const resultado = completion.choices[0].message.content;
-    return res.status(200).json({ resultado });
-
-  } catch (error) {
-    console.error("Erro no servidor:", error);
-    return res.status(500).json({ error: "Erro interno" });
+    try {
+      // 1️⃣ Apenas aceita POST
+      if (req.method !== "POST") {
+        return res.status(405).json({ error: "Método não permitido" });
+      }
+  
+      // 2️⃣ Verifica se o body existe e está no formato correto
+      if (!req.body) {
+        console.log("DEBUG: req.body não existe");
+        return res.status(400).json({ error: "Body da requisição ausente" });
+      }
+  
+      // 3️⃣ Extrai a propriedade 'texto'
+      const { texto } = req.body;
+      console.log("DEBUG recebido:", texto);
+  
+      if (!texto) {
+        return res.status(400).json({ error: "Campo 'texto' é obrigatório" });
+      }
+  
+      // 4️⃣ Simula a reformulação
+      const resultado = `Reformulado: ${texto}`;
+  
+      // 5️⃣ Retorna resultado
+      return res.status(200).json({ resultado });
+    } catch (error) {
+      console.error("Erro no servidor:", error);
+      return res.status(500).json({ error: "Erro interno" });
+    }
   }
-}
+  
