@@ -41,3 +41,13 @@ document.getElementById("importar").addEventListener("change", (event) => {
   };
   reader.readAsText(file);
 });
+
+//LIMPAR LOCAL STORAGE
+
+const botaoLimpar = document.getElementById("limpar");
+botaoLimpar.addEventListener("click", () => {
+  if (confirm("Tem certeza que deseja limpar todo o Cache? Isso não pode ser desfeito!")) {
+    localStorage.clear();
+    alert("✅ Cache limpo com sucesso!");
+  }
+});

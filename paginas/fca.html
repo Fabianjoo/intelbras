@@ -25,43 +25,59 @@
   </header>
 
   <main>
+    <img src="../imagens/favicon2.ico" alt="topo" id="btntopo">
+    <img src="../imagens/favicon3.ico" alt="busca" id="btnbusca">
+
+    <!-- POPOVER BUSCA NS -->
+    <div id="popover" class="popover">
+      <div class="popover-content">
+        <h3>Consultar Número de Série</h3>
+        <input type="text" id="serialInput" placeholder="Digite o número de série">
+        <button id="consultarBtn">Consultar</button>
+        <div id="resultado" style="margin-top: 15px; color: green;"></div>
+      </div>
+    </div>
+
     <!-- FERRAMENTA GERADOR DE FCA -->
     <section class="ferramenta">
-      <h1>🧠 Gerador de FCA</h1>
-
       <div class="modelo">
         <label for="modelo">MODELO:</label>
         <textarea id="modelo" placeholder="Digite o modelo..."></textarea>
+        <ul id="respostas-modelo" class="respostas"></ul>
       </div>
-
+      
       <div class="fato">
         <label for="fato">FATO:</label>
         <textarea id="fato" placeholder="Digite o fato..."></textarea>
+        <button id="salvar-fato" type="button">⭐ Salvar</button>
         <ul id="sugestoes-fato" class="sugestoes"></ul>
       </div>
-
+      
       <div class="causa">
         <label for="causa">CAUSA:</label>
         <textarea id="causa" placeholder="Digite a causa..."></textarea>
+        <button id="salvar-causa" type="button">⭐ Salvar</button>
         <ul id="sugestoes-causa" class="sugestoes"></ul>
       </div>
-
+      
       <div class="acao">
         <label for="acao">AÇÃO:</label>
         <textarea id="acao" placeholder="Digite a ação..."></textarea>
+        <ul id="respostas-acao" class="respostas"></ul>
       </div>
-
+      
       <div class="info">
         <label for="info">INFORMAÇÕES ADICIONAIS:</label>
         <textarea id="info" placeholder="Digite as informações adicionais... (Modelo/Firmware/Versão/Contato com cliente)"></textarea>
+        <ul id="respostas-info" class="respostas"></ul>
       </div>
-
+      
       <div class="botao">
         <button id="criar_fca" onclick="criarFCA()">Gerar FCA</button>
         <button id="limpar" onclick="limparCampos()">Limpar</button>
         <p id="mensagem"></p>
       </div>
-
+      
       <div id="resultado"></div>
     </section>
 
@@ -501,6 +517,8 @@ INFORMAÇÕES ADICIONAIS:</textarea>
   <script src="../scripts/gerador_fca.js"></script>
   <script src="../scripts/botao_copiar.js"></script>
   <script src="../scripts/local_storage/local_storage_fca.js"></script>
+  <script src="../scripts/botao_topo.js"></script>
+  <script src="../scripts/busca_ns.js"></script>
  
 </body>
 </html>
