@@ -39,7 +39,7 @@ async function consultarSerial(serial) {
 
     // Exibe resultado na div
 document.getElementById('resultado').innerHTML = `
-Modelo: ${data.name || 'Não encontrado'} <br>
+Modelo: ${data.name || 'Não encontrado'}
 Data de Fabricação: ${data.productionDate || 'Não informada'}
 `;
   } catch (err) {
