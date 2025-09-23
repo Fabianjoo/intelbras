@@ -26,7 +26,18 @@
 
   <main>
     <img src="../imagens/favicon2.ico" alt="topo" id="btntopo">
-    <img src="../imagens/favicon.ico" alt="busca" id="btnbusca">
+    <img src="../imagens/favicon3.ico" alt="busca" id="btnbusca">
+
+    <!-- POPOVER BUSCA NS -->
+    <div id="popover" class="popover">
+      <div class="popover-content">
+        <h3>Consultar Número de Série</h3>
+        <input type="text" id="serialInput" placeholder="Digite o número de série">
+        <button id="consultarBtn">Consultar</button>
+        <button id="closeBtn">Fechar</button>
+      </div>
+    </div>
+
     <!-- FERRAMENTA GERADOR DE FCA -->
     <section class="ferramenta">
       <div class="modelo">
@@ -507,6 +518,7 @@ INFORMAÇÕES ADICIONAIS:</textarea>
   <script src="../scripts/botao_copiar.js"></script>
   <script src="../scripts/local_storage/local_storage_fca.js"></script>
   <script src="../scripts/botao_topo.js"></script>
+  <script src="../scripts/busca_ns.js"></script>
  
 </body>
 </html>
