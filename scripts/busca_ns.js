@@ -36,14 +36,12 @@ async function consultarSerial(serial) {
 
     if (!response.ok) throw new Error(`Erro na consulta: ${response.status}`);
     const data = await response.json();
-    console.log('Resposta da API:', data); // Adicione isso
 
     // Exibe resultado na div
     document.getElementById('resultado').innerText = `
-Modelo: ${data.modelName || 'Não encontrado'}
-Fabricante: ${data.manufacturer || 'Não informado'}
-Status: ${data.status || 'Indisponível'}
-    `;
+Modelo: ${data.name || 'Não encontrado'}
+Data de Fabricação: ${data.productionDate || 'Não informada'}
+`;
   } catch (err) {
     document.getElementById('resultado').innerText = `Erro: ${err.message}`;
     console.error(err);
