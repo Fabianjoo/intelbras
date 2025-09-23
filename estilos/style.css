@@ -14,6 +14,18 @@
     cursor: pointer;
 }
 
+#btnbusca{
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 #btntopo:hover{
     transform: translate(5px,5px);
 }
