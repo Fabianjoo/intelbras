@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* BOTAO TOPO */
+/* BOTAO TOPO E BUSCA NS */
 
 #btntopo{
     display: none;
@@ -14,7 +14,20 @@
     cursor: pointer;
 }
 
-#btntopo:hover{
+#btnbusca{
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    z-index: 1000;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+#btntopo:hover, #btnbusca:hover{
     transform: translate(5px,5px);
 }
 
