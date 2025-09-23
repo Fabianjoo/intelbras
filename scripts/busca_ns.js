@@ -38,8 +38,8 @@ async function consultarSerial(serial) {
     const data = await response.json();
 
     // Exibe resultado na div
-    document.getElementById('resultado').innerText = `
-Modelo: ${data.name || 'Não encontrado'}
+document.getElementById('resultado').innerHTML = `
+Modelo: ${data.name || 'Não encontrado'}<br>
 Data de Fabricação: ${data.productionDate || 'Não informada'}
 `;
   } catch (err) {
@@ -48,20 +48,19 @@ Data de Fabricação: ${data.productionDate || 'Não informada'}
   }
 }
 
-// Eventos do seu código existente
+// BOTÕES HTML DO POPOVER
 const btnBusca = document.getElementById('btnbusca');
 const popover = document.getElementById('popover');
-const closeBtn = document.getElementById('closeBtn');
 const consultarBtn = document.getElementById('consultarBtn');
 const serialInput = document.getElementById('serialInput');
 
+/* BUSCAR */
 btnBusca.addEventListener('click', () => {
   popover.style.display = 'flex';
   serialInput.focus();
 });
 
-closeBtn.addEventListener('click', () => popover.style.display = 'none');
-
+/* AO CLICAR FORA FECHA */
 popover.addEventListener('click', e => {
   if (e.target === popover) popover.style.display = 'none';
 });

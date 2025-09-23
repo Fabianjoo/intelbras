@@ -24,8 +24,22 @@
         </nav>
     </header>
     <main>
+        <img src="imagens/favicon2.ico" alt="topo" id="btntopo">
+        <img src="imagens/favicon3.ico" alt="busca" id="btnbusca">
+
+        <!-- POPOVER BUSCA NS -->
+    <div id="popover" class="popover">
+        <div class="popover-content">
+          <h3>Consultar Número de Série</h3>
+          <input type="text" id="serialInput" placeholder="Digite o número de série">
+          <button id="consultarBtn">Consultar</button>
+          <div id="resultado" style="margin-top: 15px; color: green;"></div>
+        </div>
+      </div>
+  
+
         <section class="principal">
-           <h1> <img src="imagens/favicon.ico" alt="camera"> teste<img src="imagens/favicon.ico" alt="camera"></h1>
+           <h1> <img src="imagens/favicon.ico" alt="camera"> Central de Respostas Prontas - Equipe de Segurança Eletrônica CFTV <img src="imagens/favicon.ico" alt="camera"></h1>
             <div id="buttons">
                 <label for="exportar" class="export_label">Exportar Cache ⬆️</label>
                 <button id="exportar"></button>
@@ -42,9 +56,9 @@
                 </details>
             </div>
         </section>
-        
     </main>
 
     <script src="scripts/local_storage/import_export_storage.js"></script>
+    <script src="scripts/busca_ns.js"></script>
 </body>
 </html>

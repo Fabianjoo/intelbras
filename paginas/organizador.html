@@ -25,6 +25,19 @@
 
   <main>
     <img src="../imagens/favicon2.ico" alt="topo" id="btntopo">
+    <img src="../imagens/favicon3.ico" alt="busca" id="btnbusca">
+
+    <!-- POPOVER BUSCA NS -->
+    <div id="popover" class="popover">
+      <div class="popover-content">
+        <h3>Consultar Número de Série</h3>
+        <input type="text" id="serialInput" placeholder="Digite o número de série">
+        <button id="consultarBtn">Consultar</button>
+        <div id="resultado" style="margin-top: 15px; color: green;"></div>
+      </div>
+    </div>
+
+
     <h1>💬 Organizador de Respostas</h1>
     <div class="input-container">
       <input type="text" id="nomePasta" placeholder="Nome da nova pasta" />
@@ -35,6 +48,7 @@
 
   <script src="../scripts/organizador.js"></script>
   <script src="../scripts/botao_topo.js"></script>
+  <script src="../scripts/busca_ns.js"></script>
   
 </body>
 </html>
