@@ -36,6 +36,7 @@ async function consultarSerial(serial) {
 
     if (!response.ok) throw new Error(`Erro na consulta: ${response.status}`);
     const data = await response.json();
+    console.log('Resposta da API:', data); // Adicione isso
 
     // Exibe resultado na div
     document.getElementById('resultado').innerText = `
