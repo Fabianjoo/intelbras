@@ -18,8 +18,6 @@
     transform: translate(5px,5px);
 }
 
-<<<<<<< Updated upstream
-=======
 /* POPOVER */
 .popover {
     display: none;
@@ -63,8 +61,6 @@
     color: var(--verde-principal);
   }
 
-
->>>>>>> Stashed changes
 /* VARIÁVEIS */
 :root{
     --verde-principal: #00995D;
