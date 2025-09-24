@@ -74,11 +74,6 @@
     color: var(--verde-principal);
   }
 
-  .popover-content > #resultado > p{
-    display: block;
-    margin-bottom: 10px;
-  }
-
 /* VARIÁVEIS */
 :root{
     --verde-principal: #00995D;
