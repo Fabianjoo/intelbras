@@ -151,7 +151,7 @@ function criarFCA() {
 // LIMPAR CAMPOS
 function limparCampos() {
   ["modelo", "fato", "causa", "acao", "info"].forEach(id => document.getElementById(id).value = "");
-  document.getElementById("resultado").textContent = "";
+  document.getElementById("resultadofca").textContent = "";
   document.getElementById("mensagem").textContent = "";
 }
 
