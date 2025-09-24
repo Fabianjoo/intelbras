@@ -134,7 +134,7 @@ function criarFCA() {
     resultado += `INFORMAÇÕES ADICIONAIS:\n${info}`;
   }
 
-  document.getElementById("resultado").textContent = resultado;
+  document.getElementById("resultadofca").textContent = resultado;
 
   navigator.clipboard.writeText(resultado)
     .then(() => {
