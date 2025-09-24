@@ -13,7 +13,7 @@ async function reformularTexto() {
   
     try {
       const r = await fetch('/api/reformular', {
-        method: 'GET',
+        method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(payload)
       });
