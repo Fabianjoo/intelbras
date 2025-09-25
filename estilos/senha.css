@@ -45,6 +45,8 @@ div.bloco_respostas textarea{
     height: 100px;
     resize: vertical;
     background-color: var(--fundo-verde);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 div.bloco_respostas button, div.tutorial > button{
