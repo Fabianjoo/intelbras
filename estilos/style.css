@@ -70,6 +70,9 @@
   }
 
   .popover-content > iframe{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
     border: none; 
     overflow: hidden;
   }
