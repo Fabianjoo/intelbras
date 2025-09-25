@@ -126,9 +126,28 @@ header > a > img{
     height: 100%;
 }
 
-div#logo > img{
-    height: 30vh;
-    width: 30vw;
+div.logo{
+    display: flex;
+    flex-flow: row wrap;
+    height: 44px;
+}
+
+.logo > ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.logo > ul > li{
+    margin-left:20px;
+}
+
+.logo > ul > li > a:hover{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
 }
 
 nav > ul{
