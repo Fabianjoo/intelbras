@@ -31,6 +31,7 @@
     padding: 5px;
     font-size: 14px;
     resize: vertical;
+    border-radius: 5px;
   }
 
   div.acao > textarea {
@@ -51,6 +52,7 @@
     margin: 2px 0 0;
     z-index: 1000;
     display: none;
+    border-radius: 5px;
   }
 
   #salvar-causa, #salvar-fato{
@@ -61,6 +63,7 @@
     font-weight: bold;
     color: white;
     background-color: var(--verde-principal);
+    border-radius: 5px;
   }
 
   #salvar-causa:hover, #salvar-fato:hover{
