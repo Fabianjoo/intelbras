@@ -64,6 +64,8 @@ h1 {
     height: 100px;
     resize: vertical;
     background-color: var(--fundo-verde);
+    border-radius: 5px;
+    padding: 5px;
   }
 
   .excluir-pasta, .excluir-texto {
