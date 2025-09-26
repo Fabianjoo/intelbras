@@ -156,19 +156,33 @@ div.logo{
     height: 44px;
 }
 
-.logo > ul{
+.ferramentas > .titulo{
+  display: flex;
+  cursor: pointer;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.logo > .ferramentas > ul{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
     justify-content: center;
+    background-color: var(--verde-principal);
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.logo > ul > li{
-    margin-left:20px;
+.ferramentas > ul > li{
+    margin:5px 0px;
+    padding: 5px;
+    color: white;
 }
 
-.logo > ul > li > a:hover{
+.ferramentas > ul > li > a:hover{
     text-decoration: underline;
     color: white;
     cursor: pointer;
