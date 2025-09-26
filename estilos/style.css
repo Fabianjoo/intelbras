@@ -98,6 +98,10 @@
     border-radius: 5px;
   }
 
+  #consultarBtnphaseout{
+    margin-top: 5px;
+  }
+
   #consultarBtn:hover, #consultarBtnphaseout:hover{
     background-color: var(--fundo-claro);
     color: var(--verde-principal);
