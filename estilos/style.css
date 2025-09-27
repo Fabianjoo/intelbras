@@ -107,6 +107,10 @@
     color: var(--verde-principal);
   }
 
+  header > .logo > a{
+    height: 44px;
+  }
+
 /* VARIÁVEIS */
 :root{
     --verde-principal: #00995D;
