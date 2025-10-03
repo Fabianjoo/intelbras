@@ -120,39 +120,32 @@ function criarFCA() {
   const acao = adicionarMarcador(document.getElementById("acao").value);
   const info = adicionarMarcador(document.getElementById("info").value);
 
-  let resultadoHTML = "";
+  let resultado = "";
 
   if (modelo.trim() !== "") {
-    resultadoHTML += `<strong>MODELO:</strong><br>${modelo}<br><br>`;
+    resultado += `MODELO:\n${modelo}\n\n`;
   }
 
-  resultadoHTML += `<strong>FATO:</strong><br>${fato}<br><br>`;
-  resultadoHTML += `<strong>CAUSA:</strong><br>${causa}<br><br>`;
-  resultadoHTML += `<strong>AÇÃO:</strong><br>${acao}<br><br>`;
+  resultado += `FATO:\n${fato}\n\n`;
+  resultado += `CAUSA:\n${causa}\n\n`;
+  resultado += `AÇÃO:\n${acao}\n\n`;
 
   if (info.trim() !== "") {
-    resultadoHTML += `<strong>INFORMAÇÕES ADICIONAIS:</strong><br>${info}`;
+    resultado += `INFORMAÇÕES ADICIONAIS:\n${info}`;
   }
 
-  // Mostra formatado na página (opcional)
-  document.getElementById("resultadofca").innerHTML = resultadoHTML;
+  document.getElementById("resultadofca").textContent = resultado;
 
-  // Copia o HTML formatado
-  navigator.clipboard.write([
-    new ClipboardItem({
-      "text/html": new Blob([resultadoHTML], { type: "text/html" }),
-      "text/plain": new Blob([resultadoHTML.replace(/<[^>]+>/g, '')], { type: "text/plain" })
+  navigator.clipboard.writeText(resultado)
+    .then(() => {
+      const mensagem = document.getElementById("mensagem");
+      mensagem.textContent = "✅ FCA gerado e copiado para a área de transferência!";
+      setTimeout(() => mensagem.textContent = "", 3000);
     })
-  ])
-  .then(() => {
-    const mensagem = document.getElementById("mensagem");
-    mensagem.textContent = "✅ FCA gerado e copiado com formatação!";
-    setTimeout(() => mensagem.textContent = "", 3000);
-  })
-  .catch(err => {
-    document.getElementById("mensagem").textContent = "Erro ao copiar FCA.";
-    console.error(err);
-  });
+    .catch(err => {
+      document.getElementById("mensagem").textContent = "Erro ao copiar FCA.";
+      console.error(err);
+    });
 }
 
 // LIMPAR CAMPOS
