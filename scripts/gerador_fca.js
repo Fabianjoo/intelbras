@@ -51,7 +51,8 @@ const sugestoesDefault = {
     "Situação Alegada", 
     "Especificação",
     "Configuração",
-    "Solicitação de Arquivo / Procedimento"
+    "Solicitação de Arquivo / Procedimento",
+    "n/a"
   ]
 };
 
