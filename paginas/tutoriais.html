@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0R560VSDN2"></script>
+  <script src="../scripts/analytics.js"></script>
+  <title>Gerador FCA</title>
+  <link rel="stylesheet" href="../estilos/style.css">
+  <link rel="stylesheet" href="../estilos/tutoriais.css">
+  <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html"><img src="../imagens/logo.png" alt="Logo Intelbras" /></a>
+  
+      <div class="ferramentas">
+          <div class="titulo">
+              <p>⚒️ Ferramentas ⬇️</p>
+          </div>
+          <ul>
+              <li><a href="http://10.1.45.193:3777/" target="_blank">Comparativo de Produtos</a></li>
+              <li><a href="https://painel-admin-app-site.intelbras.com.br/verificar-parceiro%7C" target="_blank">Verificar Astec</a></li>
+              <li><a href="https://10.1.40.26/" target="_blank">Hermes</a></li>
+              <li><a href="https://cronos-admin.intelbras.com.br/" target="_blank">CRONOS</a></li>
+              <li><a href="http://usa.vveye.com/vvv123/" target="_blank">Servidor Cloud</a></li>
+          </ul>
+      </div>
+  
+      <div class="ferramentas">
+          <div class="titulo">
+              <p>📝 Tabelas ⬇️</p>
+          </div>
+          <ul>
+              <li><a href="https://guardian.intelbras.com.br/gravadores/armazenamentos/pt-br/" target="_blank">HD</a></li>
+              <li><a href="../pdfs/Bateria/BATERIAS INTERNAS - DVR's e NVR's.pdf" target="_blank">Bateria</a></li>
+              <li><a href="https://backend.intelbras.com/sites/default/files/2022-09/6801_LA_Adaptadores-Wireless-USB_tabela-comparativa_a01.pdf" target="_blank">Adaptadores Wifi</a></li>
+          </ul>
+      </div>
+  </div>
+    <nav>
+      <ul>
+        <li><a href="senhas.html">🔐 Recuperação de Senha</a></li>
+        <!-- <li><a href="">✉️ E-mail</a></li> -->
+        <li><a href="fca.html">🧠 FCA</a></li>
+        <li style="background-color: white;"><a href="tutoriais.html">🎥 Tutoriais</a></li>
+        <!-- <li><a href="">⚙️ Processos Internos</a></li>
+        <li><a href="">🖼️ Galeria de Fotos</a></li> -->
+        <li><a href="organizador.html">💬 Organizador de Respostas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="../imagens/favicon2.ico" alt="topo" id="btntopo">
+    <img src="../imagens/favicon3.ico" alt="busca" id="btnbusca">
+
+    <!-- POPOVER BUSCA NS -->
+    <div id="popover" class="popover">
+      <div class="popover-content">
+        <h3>🔢 Consultar Número de Série</h3>
+        <input type="text" id="serialInput" placeholder="Digite o número de série">
+        <button id="consultarBtn">Consultar</button>
+        <div id="resultado" style="margin-top: 15px; color: green;"></div>
+      </div>
+
+      <div class="popover-content">
+        <h3>🛑 Consultar Phase Out</h3>
+        <input type="text" id="serialInputphaseout" autocomplete="off" placeholder="Digite o nome do Produto">
+        <ul id="sugestoes"></ul>
+        <button id="consultarBtnphaseout">Consultar</button>
+        <div id="resultadophaseout" style="margin-top: 15px; color: green;"></div>
+      </div>
+    </div>
+
+    <!-- TUTORIAIS -->
+
+     <!-- BARRA DE PESQUISA -->
+     <div id="pesquisa">
+        <input type="text" id="caixa-pesquisa" placeholder="Buscar Tutorial...">
+      </div>
+
+    <div class="container">
+      
+        <!-- FILTROS -->
+        <aside class="filtros">
+          <h2>🔍 Filtros</h2>
+      
+          <section>
+            <h3>📦 Equipamentos</h3>
+            <label><input type="checkbox" class="equip" data-filter="DVR"> DVR</label><br>
+            <label><input type="checkbox" class="equip" data-filter="NVR"> NVR</label><br>
+            <label><input type="checkbox" class="equip" data-filter="cameras"> Câmeras IP</label><br>
+            <label><input type="checkbox" class="equip" data-filter="vtn"> Mesa Controladora</label><br>
+            <label><input type="checkbox" class="equip" data-filter="ballun"> Power Ballun</label><br>
+            
+          </section>
+
+          <section>
+            <h3>💻 Softwares</h3>
+            <label><input type="checkbox" class="softwares" data-filter="sim-next"> Sim Next</label><br>
+            <label><input type="checkbox" class="softwares" data-filter="guardian"> Intelbras Guardian</label><br>
+            <label><input type="checkbox" class="softwares" data-filter="isic-lite"> Isic Lite</label><br>
+            <label><input type="checkbox" class="softwares" data-filter="ip-utility"> IP Utility</label><br>
+            <label><input type="checkbox" class="softwares" data-filter="defense"> Defense IA Lite</label><br>
+          </section>
+      
+          <section>
+            <h3>🛠️ Procedimentos</h3>
+            <label><input type="checkbox" class="procedimentos" data-filter="cadastro"> Cadastro de Dispositivos</label><br>
+            <label><input type="checkbox" class="procedimentos" data-filter="firmware"> Atualizar Firmware</label><br>
+            <label><input type="checkbox" class="procedimentos" data-filter="senha"> Recuperar Senha</label><br>
+            <label><input type="checkbox" class="procedimentos" data-filter="instalacao"> Instalação</label><br>
+          </section>
+
+          <section>
+            <h3>⚙️ Configurações</h3>
+            <label><input type="checkbox" class="config" data-filter="FTP"> FTP</label><br>
+            <label><input type="checkbox" class="config" data-filter="NTP"> NTP</label><br>
+          </section>
+
+          <section>
+            <h3>⚠️ ERROS</h3>
+            <label><input type="checkbox" class="erros" data-filter="cloud-erros"> Intelbras Cloud</label><br>
+            <label><input type="checkbox" class="erros" data-filter="isic-erros"> Isic Lite</label><br>
+            <label><input type="checkbox" class="erros" data-filter="sim-erros"> Sim Next</label><br>
+
+          </section>
+
+
+        </aside>
+      
+        <!-- LISTA DE TUTORIAIS -->
+        <section id="tutoriais">
+      
+          <article class="tutorial" data-equip="isic-lite" data-erro="isic-erros">
+            <h3>🎥 ISIC Lite: Erro Excedido tempo máximo de conexão - i2244 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hSj_NdXOgy0?si=QRtd_S_JMumLZtsj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-equip="isic-lite" data-erro="isic-erros">
+            <h3>🎥 ISIC Lite: Erro Dispositivo não está Online - i2243 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QDaW4euSYH4?si=vdWkdA4YN5FlzLiS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-equip="isic-lite" data-erro="isic-erros">
+            <h3>🎥 ISIC Lite: Erro Limite Máximo de Usuários Conectados - i2241 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GXtzpqNNR9c?si=bwwh2d_52roE5o40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-equip="isic-lite" data-erro="isic-erros">
+            <h3>🎥 ISIC Lite: Erro Conta bloqueada - i2240 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/k4794DaoxGw?si=N45WR5txdvZUKtWr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-equip="isic-lite" data-erro="isic-erros">
+            <h3>🎥 ISIC Lite: Erro Usuário e/ou Senha Incorretos - i2242 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DRI0AjNIAII?si=TuXDSmpnbZeJDIUK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          
+      
+          
+      
+        </section>
+      </div>
+      
+
+   
+  </main>
+
+  <script src="../scripts/botao_topo.js"></script>
+  <script src="../scripts/busca_ns.js"></script>
+  <script src="../scripts/phaseout.js"></script>
+  <script src="../scripts/animacao.js"></script>
+  <script src="../scripts/tutoriais/botoes.js"></script>
+  <script src="../scripts/tutoriais/filtros.js"></script>
+  <script src="../scripts/tutoriais/pesquisar.js"></script>
+ 
+</body>
+</html>
