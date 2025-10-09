@@ -33,6 +33,10 @@ aside.filtros > section{
     color: black;
 }
 
+aside.filtros > section > label, input{
+    cursor: pointer;
+}
+
 section#tutoriais{
     margin: 20px 0px 0px 50px;
 }
