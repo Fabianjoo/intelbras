@@ -99,24 +99,37 @@
           <section>
             <h3>💻 Softwares</h3>
             <label><input type="checkbox" class="softwares" data-filter="sim-next"> Sim Next</label><br>
+            <label><input type="checkbox" class="softwares" data-filter="sim-play"> Sim Play</label><br>
             <label><input type="checkbox" class="softwares" data-filter="guardian"> Intelbras Guardian</label><br>
             <label><input type="checkbox" class="softwares" data-filter="isic-lite"> Isic Lite</label><br>
-            <label><input type="checkbox" class="softwares" data-filter="ip-utility"> IP Utility</label><br>
             <label><input type="checkbox" class="softwares" data-filter="defense"> Defense IA Lite</label><br>
           </section>
       
           <section>
             <h3>🛠️ Procedimentos</h3>
             <label><input type="checkbox" class="procedimentos" data-filter="cadastro"> Cadastro de Dispositivos</label><br>
-            <label><input type="checkbox" class="procedimentos" data-filter="firmware"> Atualizar Firmware</label><br>
-            <label><input type="checkbox" class="procedimentos" data-filter="senha"> Recuperar Senha</label><br>
+            <label><input type="checkbox" class="procedimentos" data-filter="firmware"> Firmware</label><br>
+            <label><input type="checkbox" class="procedimentos" data-filter="senha"> Senha</label><br>
+            <label><input type="checkbox" class="procedimentos" data-filter="download"> Download</label><br>
+            <label><input type="checkbox" class="procedimentos" data-filter="conta-intelbras"> Conta Intelbras</label><br>
+            <label><input type="checkbox" class="procedimentos" data-filter="interface-web"> Interface Web</label><br>
             <label><input type="checkbox" class="procedimentos" data-filter="instalacao"> Instalação</label><br>
+            
           </section>
 
           <section>
             <h3>⚙️ Configurações</h3>
             <label><input type="checkbox" class="config" data-filter="FTP"> FTP</label><br>
             <label><input type="checkbox" class="config" data-filter="NTP"> NTP</label><br>
+            <label><input type="checkbox" class="config" data-filter="encoder"> Parâmetros e Encoder</label><br>
+            <label><input type="checkbox" class="config" data-filter="OSD"> Menu OSD</label><br>
+            <label><input type="checkbox" class="config" data-filter="PTZ"> PTZ</label><br>
+            <label><input type="checkbox" class="config" data-filter="busca-avancada"> Busca Avançada</label><br>
+            <label><input type="checkbox" class="config" data-filter="favoritos"> Favoritos</label><br>
+            <label><input type="checkbox" class="config" data-filter="gravacoes"> Gravações</label><br>
+            <label><input type="checkbox" class="config" data-filter="importar"> Importar e Exportar</label><br>
+            <label><input type="checkbox" class="config" data-filter="alarme"> Alarme</label><br>
+            <label><input type="checkbox" class="config" data-filter="autoregistro"> Auto Registro</label><br>
           </section>
 
           <section>
@@ -133,7 +146,7 @@
         <!-- LISTA DE TUTORIAIS -->
         <section id="tutoriais">
       
-          <article class="tutorial" data-equip="isic-lite" data-erro="isic-erros">
+          <article class="tutorial" data-software="isic-lite" data-erros="isic-erros">
             <h3>🎥 ISIC Lite: Erro Excedido tempo máximo de conexão - i2244 🎥</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/hSj_NdXOgy0?si=QRtd_S_JMumLZtsj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div id="buttons">
@@ -142,7 +155,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-equip="isic-lite" data-erro="isic-erros">
+          <article class="tutorial" data-software="isic-lite" data-erros="isic-erros">
             <h3>🎥 ISIC Lite: Erro Dispositivo não está Online - i2243 🎥</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/QDaW4euSYH4?si=vdWkdA4YN5FlzLiS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div id="buttons">
@@ -151,7 +164,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-equip="isic-lite" data-erro="isic-erros">
+          <article class="tutorial" data-software="isic-lite" data-erros="isic-erros">
             <h3>🎥 ISIC Lite: Erro Limite Máximo de Usuários Conectados - i2241 🎥</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/GXtzpqNNR9c?si=bwwh2d_52roE5o40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div id="buttons">
@@ -160,7 +173,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-equip="isic-lite" data-erro="isic-erros">
+          <article class="tutorial" data-software="isic-lite" data-erros="isic-erros">
             <h3>🎥 ISIC Lite: Erro Conta bloqueada - i2240 🎥</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/k4794DaoxGw?si=N45WR5txdvZUKtWr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div id="buttons">
@@ -169,9 +182,396 @@
             </div>
           </article>
 
-          <article class="tutorial" data-equip="isic-lite" data-erro="isic-erros">
+          <article class="tutorial" data-software="isic-lite" data-erros="isic-erros">
             <h3>🎥 ISIC Lite: Erro Usuário e/ou Senha Incorretos - i2242 🎥</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/DRI0AjNIAII?si=TuXDSmpnbZeJDIUK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite" data-procedimentos="senha">
+            <h3>🎥 ISIC Lite: Alterar senha dos dispositivos - i2300 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZFIuDf7OEOQ?si=kjfyF308uGDVAN2X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite">
+            <h3>🎥 ISIC Lite: Aparência e Acesso ao Aplicativo - i2301 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ltS9c9yKAFk?si=zNm_HTtd0gi5npZv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite" data-procedimentos="interface-web">
+            <h3>🎥 ISIC Lite: Acesso a Interface Web dos dispositivos - i2302 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/I8gNO5TTx1o?si=gGspNL8BJJH9AZFP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-config="isic-lite">
+            <h3>🎥 ISIC Lite: Configurar Encoder dos Canais - i2303 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aH9qEkLwLc8?si=-f8IbDTcFeHdqp-J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite" data-config="encoder">
+            <h3>🎥 ISIC Lite: Configurar Parâmetros dos Canais - i2304 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g39D3Ooo_CI?si=iO3XSIOszIq6cwqi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite" data-config="OSD">
+            <h3>🎥 ISIC Lite – Menu OSD - i2335 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HbThtaoS_9s?si=RZu49EbWKtGDBKEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite" data-config="PTZ">
+            <h3>🎥 ISIC Lite – Funções PTZ - i2336 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TrpkOr_2Lh4?si=UTm3jTAZKHvtr2g4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite" data-config="busca-avancada">
+            <h3>🎥 ISIC Lite - Busca Avançada - i2347 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BS_ziJ9DCHw?si=acPfWOKVp-EyoLEB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite" data-config="favoritos">
+            <h3>🎥 Como criar favoritos de visualização no ISIC Lite – i2355 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VD09IQ31XIY?si=dxSzZvNzkyB46gtC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite">
+            <h3>🎥 ISIC Lite: Definir método de conexão dos dispositivos - i2275 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cJLZT1SyouE?si=P46Z4G-PCHSIi6Ci" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite" data-procedimentos="cadastro">
+            <h3>🎥 ISIC Lite: Cadastro de dispositivos - i2296 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bLgLr_IcQek?si=4eTB1OPi796UkFeL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite" data-procedimentos="firmware">
+            <h3>🎥 ISIC Lite: Atualização de firmware - i2256 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G4p6MAypsLg?si=HgbAZyUAwAeal1_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite" data-procedimentos="conta-intelbras">
+            <h3>🎥 ISIC Lite: Migração para a Conta Intelbras - i2283 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kLNn9ETzX7k?si=xk76QGp4D929ECHt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="isic-lite" data-procedimentos="download">
+            <h3>🎥 Aprenda a baixar o iSIC LITE - i2173 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/c-zgsbxSCp8?si=s_KmSWIObT6ppiQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-procedimentos="download">
+            <h3>🎥 SIM Next: Baixar e Instalar – i2331 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YMiX69r6QJs?si=AwWBsJ-V5L2heqMa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-config="favoritos">
+            <h3>🎥 Como fazer a criação de planos e favoritos - i2182 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/X3UsPZ17sy4?si=u2VJjsQTs4-RGjGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-config="gravacoes">
+            <h3>🎥 SIM Next: Reprodução e backup de gravações - i2195 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_DnaTTYHrz8?si=pWT0J00YCId0cjLd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-config="gravacoes">
+            <h3>🎥 SIM Next: Gravação local – i2332 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qdkuuVDYt-c?si=PYSqiBI_CGFSxMtG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-procedimentos="senha">
+            <h3>🎥 SIM Next: Redefinir senha - i2266 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MeHxm-khQqE?si=fNLkUNKReSC8FHxX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-procedimentos="conta-intelbras">
+            <h3>🎥 SIM Next: Vincular à conta Intelbras - i2267 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/S-p2xDSPK4w?si=2NRM29sg7gEv_w5j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-config="importar">
+            <h3>🎥 SIM Next: Importar, exportar e gerenciar dispositivos da conta Intelbras - i2268 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZrbCDJn8bH8?si=YuZRIc4-5cSwqNNR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-procedimentos="cadastro">
+            <h3>🎥 SIM Next: Como cadastrar câmeras Mibo Cam - i2285 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iuajiDHGYzU?si=lMZZtQOhMLkTJHm1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-play" data-procedimentos="cadastro">
+            <h3>🎥 SIM Play: Como Cadastrar Dispositivos - i2311 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pqXbcgu5Zxk?si=WKWQW2gV47rCZm0B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-play" data-procedimentos="download">
+            <h3>🎥 SIM Play: Como Instalar no Windows - i2312 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qxg1IpEtF94?si=NZvoxcUtaRJkSPEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-play" data-procedimentos="download">
+            <h3>🎥 SIM Play: Como Instalar no MacOS - i2313 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lJsWIxkfxaE?si=9DWw2q_iSQXhMaxq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-play" data-config="favoritos">
+            <h3>🎥 SIM Play: Visualizações Favoritas e Ferramentas do Canal - i2314 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d5zlHCuqCTA?si=3CetG3r-gpatmJD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-play" data-config="gravacoes">
+            <h3>🎥 SIM Play: Reprodução e Backup das Gravações – i2315 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kokFlH4AYyo?si=NiN17Un4lhw1sAXa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-play" data-config="importar">
+            <h3>🎥 SIM Play: Importar e Exportar Dispositivos – i2323 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lVEipaTr5wg?si=Y8WvDlW2XrOlFESn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-config="alarme">
+            <h3>🎥 SIM Next: Configurar entradas e saídas de alarme dos dispositivos – i2333 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fk-Wrz8wTg4?si=fpFNjqZgW100zwwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next">
+            <h3>🎥 SIM Next: Eventos ao vivo – i2334 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yfrS7_CjaLY?si=NYRICtahh22mDti3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-config="autoregistro">
+            <h3>🎥 Software de monitoramento SIM Next: como configurar a função autorregistro - i2343 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iS7rdRIiiFs?si=jA2NnbthUbIf_OfP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next">
+            <h3>🎥 SIM Next: Integração com InControl - i2352 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/X4ipZE0x2oA?si=9Km2adbMlTtyR0pN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-config="autoregistro">
+            <h3>🎥 Software SIM Next – Registro Automático (simplificado) – i2363 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bI_5aeaMFOQ?si=qNS3hRw6oKCq-hq7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-procedimentos="cadastro">
+            <h3>🎥 SIM Next: Cadastro de dispositivos - i2367 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aVunir_8CVQ?si=fNUG7t3s0j5XN7NV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="sim-next" data-config="importar">
+            <h3>🎥 SIM Next: Importar e exportar dispositivos – i2371 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_Ut_z8pRTnI?si=k-uCHeyGb4cI4h-o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="defense" data-procedimentos="download">
+            <h3>🎥 Defense IA Lite – Download e instalação – i2600 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fo87RP-eB9E?si=yR_mKIVIo2rzEB1_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="defense" data-procedimentos="cadastro">
+            <h3>🎥 Software Defense IA Lite – Cadastro de dispositivos de vídeo – i2601 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wc2B0Ydqw2Y?si=7-DUMY67r-mRgW6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="defense" data-config="gravacoes">
+            <h3>🎥 Software Defense IA Lite – Reproduzir gravações – i2603 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VLdl8bbAgpc?si=uv3vigcNZwoH20xH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="defense">
+            <h3>🎥 Software Defense IA Lite – Visualizações públicas e privadas – i2604 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/txXa_SR01c0?si=jCOOAkiy-e6ZnKse" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="defense" data-procedimentos="senha">
+            <h3>🎥 Software Defense IA Lite – Recuperar senha de acesso – i2605 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XqZ-gFhIHtM?si=c80QdzG3vOzbk1wG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="defense">
+            <h3>🎥 Software Defense IA Lite – Configurar eventos – i2606 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AgLxbh6hrZg?si=HOq4c8uJDx48i88_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="defense">
+            <h3>🎥 Software Defense IA Lite – Regras de acesso – i2607 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FvSC4Roz6NI?si=5YCjTh3-ntyrU541" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-software="defense">
+            <h3>🎥 Software Defense IA Lite – Cadastro de dispositivos de controle de acesso – i2602 🎥</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oxs4iICgtHg?si=rnGE6IgqjUDpMjaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div id="buttons">
                 <button class="link-video">COPIAR</button>
                 <button class="youtube">YOUTUBE</button>
