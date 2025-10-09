@@ -2,6 +2,10 @@
 
 input#caixa-pesquisa{
     cursor: text;
+    background-color: var(--fundo-verde);
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
 }
 
 .container{
@@ -39,6 +43,8 @@ aside.filtros > section{
 
 aside.filtros > section > label, input{
     cursor: pointer;
+    padding: 5px;
+    accent-color: green;
 }
 
 section#tutoriais{

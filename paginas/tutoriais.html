@@ -85,10 +85,21 @@
           <h2>🔍 Filtros</h2>
       
           <section>
+            <h3>📦 Segmento</h3>
+            <label><input type="checkbox" class="segmento" data-filter="cftv"> CFTV</label><br>
+            <label><input type="checkbox" class="segmento" data-filter="tmr"> TMR</label><br>
+            <label><input type="checkbox" class="segmento" data-filter="mibo"> MIBO</label><br>
+            <label><input type="checkbox" class="segmento" data-filter="alarme"> Alarme</label><br>
+            
+          </section>
+
+          <section>
             <h3>📦 Equipamentos</h3>
             <label><input type="checkbox" class="equip" data-filter="DVR"> DVR</label><br>
             <label><input type="checkbox" class="equip" data-filter="NVR"> NVR</label><br>
             <label><input type="checkbox" class="equip" data-filter="cameras"> Câmeras IP</label><br>
+            <label><input type="checkbox" class="equip" data-filter="analog-cam"> Câmeras Analógicas</label><br>
+            <label><input type="checkbox" class="equip" data-filter="veicular-cam"> Câmeras Veiculares</label><br>
             <label><input type="checkbox" class="equip" data-filter="vtn"> Mesa Controladora</label><br>
             <label><input type="checkbox" class="equip" data-filter="ballun"> Power Ballun</label><br>
             
@@ -100,7 +111,7 @@
             <label><input type="checkbox" class="softwares" data-filter="sim-play"> Sim Play</label><br>
             <label><input type="checkbox" class="softwares" data-filter="guardian"> Intelbras Guardian</label><br>
             <label><input type="checkbox" class="softwares" data-filter="isic-lite"> Isic Lite</label><br>
-            <label><input type="checkbox" class="softwares" data-filter="defense"> Defense IA Lite</label><br>
+            <label><input type="checkbox" class="softwares" data-filter="defenselite"> Defense IA Lite</label><br>
           </section>
       
           <section>
@@ -109,32 +120,35 @@
             <label><input type="checkbox" class="procedimentos" data-filter="firmware"> Firmware</label><br>
             <label><input type="checkbox" class="procedimentos" data-filter="senha"> Senha</label><br>
             <label><input type="checkbox" class="procedimentos" data-filter="download"> Download</label><br>
-            <label><input type="checkbox" class="procedimentos" data-filter="conta-intelbras"> Conta Intelbras</label><br>
+            <label><input type="checkbox" class="procedimentos" data-filter="gravacoes"> Gravações</label><br>
+            <label><input type="checkbox" class="procedimentos" data-filter="inicializar-camera"> Inicializar Câmera</label><br>
             <label><input type="checkbox" class="procedimentos" data-filter="interface-web"> Interface Web</label><br>
+            <label><input type="checkbox" class="procedimentos" data-filter="alexa"> Alexa</label><br>
             <label><input type="checkbox" class="procedimentos" data-filter="instalacao"> Instalação Física</label><br>
             
           </section>
 
           <section>
             <h3>⚙️ Configurações</h3>
-            <label><input type="checkbox" class="config" data-filter="FTP"> FTP</label><br>
+            <label><input type="checkbox" class="config" data-filter="data-hora"> Data/Hora</label><br>
             <label><input type="checkbox" class="config" data-filter="NTP"> NTP</label><br>
+            <label><input type="checkbox" class="config" data-filter="conta-intelbras"> Conta Intelbras</label><br>
+            <label><input type="checkbox" class="config" data-filter="audio"> Áudio</label><br>
             <label><input type="checkbox" class="config" data-filter="encoder"> Parâmetros e Encoder</label><br>
             <label><input type="checkbox" class="config" data-filter="OSD"> Menu OSD</label><br>
             <label><input type="checkbox" class="config" data-filter="PTZ"> PTZ</label><br>
             <label><input type="checkbox" class="config" data-filter="busca-avancada"> Busca Avançada</label><br>
             <label><input type="checkbox" class="config" data-filter="favoritos"> Favoritos</label><br>
-            <label><input type="checkbox" class="config" data-filter="gravacoes"> Gravações</label><br>
             <label><input type="checkbox" class="config" data-filter="importar"> Importar e Exportar</label><br>
-            <label><input type="checkbox" class="config" data-filter="alarme"> Alarme</label><br>
+            <label><input type="checkbox" class="config" data-filter="alarme-config"> Configurações de Alarme</label><br>
+            <label><input type="checkbox" class="config" data-filter="notificacoes"> Notificações</label><br>
             <label><input type="checkbox" class="config" data-filter="autoregistro"> Auto Registro</label><br>
           </section>
 
           <section>
-            <h3>⚠️ ERROS</h3>
-            <label><input type="checkbox" class="erros" data-filter="cloud-erros"> Intelbras Cloud</label><br>
-            <label><input type="checkbox" class="erros" data-filter="isic-erros"> Isic Lite</label><br>
-            <label><input type="checkbox" class="erros" data-filter="sim-erros"> Sim Next</label><br>
+            <h3>⚠️ ADICIONAIS</h3>
+            <label><input type="checkbox" class="adicionais" data-filter="antigos"> ANTIGOS</label><br>
+            <label><input type="checkbox" class="adicionais" data-filter="erros"> ERROS</label><br>
 
           </section>
 
@@ -144,7 +158,7 @@
         <!-- LISTA DE TUTORIAIS -->
         <section id="tutoriais">
       
-          <article class="tutorial" data-software="isic-lite" data-erros="isic-erros">
+          <article class="tutorial" data-segmento="cftv"  data-software="isic-lite" data-adicionais="erros">
             <h3>🎥 ISIC Lite: Erro Excedido tempo máximo de conexão - i2244 🎥</h3>
           
             <img class="thumb" 
@@ -159,7 +173,7 @@
           </article>
           
           
-          <article class="tutorial" data-software="isic-lite" data-erros="isic-erros">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-adicionais="erros">
             <h3>🎥 ISIC Lite: Erro Dispositivo não está Online - i2243 🎥</h3>
             <img class="thumb" 
                  data-video-id="QDaW4euSYH4?"
@@ -172,7 +186,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-erros="isic-erros">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-adicionais="erros">
             <h3>🎥 ISIC Lite: Erro Limite Máximo de Usuários Conectados - i2241 🎥</h3>
             <img class="thumb" 
             data-video-id="GXtzpqNNR9c?"
@@ -185,7 +199,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-erros="isic-erros">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-adicionais="erros">
             <h3>🎥 ISIC Lite: Erro Conta bloqueada - i2240 🎥</h3>
             <img class="thumb" 
             data-video-id="k4794DaoxGw?"
@@ -198,7 +212,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-erros="isic-erros">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-adicionais="erros">
             <h3>🎥 ISIC Lite: Erro Usuário e/ou Senha Incorretos - i2242 🎥</h3>
             <img class="thumb" 
             data-video-id="DRI0AjNIAII?"
@@ -211,7 +225,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-procedimentos="senha">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-procedimentos="senha">
             <h3>🎥 ISIC Lite: Alterar senha dos dispositivos - i2300 🎥</h3>
             <img class="thumb" 
             data-video-id="ZFIuDf7OEOQ?"
@@ -224,7 +238,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite">
             <h3>🎥 ISIC Lite: Aparência e Acesso ao Aplicativo - i2301 🎥</h3>
             <img class="thumb" 
             data-video-id="ltS9c9yKAFk?"
@@ -237,7 +251,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-procedimentos="interface-web">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-procedimentos="interface-web">
             <h3>🎥 ISIC Lite: Acesso a Interface Web dos dispositivos - i2302 🎥</h3>
             <img class="thumb" 
             data-video-id="I8gNO5TTx1o?"
@@ -250,7 +264,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-config="encoder">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-config="encoder">
             <h3>🎥 ISIC Lite: Configurar Encoder dos Canais - i2303 🎥</h3>
             <img class="thumb" 
             data-video-id="aH9qEkLwLc8?"
@@ -263,7 +277,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-config="encoder">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-config="encoder">
             <h3>🎥 ISIC Lite: Configurar Parâmetros dos Canais - i2304 🎥</h3>
             <img class="thumb" 
             data-video-id="g39D3Ooo_CI?"
@@ -276,7 +290,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-config="OSD">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-config="OSD">
             <h3>🎥 ISIC Lite – Menu OSD - i2335 🎥</h3>
             <img class="thumb" 
             data-video-id="HbThtaoS_9s?"
@@ -289,7 +303,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-config="PTZ">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-config="PTZ">
             <h3>🎥 ISIC Lite – Funções PTZ - i2336 🎥</h3>
             <img class="thumb" 
             data-video-id="TrpkOr_2Lh4?"
@@ -302,7 +316,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-config="busca-avancada">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-config="busca-avancada">
             <h3>🎥 ISIC Lite - Busca Avançada - i2347 🎥</h3>
             <img class="thumb" 
             data-video-id="BS_ziJ9DCHw?"
@@ -315,7 +329,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-config="favoritos">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-config="favoritos">
             <h3>🎥 Como criar favoritos de visualização no ISIC Lite – i2355 🎥</h3>
             <img class="thumb" 
             data-video-id="VD09IQ31XIY?"
@@ -328,7 +342,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite">
             <h3>🎥 ISIC Lite: Definir método de conexão dos dispositivos - i2275 🎥</h3>
             <img class="thumb" 
             data-video-id="cJLZT1SyouE?"
@@ -341,7 +355,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-procedimentos="cadastro">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-procedimentos="cadastro">
             <h3>🎥 ISIC Lite: Cadastro de dispositivos - i2296 🎥</h3>
             <img class="thumb" 
             data-video-id="bLgLr_IcQek?"
@@ -354,7 +368,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-procedimentos="firmware">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-procedimentos="firmware">
             <h3>🎥 ISIC Lite: Atualização de firmware - i2256 🎥</h3>
             <img class="thumb" 
             data-video-id="G4p6MAypsLg?"
@@ -367,7 +381,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-procedimentos="conta-intelbras">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-config="conta-intelbras">
             <h3>🎥 ISIC Lite: Migração para a Conta Intelbras - i2283 🎥</h3>
             <img class="thumb" 
             data-video-id="kLNn9ETzX7k?"
@@ -380,7 +394,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="isic-lite" data-procedimentos="download">
+          <article class="tutorial" data-segmento="cftv" data-software="isic-lite" data-procedimentos="download">
             <h3>🎥 Aprenda a baixar o iSIC LITE - i2173 🎥</h3>
             <img class="thumb" 
             data-video-id="c-zgsbxSCp8?"
@@ -393,7 +407,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-procedimentos="download">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-procedimentos="download">
             <h3>🎥 SIM Next: Baixar e Instalar – i2331 🎥</h3>
             <img class="thumb" 
             data-video-id="YMiX69r6QJs?"
@@ -406,7 +420,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-config="favoritos">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-config="favoritos">
             <h3>🎥 Como fazer a criação de planos e favoritos - i2182 🎥</h3>
             <img class="thumb" 
             data-video-id="X3UsPZ17sy4?"
@@ -419,7 +433,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-config="gravacoes">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-procedimentos="gravacoes">
             <h3>🎥 SIM Next: Reprodução e backup de gravações - i2195 🎥</h3>
             <img class="thumb" 
             data-video-id="_DnaTTYHrz8?"
@@ -432,7 +446,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-config="gravacoes">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-procedimentos="gravacoes">
             <h3>🎥 SIM Next: Gravação local – i2332 🎥</h3>
             <img class="thumb" 
             data-video-id="qdkuuVDYt-c?"
@@ -445,7 +459,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-procedimentos="senha">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-procedimentos="senha">
             <h3>🎥 SIM Next: Redefinir senha - i2266 🎥</h3>
             <img class="thumb" 
             data-video-id="MeHxm-khQqE?"
@@ -458,7 +472,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-procedimentos="conta-intelbras">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-config="conta-intelbras">
             <h3>🎥 SIM Next: Vincular à conta Intelbras - i2267 🎥</h3>
             <img class="thumb" 
             data-video-id="S-p2xDSPK4w?"
@@ -471,7 +485,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-config="importar">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-config="importar">
             <h3>🎥 SIM Next: Importar, exportar e gerenciar dispositivos da conta Intelbras - i2268 🎥</h3>
             <img class="thumb" 
             data-video-id="ZrbCDJn8bH8?"
@@ -484,7 +498,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-procedimentos="cadastro">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-procedimentos="cadastro">
             <h3>🎥 SIM Next: Como cadastrar câmeras Mibo Cam - i2285 🎥</h3>
             <img class="thumb" 
             data-video-id="iuajiDHGYzU?"
@@ -497,7 +511,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-play" data-procedimentos="cadastro">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-play" data-procedimentos="cadastro">
             <h3>🎥 SIM Play: Como Cadastrar Dispositivos - i2311 🎥</h3>
             <img class="thumb" 
             data-video-id="pqXbcgu5Zxk?"
@@ -510,7 +524,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-play" data-procedimentos="download">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-play" data-procedimentos="download">
             <h3>🎥 SIM Play: Como Instalar no Windows - i2312 🎥</h3>
             <img class="thumb" 
             data-video-id="qxg1IpEtF94?"
@@ -523,7 +537,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-play" data-procedimentos="download">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-play" data-procedimentos="download">
             <h3>🎥 SIM Play: Como Instalar no MacOS - i2313 🎥</h3>
             <img class="thumb" 
             data-video-id="lJsWIxkfxaE?"
@@ -536,7 +550,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-play" data-config="favoritos">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-play" data-config="favoritos">
             <h3>🎥 SIM Play: Visualizações Favoritas e Ferramentas do Canal - i2314 🎥</h3>
             <img class="thumb" 
             data-video-id="d5zlHCuqCTA?"
@@ -549,7 +563,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-play" data-config="gravacoes">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-play" data-procedimentos="gravacoes">
             <h3>🎥 SIM Play: Reprodução e Backup das Gravações – i2315 🎥</h3>
             <img class="thumb" 
             data-video-id="kokFlH4AYyo?"
@@ -562,7 +576,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-play" data-config="importar">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-play" data-config="importar">
             <h3>🎥 SIM Play: Importar e Exportar Dispositivos – i2323 🎥</h3>
             <img class="thumb" 
             data-video-id="lVEipaTr5wg?"
@@ -575,7 +589,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-config="alarme">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-config="alarme-config">
             <h3>🎥 SIM Next: Configurar entradas e saídas de alarme dos dispositivos – i2333 🎥</h3>
             <img class="thumb" 
             data-video-id="Fk-Wrz8wTg4?"
@@ -588,7 +602,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next">
             <h3>🎥 SIM Next: Eventos ao vivo – i2334 🎥</h3>
             <img class="thumb" 
             data-video-id="yfrS7_CjaLY?"
@@ -601,7 +615,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-config="autoregistro">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-config="autoregistro">
             <h3>🎥 Software de monitoramento SIM Next: como configurar a função autorregistro - i2343 🎥</h3>
             <img class="thumb" 
             data-video-id="iS7rdRIiiFs?"
@@ -614,7 +628,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next">
             <h3>🎥 SIM Next: Integração com InControl - i2352 🎥</h3>
             <img class="thumb" 
             data-video-id="X4ipZE0x2oA?"
@@ -627,7 +641,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-config="autoregistro">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-config="autoregistro">
             <h3>🎥 Software SIM Next – Registro Automático (simplificado) – i2363 🎥</h3>
             <img class="thumb" 
             data-video-id="bI_5aeaMFOQ?"
@@ -640,7 +654,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-procedimentos="cadastro">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-procedimentos="cadastro">
             <h3>🎥 SIM Next: Cadastro de dispositivos - i2367 🎥</h3>
             <img class="thumb" 
             data-video-id="aVunir_8CVQ?"
@@ -653,7 +667,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="sim-next" data-config="importar">
+          <article class="tutorial" data-segmento="cftv" data-software="sim-next" data-config="importar">
             <h3>🎥 SIM Next: Importar e exportar dispositivos – i2371 🎥</h3>
             <img class="thumb" 
             data-video-id="_Ut_z8pRTnI?"
@@ -666,7 +680,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="defense" data-procedimentos="download">
+          <article class="tutorial" data-segmento="cftv" data-software="defenselite" data-procedimentos="download">
             <h3>🎥 Defense IA Lite – Download e instalação – i2600 🎥</h3>
             <img class="thumb" 
             data-video-id="Fo87RP-eB9E?"
@@ -679,7 +693,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="defense" data-procedimentos="cadastro">
+          <article class="tutorial" data-segmento="cftv" data-software="defenselite" data-procedimentos="cadastro">
             <h3>🎥 Software Defense IA Lite – Cadastro de dispositivos de vídeo – i2601 🎥</h3>
             <img class="thumb" 
             data-video-id="wc2B0Ydqw2Y?"
@@ -692,7 +706,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="defense" data-config="gravacoes">
+          <article class="tutorial" data-segmento="cftv" data-software="defenselite" data-procedimentos="gravacoes">
             <h3>🎥 Software Defense IA Lite – Reproduzir gravações – i2603 🎥</h3>
             <img class="thumb" 
             data-video-id="VLdl8bbAgpc?"
@@ -705,7 +719,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="defense">
+          <article class="tutorial" data-segmento="cftv" data-software="defenselite">
             <h3>🎥 Software Defense IA Lite – Visualizações públicas e privadas – i2604 🎥</h3>
             <img class="thumb" 
             data-video-id="txXa_SR01c0?"
@@ -718,7 +732,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="defense" data-procedimentos="senha">
+          <article class="tutorial" data-segmento="cftv" data-software="defenselite" data-procedimentos="senha">
             <h3>🎥 Software Defense IA Lite – Recuperar senha de acesso – i2605 🎥</h3>
             <img class="thumb" 
             data-video-id="XqZ-gFhIHtM?"
@@ -731,7 +745,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="defense">
+          <article class="tutorial" data-segmento="cftv" data-software="defenselite">
             <h3>🎥 Software Defense IA Lite – Configurar eventos – i2606 🎥</h3>
             <img class="thumb" 
             data-video-id="AgLxbh6hrZg?"
@@ -744,7 +758,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="defense">
+          <article class="tutorial" data-segmento="cftv" data-software="defenselite">
             <h3>🎥 Software Defense IA Lite – Regras de acesso – i2607 🎥</h3>
             <img class="thumb" 
             data-video-id="FvSC4Roz6NI?"
@@ -757,7 +771,7 @@
             </div>
           </article>
 
-          <article class="tutorial" data-software="defense">
+          <article class="tutorial" data-segmento="cftv" data-software="defenselite">
             <h3>🎥 Software Defense IA Lite – Cadastro de dispositivos de controle de acesso – i2602 🎥</h3>
             <img class="thumb" 
             data-video-id="oxs4iICgtHg?"
@@ -770,6 +784,371 @@
             </div>
           </article>
 
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-config="alarme-config">
+            <h3>🎥 Guardian: Adição de alarme – i6243 🎥</h3>
+            <img class="thumb" 
+            data-video-id="NcHCul8paJc?"
+            src="https://img.youtube.com/vi/NcHCul8paJc/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-config="alarme-config">
+            <h3>🎥 Guardian: Regra de associação e disparo - i6244 🎥</h3>
+            <img class="thumb" 
+            data-video-id="K1tOc5WNkJs?"
+            src="https://img.youtube.com/vi/K1tOc5WNkJs/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-config="alarme-config">
+            <h3>🎥 Guardian: Eventos lista e detalhes - i6245 🎥</h3>
+            <img class="thumb" 
+            data-video-id="vaLCPh4-lmE?"
+            src="https://img.youtube.com/vi/vaLCPh4-lmE/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-config="alarme-config">
+            <h3>🎥 Guardian: Funções de alarme (Pânico) - i6246 🎥</h3>
+            <img class="thumb" 
+            data-video-id="NcLcY8PhwUo?"
+            src="https://img.youtube.com/vi/NcLcY8PhwUo/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-config="alarme-config">
+            <h3>🎥 Guardian: Função de alarme (Setores) - i6247 🎥</h3>
+            <img class="thumb" 
+            data-video-id="Ceo8jgYCRZE?"
+            src="https://img.youtube.com/vi/Ceo8jgYCRZE/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-config="alarme-config">
+            <h3>🎥 Guardian Função de alarme (Controles) - i6248 🎥</h3>
+            <img class="thumb" 
+            data-video-id="rRWN_Tueclo?"
+            src="https://img.youtube.com/vi/rRWN_Tueclo/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-config="alarme-config">
+            <h3>🎥 Guardian - Funções de alarme (Lista de problemas) i6249 🎥</h3>
+            <img class="thumb" 
+            data-video-id="NuKZ1CvFczU?"
+            src="https://img.youtube.com/vi/NuKZ1CvFczU/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+          
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-config="alarme-config">
+            <h3>🎥 Guardian - Funções de alarme - Ativação Geral e Partições - i6250 🎥</h3>
+            <img class="thumb" 
+            data-video-id="toQFBaChTps?"
+            src="https://img.youtube.com/vi/toQFBaChTps/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-config="alarme-config">
+            <h3>🎥 Guardian: Compatibilidade com o Eletrificador (i6256) 🎥</h3>
+            <img class="thumb" 
+            data-video-id="GWbgqdjXaNI?"
+            src="https://img.youtube.com/vi/GWbgqdjXaNI/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-procedimentos="alexa" data-config="alarme-config">
+            <h3>🎥 Guardian: AMT 8000 LITE/PRO - Integração com a Alexa (i6257) 🎥</h3>
+            <img class="thumb" 
+            data-video-id="oUe0gMujwjY?"
+            src="https://img.youtube.com/vi/oUe0gMujwjY/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-procedimentos="alexa" data-config="alarme-config">
+            <h3>🎥 Guardian: AMT 8000 LITE/PRO – Ativação/Desativação através da Alexa (i6258) 🎥</h3>
+            <img class="thumb" 
+            data-video-id="ZfLQgXdwHDE?"
+            src="https://img.youtube.com/vi/ZfLQgXdwHDE/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="alarme" data-software="guardian" data-procedimentos="alexa" data-config="alarme-config">
+            <h3>🎥 Guardian: AMT 8000 LITE/PRO – Acionamento da PGM através da Alexa (i6259) 🎥</h3>
+            <img class="thumb" 
+            data-video-id="adYPtiuvp5E?"
+            src="https://img.youtube.com/vi/adYPtiuvp5E/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-procedimentos="cadastro">
+            <h3>🎥 Guardian: Cadastrar dispositivos de vídeo – i2316 🎥</h3>
+            <img class="thumb" 
+            data-video-id="3FP8X5ftiFU?"
+            src="https://img.youtube.com/vi/3FP8X5ftiFU/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-procedimentos="gravacoes">
+            <h3>🎥 Guardian: Reproduzir gravações – i2317 🎥</h3>
+            <img class="thumb" 
+            data-video-id="ZIQPWxMokRU?"
+            src="https://img.youtube.com/vi/ZIQPWxMokRU/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-config="conta-intelbras">
+            <h3>🎥 Guardian: Conta Intelbras – i2318 🎥</h3>
+            <img class="thumb" 
+            data-video-id="3sRVmhBItuI?"
+            src="https://img.youtube.com/vi/3sRVmhBItuI/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-config="favoritos">
+            <h3>🎥 Guardian: Favoritos de vídeo – i2319 🎥</h3>
+            <img class="thumb" 
+            data-video-id="yVd9OMsICkE?"
+            src="https://img.youtube.com/vi/yVd9OMsICkE/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian">
+            <h3>🎥 Guardian: Grupos de dispositivos – i2320 🎥</h3>
+            <img class="thumb" 
+            data-video-id="4rKn3Lgt3Z4?"
+            src="https://img.youtube.com/vi/4rKn3Lgt3Z4/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          
+          <article class="tutorial" data-segmento="cftv" data-software="guardian">
+            <h3>🎥 Guardian: Barra de ferramentas – i2321 🎥</h3>
+            <img class="thumb" 
+            data-video-id="yK6Ciyefc0Y?"
+            src="https://img.youtube.com/vi/yK6Ciyefc0Y/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-config="PTZ">
+            <h3>🎥 Guardian: Função PTZ – i2322 🎥</h3>
+            <img class="thumb" 
+            data-video-id="zL2ipuY-BXI?"
+            src="https://img.youtube.com/vi/zL2ipuY-BXI/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-procedimentos="inicializar-camera">
+            <h3>🎥 Guardian: Como configurar câmeras IP Wi-Fi – i2354 🎥</h3>
+            <img class="thumb" 
+            data-video-id="6HPqe-glHcI?"
+            src="https://img.youtube.com/vi/6HPqe-glHcI/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-config="PTZ">
+            <h3>🎥 Guardian: PTZ avançado – i2361 🎥</h3>
+            <img class="thumb" 
+            data-video-id="PaGIj5MQKYs?"
+            src="https://img.youtube.com/vi/PaGIj5MQKYs/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-procedimentos="interface-web">
+            <h3>🎥 Guardian: Abrir interface web dos dispositivos - i2362 🎥</h3>
+            <img class="thumb" 
+            data-video-id="yRQNq80fENk?"
+            src="https://img.youtube.com/vi/yRQNq80fENk/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-config="data-hora">
+            <h3>🎥 Guardian: Ajuste de data e hora – i2364 🎥</h3>
+            <img class="thumb" 
+            data-video-id="B9qLcw2h06o?"
+            src="https://img.youtube.com/vi/B9qLcw2h06o/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-config="audio">
+            <h3>🎥 Guardian: Redução de ruído no áudio – i2365 🎥</h3>
+            <img class="thumb" 
+            data-video-id="jmvA4ZvYJDs?"
+            src="https://img.youtube.com/vi/jmvA4ZvYJDs/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="tmr" data data-software="guardian" data-procedimentos="cadastro">
+            <h3>🎥 Guardian: Cadastro de dispositivos de vídeo veiculares – i2366 🎥</h3>
+            <img class="thumb" 
+            data-video-id="KucXm4emdoU?"
+            src="https://img.youtube.com/vi/KucXm4emdoU/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-config="notificacoes">
+            <h3>🎥 Acionamento de alertas no aplicativo Guardian – i2378 🎥</h3>
+            <img class="thumb" 
+            data-video-id="g0URJOJDww4?"
+            src="https://img.youtube.com/vi/g0URJOJDww4/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-config="notificacoes">
+            <h3>🎥 Notificações de dispositivos de vídeo no aplicativo Guardian – i2379 🎥</h3>
+            <img class="thumb" 
+            data-video-id="kTU2nRfEyL8?"
+            src="https://img.youtube.com/vi/kTU2nRfEyL8/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
+
+          <article class="tutorial" data-segmento="cftv" data-software="guardian" data-config="favoritos">
+            <h3>🎥 Como ordenar e personalizar dispositivos no aplicativo Guardian – i2380 🎥</h3>
+            <img class="thumb" 
+            data-video-id="o3NbdtKOwDw?"
+            src="https://img.youtube.com/vi/o3NbdtKOwDw/hqdefault.jpg" 
+            alt="Miniatura do vídeo">
+            
+            <div id="buttons">
+                <button class="link-video">COPIAR</button>
+                <button class="youtube">YOUTUBE</button>
+            </div>
+          </article>
           
       
           
