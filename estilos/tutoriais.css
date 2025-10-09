@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+input#caixa-pesquisa{
+    cursor: text;
+}
+
 .container{
     display: flex;
     flex-flow: row nowrap;
