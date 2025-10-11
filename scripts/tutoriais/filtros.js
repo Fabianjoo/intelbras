@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const filtrosPermitidosAlarme = {
       equip: ['central-alarme', 'central-choque', 'sensor', 'automacao'],
-      softwares: ['incontrol'],
-      procedimentos: ['cadastro', 'firmware', 'senha', 'instalacao'],
+      softwares: ['guardian'],
+      procedimentos: ['alexa','cadastro'],
       config: ['notificacoes', 'alarme-config'],
       adicionais: ['erros'],
   };
