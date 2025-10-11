@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
       procedimentos: [],
       config: [],
       erros: [],
-      segmento: [],    // nova categoria
-      adicionais: []   // nova categoria
+      segmento: [],   
+      adicionais: []   
     };
 
     filtros.forEach(ch => {
