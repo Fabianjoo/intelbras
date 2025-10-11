@@ -44,8 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const imgThumb = art.querySelector('.thumb');
     const btnYouTube = art.querySelector('.youtube');
     const btnCopiar = art.querySelector('.link-video');
+    const titulo = art.querySelector('h3'); // título do vídeo
 
-    if (!imgThumb || !btnYouTube || !btnCopiar) return;
+    if (!imgThumb || !btnYouTube || !btnCopiar || !titulo) return;
 
     const videoID = imgThumb.dataset.videoId.replace('?', '');
     const youtubeLink = `https://www.youtube.com/watch?v=${videoID}`;
@@ -55,10 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
       window.open(youtubeLink, '_blank');
     });
 
-    // Copiar link do vídeo
+    // Copiar título + link
     btnCopiar.addEventListener('click', async () => {
+      const textoParaCopiar = `${titulo.textContent.trim()}\n${youtubeLink}`;
+
       try {
-        await navigator.clipboard.writeText(youtubeLink);
+        await navigator.clipboard.writeText(textoParaCopiar);
         const textoOriginal = btnCopiar.textContent;
         btnCopiar.textContent = '✅ Copiado!';
         setTimeout(() => {
