@@ -22,6 +22,12 @@ aside.filtros{
     color: white;
 }
 
+
+.filtros-grupo label {
+    display: block; 
+    margin: 5px 0; 
+}
+
 aside.filtros > h2{
     margin-bottom: 10px;
     font-family: "Edu NSW ACT Cursive", cursive;
@@ -45,7 +51,8 @@ aside.filtros > section > h3{
     margin-bottom: 10px;
 }
 
-aside.filtros > section{
+aside.filtros > div{
+    width: 250px;
     margin-bottom: 30px;
     background-color: var(--fundo-claro);
     padding: 10px;
@@ -55,12 +62,9 @@ aside.filtros > section{
     color: black;
 }
 
-aside.filtros > section > label, input{
+aside.filtros > div > label, input{
     cursor: pointer;
-    padding: 5px;
     accent-color: green;
-    font-size: 1.2em;
-    margin-bottom: 5px;
 }
 
 section#tutoriais{
