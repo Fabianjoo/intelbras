@@ -23,8 +23,22 @@ aside.filtros{
 }
 
 aside.filtros > h2{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: "Edu NSW ACT Cursive", cursive;
+}
+
+aside.filtros > .limpar-filtro{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+aside.filtros > .limpar-filtro:hover{
+    background-color: white;
+    color: red;
 }
 
 aside.filtros > section > h3{

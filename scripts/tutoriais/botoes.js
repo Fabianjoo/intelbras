@@ -1,6 +1,45 @@
 document.addEventListener('DOMContentLoaded', () => {
   const artigos = document.querySelectorAll('.tutorial');
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const btnLimpar = document.querySelector('.limpar-filtro');
 
+  // === FUNÇÃO PRINCIPAL DE FILTRO ===
+  function atualizarFiltros() {
+    const filtrosAtivos = Array.from(checkboxes)
+      .filter(cb => cb.checked)
+      .map(cb => cb.dataset.filter);
+
+    // Se nenhum filtro estiver ativo, mostra tudo
+    if (filtrosAtivos.length === 0) {
+      artigos.forEach(art => art.style.display = 'block');
+      return;
+    }
+
+    // Caso contrário, exibe apenas os artigos que correspondem a algum filtro ativo
+    artigos.forEach(art => {
+      const corresponde = filtrosAtivos.some(filtro =>
+        art.dataset.segmento === filtro ||
+        art.dataset.equip === filtro ||
+        art.dataset.software === filtro ||
+        art.dataset.procedimento === filtro ||
+        art.dataset.config === filtro ||
+        art.dataset.adicional === filtro
+      );
+
+      art.style.display = corresponde ? 'block' : 'none';
+    });
+  }
+
+  // === BOTÃO "LIMPAR FILTROS" ===
+  btnLimpar.addEventListener('click', () => {
+    checkboxes.forEach(cb => cb.checked = false);
+    atualizarFiltros(); // Mostra tudo novamente
+  });
+
+  // === MONITORA CHECKBOXES PARA ATUALIZAR AUTOMATICAMENTE ===
+  checkboxes.forEach(cb => cb.addEventListener('change', atualizarFiltros));
+
+  // === FUNÇÕES DE VÍDEO E COPIAR LINK ===
   artigos.forEach(art => {
     const imgThumb = art.querySelector('.thumb');
     const btnYouTube = art.querySelector('.youtube');
@@ -8,16 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!imgThumb || !btnYouTube || !btnCopiar) return;
 
-    // Pega o ID do vídeo e monta o link do YouTube
     const videoID = imgThumb.dataset.videoId.replace('?', '');
     const youtubeLink = `https://www.youtube.com/watch?v=${videoID}`;
 
-    // Abrir no YouTube
+    // Abrir vídeo no YouTube
     btnYouTube.addEventListener('click', () => {
       window.open(youtubeLink, '_blank');
     });
 
-    // Copiar link
+    // Copiar link do vídeo
     btnCopiar.addEventListener('click', async () => {
       try {
         await navigator.clipboard.writeText(youtubeLink);
