@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const filtrosPermitidosMibo = {
       equip: ['automacao'],
       softwares: ['mibo-smart', 'mibo-cam', 'mibo-home'],
-      procedimentos: ['cadastro', 'alexa'],
-      config: [],
+      procedimentos: ['cadastro', 'criar-conta','alexa'],
+      config: ['automacoes'],
       adicionais:['antigos']
   };
   
