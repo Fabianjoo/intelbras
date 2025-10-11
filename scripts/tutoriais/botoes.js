@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
       .filter(cb => cb.checked)
       .map(cb => cb.dataset.filter);
 
-    // Se nenhum filtro estiver ativo, mostra tudo
+    // Se nenhum filtro estiver ativo, esconde todos
     if (filtrosAtivos.length === 0) {
-      artigos.forEach(art => art.style.display = 'block');
+      artigos.forEach(art => art.style.display = 'none');
       return;
     }
 
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // === BOTÃO "LIMPAR FILTROS" ===
   btnLimpar.addEventListener('click', () => {
     checkboxes.forEach(cb => cb.checked = false);
-    atualizarFiltros(); // Mostra tudo novamente
+    artigos.forEach(art => art.style.display = 'none'); // agora esconde todos
   });
 
   // === MONITORA CHECKBOXES PARA ATUALIZAR AUTOMATICAMENTE ===
@@ -72,4 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Oculta todos os tutoriais ao carregar a página
+  artigos.forEach(art => art.style.display = 'none');
 });
