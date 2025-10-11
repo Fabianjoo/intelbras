@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const filtrosPermitidosCftv = {
       equip: [
           'gravadores-cftv', 'cameras-ip', 'speed-dome', 'analog-cam', 
-          'vhd-control', 'vtn', 'ballun', 'multibox'
+          'vhd-control', 'vtn', 'ballun', 'multibox', 'microfone'
       ],
       softwares: [
           'sim-next', 'sim-play', 'sim-plus', 'guardian', 'isic-lite',
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
           'data-hora', 'ftp', 'rtmp', 'smtp', 'pos', 'espelhamento', 'conta-intelbras', 
           'audio', 'encoder', 'OSD', 'PTZ', 'reconhecimento-facial', 
           'linha-cerca', 'busca-avancada', 'mosaico-visualizacao', 
-          'importar', 'alarme-config', 'notificacoes', 'autoregistro'
+          'importar', 'alarme-config', 'notificacoes', 'autoregistro', 'full-color'
       ],
       adicionais: ['antigos', 'erros'],
   };
