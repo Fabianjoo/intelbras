@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (ch.classList.contains('config')) filtrosPorCategoria.config.push(ch.dataset.filter);
         if (ch.classList.contains('erros')) filtrosPorCategoria.erros.push(ch.dataset.filter);
         if (ch.classList.contains('segmento')) filtrosPorCategoria.segmento.push(ch.dataset.filter);
-        if (ch.classList.contains('adicionais')) filtrosPorCategoria.adicionais.push(ch.dataset.filter); // novo
+        if (ch.classList.contains('adicionais')) filtrosPorCategoria.adicionais.push(ch.dataset.filter);
       }
     });
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const algumFiltroMarcado = filtrosPorCategoria.equip.length > 0 || filtrosPorCategoria.softwares.length > 0 ||
                               filtrosPorCategoria.procedimentos.length > 0 || filtrosPorCategoria.config.length > 0 ||
                               filtrosPorCategoria.erros.length > 0 || filtrosPorCategoria.segmento.length > 0 ||
-                              filtrosPorCategoria.adicionais.length > 0; // novo
+                              filtrosPorCategoria.adicionais.length > 0;
 
     artigos.forEach(art => {
       if (!algumFiltroMarcado) {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const config = art.dataset.config || '';
       const erros = art.dataset.erros || '';
       const segmento = art.dataset.segmento || '';
-      const adicionais = art.dataset.adicionais || ''; // novo
+      const adicionais = art.dataset.adicionais || ''; 
 
       let mostrar = true;
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (filtrosPorCategoria.config.length > 0 && !filtrosPorCategoria.config.includes(config)) mostrar = false;
       if (filtrosPorCategoria.erros.length > 0 && !filtrosPorCategoria.erros.includes(erros)) mostrar = false;
       if (filtrosPorCategoria.segmento.length > 0 && !filtrosPorCategoria.segmento.includes(segmento)) mostrar = false;
-      if (filtrosPorCategoria.adicionais.length > 0 && !filtrosPorCategoria.adicionais.includes(adicionais)) mostrar = false; // novo
+      if (filtrosPorCategoria.adicionais.length > 0 && !filtrosPorCategoria.adicionais.includes(adicionais)) mostrar = false;
 
       art.style.display = mostrar ? 'flex' : 'none';
     });
