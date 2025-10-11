@@ -61,18 +61,18 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const filtrosPermitidosMibo = {
       equip: ['automacao'],
-      softwares: ['mibo-smart', 'mibo-cam', 'mibo-home'],
-      procedimentos: ['cadastro', 'firmware', 'senha', 'inicializacao', 'acesso-remoto', 'alexa'],
-      config: ['data-hora', 'audio', 'notificacoes'],
-      adicionais: ['erros'],
+      softwares: ['mibo-home'],
+      procedimentos: ['cadastro'],
+      config: [],
+      adicionais: [],
   };
   
   const filtrosPermitidosAlarme = {
       equip: ['central-alarme', 'central-choque', 'sensor', 'automacao'],
       softwares: ['incontrol'],
-      procedimentos: ['cadastro', 'firmware', 'senha', 'instalacao'],
-      config: ['notificacoes', 'alarme-config'],
-      adicionais: ['erros'],
+      procedimentos: ['cadastro'],
+      config: [],
+      adicionais: [],
   };
 
   const mapaFiltrosSegmento = {
