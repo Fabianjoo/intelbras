@@ -45,6 +45,8 @@ aside.filtros > section > label, input{
     cursor: pointer;
     padding: 5px;
     accent-color: green;
+    font-size: 1.2em;
+    margin-bottom: 5px;
 }
 
 section#tutoriais{
