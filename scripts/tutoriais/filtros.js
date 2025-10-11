@@ -157,7 +157,7 @@ function atualizarVideos() {
     gerenciarVisibilidadeGrupos(segmentoSelecionado);
 
     // ===================================================================================
-    // MUDANÇA AQUI: Verifica se o segmento foi selecionado.
+    // Verifica se o segmento foi selecionado.
     // ===================================================================================
     const algumFiltroMarcado = Object.values(filtrosPorCategoria).some(arr => arr.length > 0);
     const segmentoFoiSelecionado = filtrosPorCategoria.segmento.length > 0;
