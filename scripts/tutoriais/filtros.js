@@ -129,67 +129,69 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // --------------------------------------------------------------------------------------
-  // 3. Função principal de filtragem de tutoriais (SUA LÓGICA DE FILTRAGEM REINSERIDA)
-  // --------------------------------------------------------------------------------------
-  function atualizarVideos() {
-      // 3a. Agrupa filtros por categoria
-      const filtrosPorCategoria = {
-          equip: [], softwares: [], procedimentos: [], config: [], 
-          erros: [], segmento: [], adicionais: []
-      };
+// --------------------------------------------------------------------------------------
+// 3. Função principal de filtragem de tutoriais
+// --------------------------------------------------------------------------------------
+function atualizarVideos() {
+    // 3a. Agrupa filtros por categoria
+    const filtrosPorCategoria = {
+        equip: [], softwares: [], procedimentos: [], config: [],
+        erros: [], segmento: [], adicionais: []
+    };
 
-      filtros.forEach(ch => {
-          if (ch.checked) {
-              if (ch.classList.contains('equip')) filtrosPorCategoria.equip.push(ch.dataset.filter);
-              if (ch.classList.contains('softwares')) filtrosPorCategoria.softwares.push(ch.dataset.filter);
-              if (ch.classList.contains('procedimentos')) filtrosPorCategoria.procedimentos.push(ch.dataset.filter);
-              if (ch.classList.contains('config')) filtrosPorCategoria.config.push(ch.dataset.filter);
-              if (ch.classList.contains('erros')) filtrosPorCategoria.erros.push(ch.dataset.filter);
-              if (ch.classList.contains('segmento')) filtrosPorCategoria.segmento.push(ch.dataset.filter);
-              if (ch.classList.contains('adicionais')) filtrosPorCategoria.adicionais.push(ch.dataset.filter);
-          }
-      });
-      
-      // 3b. Gerencia a visibilidade dos filtros secundários (USA O SEGMENTO SELECIONADO)
-      const segmentoSelecionado = filtrosPorCategoria.segmento[0];
-      gerenciarVisibilidadeGrupos(segmentoSelecionado); 
-      
-      // 3c. Verifica se *qualquer* filtro está marcado
-      const algumFiltroMarcado = Object.values(filtrosPorCategoria).some(arr => arr.length > 0);
-      
-      // 3d. Executa a filtragem dos artigos
-      artigos.forEach(art => {
-          if (!algumFiltroMarcado) {
-              // Se nada está marcado, esconde todos
-              art.style.display = 'none';
-              return;
-          }
+    filtros.forEach(ch => {
+        if (ch.checked) {
+            if (ch.classList.contains('equip')) filtrosPorCategoria.equip.push(ch.dataset.filter);
+            if (ch.classList.contains('softwares')) filtrosPorCategoria.softwares.push(ch.dataset.filter);
+            if (ch.classList.contains('procedimentos')) filtrosPorCategoria.procedimentos.push(ch.dataset.filter);
+            if (ch.classList.contains('config')) filtrosPorCategoria.config.push(ch.dataset.filter);
+            if (ch.classList.contains('erros')) filtrosPorCategoria.erros.push(ch.dataset.filter);
+            if (ch.classList.contains('segmento')) filtrosPorCategoria.segmento.push(ch.dataset.filter);
+            if (ch.classList.contains('adicionais')) filtrosPorCategoria.adicionais.push(ch.dataset.filter);
+        }
+    });
 
-          // Pega os datasets dos artigos (SUA LÓGICA DE DADOS SIMPLES)
-          const equip = art.dataset.equip || '';
-          const software = art.dataset.software || '';
-          const procedimentos = art.dataset.procedimentos || '';
-          const config = art.dataset.config || '';
-          const erros = art.dataset.erros || '';
-          const segmento = art.dataset.segmento || '';
-          const adicionais = art.dataset.adicionais || '';
+    // 3b. Gerencia a visibilidade dos filtros secundários (USA O SEGMENTO SELECIONADO)
+    const segmentoSelecionado = filtrosPorCategoria.segmento[0];
+    gerenciarVisibilidadeGrupos(segmentoSelecionado);
 
-          let mostrar = true;
+    // ===================================================================================
+    // MUDANÇA AQUI: Verifica se o segmento foi selecionado.
+    // ===================================================================================
+    const algumFiltroMarcado = Object.values(filtrosPorCategoria).some(arr => arr.length > 0);
+    const segmentoFoiSelecionado = filtrosPorCategoria.segmento.length > 0;
 
-          // Aplica a lógica de filtro: Se o filtro está selecionado, o artigo PRECISA conter o valor.
-          // Note que aqui só se pode selecionar UM valor por filtro do artigo, o que é consistente com a sua lógica simples.
-          if (filtrosPorCategoria.equip.length > 0 && !filtrosPorCategoria.equip.includes(equip)) mostrar = false;
-          if (filtrosPorCategoria.softwares.length > 0 && !filtrosPorCategoria.softwares.includes(software)) mostrar = false;
-          if (filtrosPorCategoria.procedimentos.length > 0 && !filtrosPorCategoria.procedimentos.includes(procedimentos)) mostrar = false;
-          if (filtrosPorCategoria.config.length > 0 && !filtrosPorCategoria.config.includes(config)) mostrar = false;
-          if (filtrosPorCategoria.erros.length > 0 && !filtrosPorCategoria.erros.includes(erros)) mostrar = false;
-          if (filtrosPorCategoria.segmento.length > 0 && !filtrosPorCategoria.segmento.includes(segmento)) mostrar = false;
-          if (filtrosPorCategoria.adicionais.length > 0 && !filtrosPorCategoria.adicionais.includes(adicionais)) mostrar = false;
+    // 3c. Executa a filtragem dos artigos
+    artigos.forEach(art => {
+        // Se nenhum filtro está marcado OU se o segmento não foi selecionado, ESCONDE TUDO.
+        if (!algumFiltroMarcado || !segmentoFoiSelecionado) {
+            art.style.display = 'none';
+            return;
+        }
 
-          art.style.display = mostrar ? 'flex' : 'none';
-      });
-  }
+        // Pega os datasets dos artigos (SUA LÓGICA DE DADOS SIMPLES)
+        const equip = art.dataset.equip || '';
+        const software = art.dataset.software || '';
+        const procedimentos = art.dataset.procedimentos || '';
+        const config = art.dataset.config || '';
+        const erros = art.dataset.erros || '';
+        const segmento = art.dataset.segmento || '';
+        const adicionais = art.dataset.adicionais || '';
+
+        let mostrar = true;
+
+        // Aplica a lógica de filtro
+        if (filtrosPorCategoria.equip.length > 0 && !filtrosPorCategoria.equip.includes(equip)) mostrar = false;
+        if (filtrosPorCategoria.softwares.length > 0 && !filtrosPorCategoria.softwares.includes(software)) mostrar = false;
+        if (filtrosPorCategoria.procedimentos.length > 0 && !filtrosPorCategoria.procedimentos.includes(procedimentos)) mostrar = false;
+        if (filtrosPorCategoria.config.length > 0 && !filtrosPorCategoria.config.includes(config)) mostrar = false;
+        if (filtrosPorCategoria.erros.length > 0 && !filtrosPorCategoria.erros.includes(erros)) mostrar = false;
+        if (filtrosPorCategoria.segmento.length > 0 && !filtrosPorCategoria.segmento.includes(segmento)) mostrar = false;
+        if (filtrosPorCategoria.adicionais.length > 0 && !filtrosPorCategoria.adicionais.includes(adicionais)) mostrar = false;
+
+        art.style.display = mostrar ? 'flex' : 'none';
+    });
+}
   
   // --------------------------------------------------------------------------------------
   // 4. Listener de eventos para seleção única e atualização de filtros
