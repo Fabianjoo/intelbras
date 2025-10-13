@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   
   const filtrosPermitidosMibo = {
-      equip: ['automacao'],
-      softwares: ['mibo-smart', 'mibo-cam', 'mibo-home'],
-      procedimentos: ['cadastro', 'criar-conta','alexa'],
-      config: ['automacoes'],
+      equip: ['automacao', 'cameras-ip'],
+      softwares: ['mibo-smart', 'mibo-cam', 'mibo-home', 'mibo'],
+      procedimentos: ['cadastro','download','mibo-cloud','mibo-+', 'criar-conta','alexa', 'google-assistant'],
+      config: ['automacoes','criar-conta', 'compartilhar-gravacoes', 'compartilhar-cameras', 'importar', 'desvincular', 'mosaico-visualizacao', 'baba-eletronica', 'rotinas', 'ambientes'],
       adicionais:['antigos']
   };
   
