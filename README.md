@@ -13,3 +13,6 @@ Projeto desenvolvido por Fabiano Carvalho com HTML, CSS e JavaScript puro como p
 🔍 Consulta de NS e Phase Out de Equipamentos
 
 Este projeto foi criado para praticar programação e ajudar a equipe, tornando tarefas repetitivas mais rápidas e organizadas.
+
+Hospedado em:
+[respostasprontas](https://respostasprontas.vercel.app/index.html)
