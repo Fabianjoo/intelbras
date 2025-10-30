@@ -60,18 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const filtrosPermitidosControleAcesso = {
-        equip: [
-            'controladores', 'leitores-faciais', 'leitores-proximidade', 'fechaduras', 
-            'catracas', 'botoeiras'
+        equip: [ 
+            'catracas', 'porteiros', 'controlador'
         ],
         softwares: [
            'incontrol'
         ],
         procedimentos: [
-            'backup', 'cadastro', 'interface-web', 'cadastrousuario'
+            'backup', 'cadastro', 'interface-web', 'cadastrousuario', 'instalacao', 'chamada'
         ],
         config: [
-           'incontrolclient','incontrolweb', 'enderecoip', 'importar', 'reconhecimento-facial'
+           
         ],
         adicionais: ['antigos'],
     };

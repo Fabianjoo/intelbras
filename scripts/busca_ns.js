@@ -22,6 +22,9 @@ async function geraNovoToken() {
 
 // Função para consultar o número de série
 async function consultarSerial(serial) {
+  // Feedback enquanto consulta
+  document.getElementById('resultado').innerText = "🔎 Consultando número de série...\nAguarde...";
+
   if (!token) await geraNovoToken(); // garante token
 
   try {
@@ -34,20 +37,35 @@ async function consultarSerial(serial) {
       }
     });
 
+    // Tratamento de erros específicos
+    if (response.status === 404) {
+      document.getElementById('resultado').innerText = "❌ Erro 404: Número de série não encontrado";
+      return;
+    }
+
+    if (response.status === 401) {
+      document.getElementById('resultado').innerText = "⏳ Acesso expirado. Por favor, recarregue a página.";
+      return;
+    }
+
+    // Outros erros
     if (!response.ok) throw new Error(`Erro na consulta: ${response.status}`);
+
     const data = await response.json();
 
     // Exibe resultado na div
-document.getElementById('resultado').innerHTML = `
-Modelo: ${data.name || 'Não encontrado'} <br>
-Data de Fabricação: ${data.productionDate || 'Não informado'} <br>
-Política de Troca: ${data.repairPolicy || 'Não informado'}
-`;
+    document.getElementById('resultado').innerHTML = `
+      ✅ Modelo: ${data.name || 'Não encontrado'} <br>
+      🗓️ Data de Fabricação: ${data.productionDate || 'Não informado'} <br>
+      🔁 Política de Troca: ${data.repairPolicy || 'Não informado'}
+    `;
+
   } catch (err) {
-    document.getElementById('resultado').innerText = `Erro: ${err.message}`;
+    document.getElementById('resultado').innerText = `⚠️ Erro: ${err.message}`;
     console.error(err);
   }
 }
+
 
 // BOTÕES HTML DO POPOVER
 const btnBusca = document.getElementById('btnbusca');
