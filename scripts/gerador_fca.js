@@ -158,8 +158,8 @@ function limparCampos() {
 
 // INICIALIZAÇÃO
 window.onload = () => {
-  // Limpa todos os campos
-  ["modelo", "fato", "causa", "acao", "info"].forEach(id => document.getElementById(id).value = "");
+  /* // Limpa todos os campos
+  ["modelo", "fato", "causa", "acao", "info"].forEach(id => document.getElementById(id).value = ""); */
 
   // Configura sugestões
   const campos = ["fato", "causa"];
