@@ -15,5 +15,4 @@ Projeto desenvolvido por Fabiano Carvalho com HTML, CSS e JavaScript puro como p
 Este projeto foi criado para praticar programação e ajudar a equipe, tornando tarefas repetitivas mais rápidas e organizadas.
 
 Hospedado em:
-<a href="https://centraldeatendimento.vercel.app/" target="_blank">🔗 Central de Atendimento</a>
-
+[Central de Atendimento](https://centraldeatendimento.vercel.app/)
