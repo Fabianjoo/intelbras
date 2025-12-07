@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         procedimentos: [
             'cadastro', 'firmware', 'senha', 'download', 'gravacoes', 
-            'inicializacao', 'inteligencias', 'acesso-remoto', 'interface-web', 'instalacao'
+            'inicializacao', 'inteligencias', 'acesso-remoto', 'interface-web', 'instalacao', 'gravacao-nuvem'
         ],
         config: [
             'data-hora', 'ftp', 'rtmp', 'smtp', 'pos', 'espelhamento', 'conta-intelbras', 
