@@ -100,3 +100,110 @@ div.erros{
     color: var(--verde-principal);
     border: 2px solid var(--verde-principal);
 }
+
+/* GERADOR DE SENHA */
+.gerador-senha{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../imagens/background-senha.jpg);
+    height: 700px;
+}
+
+.inputs-senha{
+    display: flex;
+    flex-flow: column nowrap;
+
+    color: white;
+    width: 400px;
+}
+
+.inputs-senha > label{
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.inputs-senha > input{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.inputs-senha > input:hover{
+    cursor: text;
+}
+
+#gerar-senha{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#gerar-senha:hover{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+#resultado-senha{
+    background-color: #e7ffe7be;
+    border: 2px solid green;
+    padding: 5px;
+    width: 50%;
+    margin-left: 20px;
+    display: none;
+}
+
+#resultado-senha > p{
+    color: black;
+}
+
+#resultado-senha > p > a{
+    color: blue;
+}
+
+#copiar-senha{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#copiar-senha:hover{
+    background-color: white;
+    border: 1px solid blue;
+    cursor: pointer;
+    color: blue;
+}
+
+#limpar-senha{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: block;
+}
+
+#limpar-senha:hover{
+    background-color: white;
+    border: 1px solid red;
+    cursor: pointer;
+    color: red;
+}

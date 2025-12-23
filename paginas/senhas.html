@@ -81,11 +81,24 @@
         <section class="gerador">
             <details>
                 <summary><strong>Geradores</strong></summary>
-                <iframe src="https://recsenha-callcenter.intelbras.com.br/"
-                width="1200"
-                height="720"
-                frameborder="0">
-                </iframe>
+                <div class="gerador-senha">
+                    <div class="inputs-senha">
+                      <label for="ns">🔢 Número de Série</label>
+                      <input type="text" id="ns" placeholder="Insira o Número de Série...">
+                  
+                      <label for="data">📅 Data do Gravador</label>
+                      <input type="date" id="data">
+                  
+                      <label for="versao">⚙️ Versão</label>
+                      <input type="date" id="versao">
+                  
+                      <button id="gerar-senha">Gerar Senha</button>
+                      <button id="copiar-senha">Copiar Texto</button>
+                      <button id="limpar-senha">Limpar</button>
+                    </div>
+                    <div id="resultado-senha"></div>
+                  </div>
+
                 <iframe src="https://recsenha-callcenter.intelbras.com.br/"
                 width="1200"
                 height="720"
@@ -614,5 +627,6 @@ Se essa opção "Esqueceu a Senha?" não aparecer na sua tela, é provável que 
     <script src="../scripts/busca_ns.js"></script>
     <script src="../scripts/phaseout.js"></script>
     <script src="../scripts/animacao.js"></script>
+    <script src="../scripts/gerador-senha/gerador.js"></script>
 </body>
 </html>
