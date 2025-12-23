@@ -29,7 +29,7 @@ btnGerar.addEventListener('click', async () => {
   }
 
   resultadoSenha.style.display = 'block'
-  resultadoSenha.innerHTML = '⏳ Gerando senhas...'
+  resultadoSenha.innerHTML = '<strong>⏳ Gerando senhas...</strong>'
 
   try {
     const senhas = await gerarTodasSenhas(data, ns, versao)
