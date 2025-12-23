@@ -81,7 +81,7 @@ btnGerar.addEventListener('click', async () => {
     btnCopiar.style.display = 'block'
     btnLimpar.style.display = 'block'
   } catch (erro) {
-    resultadoSenha.innerHTML = '<p style="color:red">Erro ao gerar senha.</p>'
+    resultadoSenha.innerHTML = '<p style="color:red"><strong>Erro ao gerar senha.</strong></p>'
     btnLimpar.style.display = 'block'
     console.error(erro)
   }
