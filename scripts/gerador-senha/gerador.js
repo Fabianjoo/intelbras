@@ -24,7 +24,7 @@ btnGerar.addEventListener('click', async () => {
   const versao = versaoInput.value
 
   if (!ns || ns.length !== 13 || !data) {
-    alert('⚠️ Preencha o NS (13 caracteres) e a data do gravador.')
+    alert('⚠️ Preencha o NS (13 caracteres) e a Data do Gravador.')
     return
   }
 
@@ -38,7 +38,8 @@ btnGerar.addEventListener('click', async () => {
       <p><strong>🔐 Acesso provisório</strong></p>
       <p>
         Vá até o monitor e mouse do gravador e digite uma das senhas abaixo.<br><br>
-        Usuário: <strong>admin</strong>
+        Usuário: <strong>admin</strong><br><br>
+        Senhas:
       </p>
     `
 
@@ -81,6 +82,7 @@ btnGerar.addEventListener('click', async () => {
     btnLimpar.style.display = 'block'
   } catch (erro) {
     resultadoSenha.innerHTML = '<p style="color:red">Erro ao gerar senha.</p>'
+    btnLimpar.style.display = 'block'
     console.error(erro)
   }
 })
