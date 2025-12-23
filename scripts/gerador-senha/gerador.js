@@ -52,14 +52,14 @@ btnGerar.addEventListener('click', async () => {
       </p>
 
       <p>
-        Após acessar:<br>
-        <strong>Menu Principal &gt; Sistema &gt; Conta</strong><br>
-        Edite o usuário <strong>admin</strong> e altere a senha.
+        Após acessar, altere a senha:<br>
+        <strong>Vá em Menu Principal &gt; Sistema &gt; Conta</strong><br>
+        Edite o usuário <strong>admin</strong> e clique em <strong>Modificar Senha</strong>. (A senha antiga é a numeração usada para acessar o gravador)
         <br><br>
         <strong>Senha provisória válida por 1 dia.</strong>
       </p>
 
-     <p><strong>TUTORIAL MODIFICAR SENHA:</strong></p>
+     <p><strong>🎥 TUTORIAL MODIFICAR SENHA:</strong></p>
 
       <p>
         <strong>Interface Nova</strong><br>
