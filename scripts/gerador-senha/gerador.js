@@ -75,6 +75,13 @@ btnGerar.addEventListener('click', async () => {
           https://bit.ly/2OTkom5
         </a>
       </p>
+
+       <p>
+        <strong>Interface VD</strong><br>
+        <a href="https://www.youtube.com/watch?v=p27Dj5RQguQ" target="_blank">
+          https://www.youtube.com/watch?v=p27Dj5RQguQ
+        </a>
+      </p>
     `
 
     resultadoSenha.innerHTML = html

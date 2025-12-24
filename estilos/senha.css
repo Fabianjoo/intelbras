@@ -104,12 +104,12 @@ div.erros{
 /* GERADOR DE SENHA */
 .gerador-senha{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 
     background-image: url(../imagens/background-senha.jpg);
-    height: 700px;
+    height: 1000px;
 }
 
 .inputs-senha{
