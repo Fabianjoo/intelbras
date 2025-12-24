@@ -127,15 +127,15 @@ function obterAnoVersao(versao) {
 
 function definirGeradores(anoVersao) {
   if (!anoVersao) {
-    return [1, 2, '3-local', '3-api', 4]
+    return [4,'3-api','3-local',2,1]
   }
 
   if (anoVersao <= 2016) {
-    return [1, 2]
+    return [2,1]
   }
 
   if (anoVersao >= 2017 && anoVersao <= 2018) {
-    return ['3-local', '3-api']
+    return ['3-api','3-local']
   }
 
   return [4]
