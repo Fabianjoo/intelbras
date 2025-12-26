@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'data-hora', 'ftp', 'rtmp', 'smtp', 'pos', 'espelhamento', 'conta-intelbras', 
             'audio', 'encoder', 'OSD', 'PTZ', 'reconhecimento-facial', 
             'linha-cerca', 'busca-avancada', 'mosaico-visualizacao', 
-            'importar', 'alarme-config', 'notificacoes', 'autoregistro', 'full-color', 'incontrol'
+            'importar', 'alarme-config', 'notificacoes', 'autoregistro', 'full-color', 'incontrol', 'lpr'
         ],
         adicionais: ['antigos', 'erros'],
     };
