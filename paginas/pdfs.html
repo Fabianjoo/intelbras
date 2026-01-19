@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../estilos/style.css">
   <link rel="stylesheet" href="../estilos/tutoriais.css">
   <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../estilos/pdfs.css">
 </head>
 <body>
   <header>
@@ -42,11 +43,9 @@
     <nav>
       <ul>
         <li><a href="senhas.html">🔐 Recuperação de Senha</a></li>
-        <!-- <li><a href="">✉️ E-mail</a></li> -->
         <li><a href="fca.html">🧠 FCA</a></li>
-        <li style="background-color: white;"><a href="tutoriais.html">🎥 Tutoriais</a></li>
-        <!-- <li><a href="">⚙️ Processos Internos</a></li>
-        <li><a href="">🖼️ Galeria de Fotos</a></li> -->
+        <li><a href="tutoriais.html">🎥 Tutoriais</a></li>
+        <li style="background-color: white;"><a href="#">🗂️ PDF's</a></li>
         <li><a href="organizador.html">💬 Organizador de Respostas</a></li>
       </ul>
     </nav>
@@ -85,46 +84,230 @@
         <aside class="filtros">
           <h2>🔍 Filtros</h2>
           <button class="limpar-filtro">Limpar Filtros</button>
-      
-          <div class="filtros-grupo segmento">
-            <h3>🏷️ Segmento</h3>
-            <label><input type="checkbox" class="segmento" data-filter="cftv"> CFTV</label>
-            <label><input type="checkbox" class="segmento" data-filter="tmr"> TMR</label>
-            <label><input type="checkbox" class="segmento" data-filter="controle-acesso"> Controle de Acesso Corporativo</label>
-            <!-- <label><input type="checkbox" class="segmento" data-filter="mibo"> MIBO</label> -->
-            <!-- <label><input type="checkbox" class="segmento" data-filter="alarme"> Alarme</label> -->
+
+          <div class="filtros-grupo equip">
+            <h3>📦 Equipamentos</h3>
+            <label><input type="checkbox" class="equip" data-filter="gravadores-cftv"> Gravadores de Vídeo</label>
             
           </div>
 
+          <div class="filtros-grupo softwares">
+            <h3>💻 Softwares</h3>
+            <label><input type="checkbox" class="softwares" data-filter="sim-next"> Sim Next</label>
+            <label><input type="checkbox" class="softwares" data-filter="defense-lite"> Defense IA Lite</label>
+        
+          </div>
+
+          <div class="filtros-grupo outros">
+            <h3>🧩 Outros</h3>
+            <label><input type="checkbox" class="outros" data-filter="windows"> Windows</label>
+            <label><input type="checkbox" class="outros" data-filter="conta-intelbras"> Conta Intelbras</label>
+        
+          </div>
+
         </aside>
-      
+
         <!-- LISTA DE TUTORIAIS -->
-        <section id="tutoriais">
-      
-          <article class="tutorial" data-segmento="cftv"  data-software="isic-lite" data-adicionais="erros">
-            <h3>🎥 ISIC Lite: Erro Excedido tempo máximo de conexão - i2244 🎥</h3>
+    <section id="pdfs">
           
-            <img class="thumb" 
-                 data-video-id="hSj_NdXOgy0"
-                 src="https://img.youtube.com/vi/hSj_NdXOgy0/hqdefault.jpg" 
-                 alt="Miniatura do vídeo">
+      <div class="pdf-box" data-software="sim-next">
+      <h3>🗂️ Como criar um tour no SIM Next 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/sim_next/criar-tour.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-06/criar-tour-no-sim-next.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="sim-next">
+      <h3>🗂️ Como abrir o Menu OSD da câmera através do SIM Next 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/sim_next/menu-osd.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-06/sim-next-abrir-menu-osd.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="sim-next">
+      <h3>🗂️ Como criar uma visualização favorita no SIM Next 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/sim_next/visualizacao-favorita.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-06/criar-visualizacoes-favoritas-no-sim-next.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="sim-next">
+      <h3>🗂️ Exclusão de dispositivos da Conta Intelbras através do SIM Next 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/sim_next/exclusao-conta.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-06/excluir-dispositivos-da-conta-intelbras-pelo-sim-next.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="sim-next">
+      <h3>🗂️ Recuperação de senha do SIM Next 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/sim_next/recuperacao-senha.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-06/recuperar-a-senha-do-sim-next.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="sim-next">
+      <h3>🗂️ Importar e exportar dispositivos 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/sim_next/importar-exportar.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2024-09/sim-next-importar-e-exportar-dispositivos-2024.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="sim-next">
+      <h3>🗂️ Download e Instalação 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/sim_next/download.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2021-07/sim-next-download-instalar.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="sim-next">
+      <h3>🗂️ Acesso remoto por IPv6 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/sim_next/ipv6.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2022-06/mhdx-ipv6-sim-next.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="sim-next">
+      <h3>🗂️ Vincular Conta Intelbras 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/sim_next/vincular-conta.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2024-08/sim-next-vincular-conta-intelbras.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="sim-next">
+      <h3>🗂️ Configurar leitura de placas (LPR) 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/sim_next/lpr.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2024-08/sim-next-configurar-lpr.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="sim-next">
+      <h3>🗂️ Cadastrar dispositivos 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/sim_next/cadastro-dispositivos.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2023-01/sim-next-cadastrar-dispositivos.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-outros="windows">
+      <h3>🗂️ Localizar dispositivos na rede local (Serviço de Plataforma) 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/windows/rede-local.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2023-08/localizar-dispositivos-na-rede-local-2.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-outros="windows">
+      <h3>🗂️ Como habilitar modo IE 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/windows/modo-ie.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2026-01/microsoft-edge-como-habilitar-modo-ie.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-outros="conta-intelbras">
+      <h3>🗂️ CRIAR CONTA INTELBRAS 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/conta-intelbras/criar-containtelbras.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2022-08/como-criar-conta-intelbras.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="defense-lite">
+      <h3>🗂️ Criar botão de alerta pela visualização do Defense Lite 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/defense-lite/botao-alerta.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-11/defense-ia-lite-botao-de-alerta.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="defense-lite">
+      <h3>🗂️ Alocação de Disco 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/defense-lite/alocacao-disco.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-09/defense-ia-lite-alocacao-de-disco.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="defense-lite">
+      <h3>🗂️ Câmera LPR Módulo de estacionamento 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/defense-lite/modulo-estacionamento.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-08/defense-ia-lite-modulo-estacionamento.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="defense-lite">
+      <h3>🗂️ LPR - Leitura de placas 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/defense-lite/lpr.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-08/defense-ia-lite-leitura-de-placas.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="defense-lite">
+      <h3>🗂️ Reconhecimento facial 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/defense-lite/reconhecimento-facial.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-07/defense-ia-lite-configurar-reconhecimento-facial.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="defense-lite">
+      <h3>🗂️ Importação de pessoas e veículos via Excel 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/defense-lite/importar-pessoas.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-07/importacao-de-pessoas-e-veiculos-via-excel.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="defense-lite">
+      <h3>🗂️ Backup do banco de dados 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/defense-lite/backup.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-07/intelbras-defense-ia-backup.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+     <div class="pdf-box" data-software="defense-lite">
+      <h3>🗂️ Como integrar o aplicativo Defense IA ao software Defense IA Lite 🗂️</h3>
+       <div class="preview">
+         <img src="../pdfs/defense-lite/aplicativo-defense.png" alt="Preview">
+       </div>
+       <a href="https://backend.intelbras.com/sites/default/files/2025-02/como_integrar_o_aplicativo_defense_ia_no_software_defense_ia_lite.pdf" target="_blank" class="botao-abrirpdf">ABRIR</a>
+     </div>
+
+
           
-            <div id="buttons">
-              <button class="link-video">COPIAR</button>
-              <button class="youtube">YOUTUBE</button>
-            </div>
-          </article>
-        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
     </main>
 
     <script src="../scripts/botao_topo.js"></script>
     <script src="../scripts/busca_ns.js"></script>
     <script src="../scripts/phaseout.js"></script>
     <script src="../scripts/animacao.js"></script>
-    <script src="../scripts/tutoriais/botoes.js"></script>
-    <script src="../scripts/tutoriais/filtros.js"></script>
-    <script src="../scripts/tutoriais/pesquisar.js"></script>
-    <script src="../scripts/tutoriais/iframes.js"></script>
-
+    <script src="../scripts/pdfs.js"></script>
 </body>
 </html>
