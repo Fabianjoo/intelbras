@@ -68,7 +68,7 @@ div.imagens{
 }
 
 .img_copiavel{
-    border: 2px solid var(--verde-principal)
+    border: 2px solid var(--verde-principal);
 }
 
 div.erros{
@@ -207,4 +207,10 @@ div.erros{
     border: 1px solid red;
     cursor: pointer;
     color: red;
+}
+
+@media (max-width: 1125px) {
+    .img_mediaquery{
+        width: 100%;
+    }
 }
