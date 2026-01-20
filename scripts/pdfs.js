@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     pdfBoxes.forEach(box => {
       const titulo = box.querySelector("h3")?.innerText.toLowerCase() || "";
       const software = box.dataset.software || "";
-      const equipamento = box.dataset.equipamento || "";
+      const equipamento = box.dataset.equip || "";
       const outros = box.dataset.outros || "";
 
       const matchBusca = titulo.includes(textoBusca);
