@@ -248,7 +248,6 @@ main{
     top: 44px;
     opacity: 1;
     transform: translateX(215px);
-    transition: transform 0.6s ease;
   }
 
   nav > ul.ativo{
