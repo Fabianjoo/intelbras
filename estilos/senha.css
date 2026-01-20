@@ -214,3 +214,21 @@ div.erros{
         width: 100%;
     }
 }
+
+@media (max-width: 898px) {
+    #img_mediaquery2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 862px) {
+    #img_mediaquery3{
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    #img_mediaquery4{
+        width: 100%;
+    }
+}
