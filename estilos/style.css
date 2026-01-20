@@ -193,6 +193,10 @@ div.logo{
     cursor: pointer;
 }
 
+#hamburguer{
+  display: none;
+}
+
 nav > ul{
     display: flex;
     height: 44px;
@@ -217,5 +221,53 @@ main{
     margin: auto;
     padding: 15px;
     border-radius: 10px;
+}
+
+@media (max-width: 1163px) {
+  #hamburguer{
+    display: block;
+    width: 50px;
+    height: 44px;
+    color: white;
+    cursor: pointer;
+  }
+
+  #hamburguer.ativo{
+    background-color: white;
+  }
+
+  #hamburguer:hover{
+    background-color: rgba(255, 255, 255, 0.719);
+  }
+
+  nav > ul{
+    display: block;
+    position: fixed;
+    
+    right: 0px;
+    top: 44px;
+    opacity: 1;
+    transform: translateX(215px);
+    transition: transform 0.6s ease;
+  }
+
+  nav > ul.ativo{
+    display: block;
+    position: fixed;
+    right: 0px;
+    top: 44px;
+    opacity: 1;
+    transform: translateX(0px);
+    transition: transform 0.6s ease;
+  }
+
+  nav > ul > li{
+    background-color: var(--verde-principal);
+  }
+
+  nav > ul> li:last-child{
+    border-radius: 0px 0px 0px 5px;
+  }
+
 }
 
