@@ -136,3 +136,9 @@
       background-color: white;
       color: red;
   }
+
+  @media (max-width: 926px) {
+    button#criar_fca{
+      margin-bottom: 5px;
+    }
+  }
