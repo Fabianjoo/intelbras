@@ -179,6 +179,7 @@ div.logo{
     background-color: var(--verde-principal);
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .ferramentas > ul > li{
