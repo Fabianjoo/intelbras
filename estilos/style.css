@@ -280,8 +280,18 @@ main{
 }
 
 @media (max-width: 546px) {
-  div.ferramentas{
-    display: none;
-  }
+    .ferramentas{
+      width: 145px;
+    }
+
+    .logo > a > img{
+      width: 145px;
+      height: 44px;
+    }
+
+    .ferramentas > ul > li{
+      text-align: center;
+    }
+
 }
 
