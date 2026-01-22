@@ -144,7 +144,7 @@ html, body{
 /* CABEÇALHO */
 header{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
 
     background-color: var(--verde-principal);
@@ -157,7 +157,7 @@ header > a > img{
 
 div.logo{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     height: 44px;
 }
 
