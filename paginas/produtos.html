@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0R560VSDN2"></script>
+  <script src="../scripts/analytics.js"></script>
+  <title>Produtos</title>
+  <link rel="stylesheet" href="../estilos/style.css" />
+  <link rel="stylesheet" href="../estilos/organizador.css">
+  <link rel="stylesheet" href="../estilos/produtos.css">
+  <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html"><img src="../imagens/logo.png" alt="Logo Intelbras" /></a>
+  
+      <div class="ferramentas">
+          <div class="titulo">
+              <p>⚒️ Ferramentas ⬇️</p>
+          </div>
+          <ul>
+              <li><a href="http://10.1.45.193:3777/" target="_blank">Comparativo de Produtos</a></li>
+              <li><a href="https://painel-admin-app-site.intelbras.com.br/verificar-parceiro%7C" target="_blank">Verificar Astec</a></li>
+              <li><a href="https://10.1.40.26/" target="_blank">Hermes</a></li>
+              <li><a href="https://cronos-admin.intelbras.com.br/" target="_blank">CRONOS</a></li>
+              <li><a href="http://usa.vveye.com/vvv123/" target="_blank">Servidor Cloud</a></li>
+              <li><a href="https://suporte.conta.intelbras.com/support/user" target="_blank">Portal Conta Intelbras</a></li>
+          </ul>
+      </div>
+  
+      <div class="ferramentas">
+          <div class="titulo">
+              <p>📝 Tabelas ⬇️</p>
+          </div>
+          <ul>
+              <li><a href="https://guardian.intelbras.com.br/gravadores/armazenamentos/pt-br/" target="_blank">HD</a></li>
+              <li><a href="../pdfs/Bateria/BATERIAS INTERNAS - DVR's e NVR's.pdf" target="_blank">Bateria</a></li>
+              <li><a href="https://backend.intelbras.com/sites/default/files/2022-09/6801_LA_Adaptadores-Wireless-USB_tabela-comparativa_a01.pdf" target="_blank">Adaptadores Wifi</a></li>
+          </ul>
+      </div>
+  </div>
+    <nav>
+      <img src="../imagens/hamburger.png" id="hamburguer" alt="Menu Hamburguer">
+      <ul id="paginas">
+        <li><a href="senhas.html">🔐 Recuperação de Senha</a></li>
+        <li><a href="fca.html">🧠 FCA</a></li>
+        <li><a href="tutoriais.html">🎥 Tutoriais</a></li>
+        <li><a href="pdfs.html">🗂️ PDF's</a></li>
+        <li style="background-color: white;"><a href="#">💬 Organizador de Respostas</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="../imagens/favicon2.ico" alt="topo" id="btntopo">
+    <img src="../imagens/favicon3.ico" alt="busca" id="btnbusca">
+
+    <!-- POPOVER BUSCA NS -->
+    <div id="popover" class="popover">
+      <div class="popover-content">
+        <h3>🔢 Consultar Número de Série</h3>
+        <input type="text" id="serialInput" placeholder="Digite o número de série">
+        <button id="consultarBtn">Consultar</button>
+        <div id="resultado" style="margin-top: 15px; color: green;"></div>
+      </div>
+
+      <div class="popover-content">
+        <h3>🛑 Consultar Phase Out</h3>
+        <input type="text" id="serialInputphaseout" autocomplete="off" placeholder="Digite o nome do Produto">
+        <ul id="sugestoes"></ul>
+        <button id="consultarBtnphaseout">Consultar</button>
+        <div id="resultadophaseout" style="margin-top: 15px; color: green;"></div>
+      </div>
+    </div>
+
+    <table id="tabela-produtos">
+        <thead>
+            <tr>
+                <th>✔</th>
+                <th>Modelo</th>
+                <th>Canais</th>
+                <th>Resolução máx</th>
+                <th>Tecnologias</th>
+                <th>HD</th>
+                <th>Página</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabela-corpo"></tbody>
+    </table>
+
+    <div id="container-popover">
+        <div id="popover-conteudo"></div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <script src="../scripts/botao_topo.js"></script>
+  <script src="../scripts/busca_ns.js"></script>
+  <script src="../scripts/phaseout.js"></script>
+  <script src="../scripts/animacao.js"></script>
+  <script src="../scripts/menu_hamburguer.js"></script>
+
+  <script src="../scripts/produtos/utils.js"></script>
+  <script src="../scripts/produtos/fetchProdutos.js"></script>
+  <script src="../scripts/produtos/tabela-inicial.js"></script>
+  <script src="../scripts/montar-ficha.js"></script>
+  <script src="../scripts/produtos/popover.js"></script>
+  
+</body>
+</html>

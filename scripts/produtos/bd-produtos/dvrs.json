@@ -1,0 +1,215 @@
+{
+    "meta": {
+      "categoria": "DVR",
+      "fabricante": "Intelbras",
+      "ultima_atualizacao": "2026-01-24"
+    },
+  
+    "produtos": [
+      {
+        "id": "mhdx-1208",
+        "nome": "MHDX 1208",
+        "linha": "Multi HD",
+        "nivel": "Básico",
+        "descricao": "Gravador digital de vídeo compatível com múltiplas tecnologias, indicado para residências e comércios.",
+  
+        "canais": {
+          "bnc": 8,
+          "ip_adicional": 2,
+          "max_ip_modo_nvr": 10
+        },
+  
+        "tecnologias": ["HDCVI", "AHD", "HDTVI", "Analógica", "IP"],
+  
+        "resolucoes_suportadas": {
+          "hdcvi": ["1080p", "720p"],
+          "ahd": ["1080p", "720p"],
+          "hdtvi": ["1080p", "720p"],
+          "ip": ["6MP", "5MP", "4MP", "3MP", "1080p", "720p"],
+          "analogico": ["960H", "D1", "CIF"]
+        },
+  
+        "video": {
+          "compressao": ["H.265+", "H.265", "H.264+", "H.264"],
+          "bitrate_max_mbps": 4,
+          "saidas_video": ["HDMI", "VGA", "BNC"],
+          "resolucao_saida_max": "1920x1080"
+        },
+  
+        "audio": {
+          "entrada": 1,
+          "saida": 1,
+          "bidirecional": true,
+          "hdcvi_audio": true
+        },
+  
+        "gravacao": {
+          "fps_max": 30,
+          "modos": [
+            "Manual",
+            "Contínua",
+            "Agendada",
+            "Detecção de movimento",
+            "Perda de vídeo"
+          ]
+        },
+  
+        "inteligencia": {
+          "detecao_inteligente": {
+            "ativo": true,
+            "canais": 8
+          },
+          "linha_virtual": {
+            "ativo": false,
+            "canais": 0
+          },
+          "cerca_virtual": {
+            "ativo": false,
+            "canais": 0
+          },
+          "reconhecimento_facial": {
+            "ativo": false,
+            "canais_processamento": 0,
+            "faces_por_segundo": 0,
+            "bancos_faces": 0,
+            "max_faces": 0
+          }
+        },
+  
+        "rede": {
+          "ethernet": "10/100 Mbps",
+          "throughput_mbps": 48,
+          "onvif": true,
+          "wifi_usb": true,
+          "conexoes_simultaneas": 128
+        },
+  
+        "armazenamento": {
+          "sata": 1,
+          "capacidade_max_tb": 10
+        },
+  
+        "interfaces": {
+          "usb": 2,
+          "rs485": true,
+          "rs232": false
+        },
+  
+        "energia": {
+          "fonte": "12 Vdc / 1,5 A",
+          "consumo_w": "10 W (sem HD)"
+        },
+  
+        "fisico": {
+          "dimensoes_mm": "260 x 238 x 48",
+          "peso_kg": 0.86
+        },
+  
+       "site": "https://www.intelbras.com/pt-br/gravador-de-video-inteligente-com-8-canais-mhdx-1208",
+        "ficha": "https://backend.intelbras.com/sites/default/files/2022-04/Datasheet%20-%20MHDX%201208.pdf",
+        "manual": "https://backend.intelbras.com/sites/default/files/2025-09/Manual_MHDX_1204_1208_1216_02-25_site.pdf"
+      },
+  
+      {
+        "id": "imhdx-5108",
+        "nome": "iMHDX 5108",
+        "linha": "Multi HD Inteligente",
+        "nivel": "Avançado",
+        "descricao": "Gravador digital inteligente com analíticos de vídeo avançados e reconhecimento facial.",
+  
+        "canais": {
+          "bnc": 8,
+          "ip_adicional": 8,
+          "max_ip_modo_nvr": 16
+        },
+  
+        "tecnologias": ["HDCVI", "AHD", "HDTVI", "Analógica", "IP"],
+  
+        "resolucoes_suportadas": {
+          "hdcvi": ["4K", "6MP", "5MP", "4MP", "1080p", "720p"],
+          "ahd": ["4K", "5MP", "4MP", "3MP", "1080p"],
+          "hdtvi": ["4K", "5MP", "4MP", "3MP", "1080p"],
+          "ip": ["4K", "6MP", "5MP", "4MP", "3MP", "1080p"],
+          "analogico": ["960H", "D1", "CIF"]
+        },
+  
+        "video": {
+          "compressao": ["H.265+", "H.265", "H.264+", "H.264"],
+          "bitrate_max_mbps": 6,
+          "saidas_video": ["HDMI", "VGA", "BNC"],
+          "resolucao_saida_max": "3840x2160"
+        },
+  
+        "audio": {
+          "entrada": 1,
+          "saida": 1,
+          "bidirecional": true,
+          "hdcvi_audio": true
+        },
+  
+        "gravacao": {
+          "fps_max": 30,
+          "modos": [
+            "Manual",
+            "Contínua",
+            "Agendada",
+            "Detecção de movimento",
+            "Inteligência de vídeo"
+          ]
+        },
+  
+        "inteligencia": {
+          "detecao_inteligente": {
+            "ativo": true,
+            "canais": 8
+          },
+          "linha_cerca_virtual": {
+            "ativo": true,
+            "canais_avancado": 2,
+            "canais_geral": 4
+          },
+          "reconhecimento_facial": {
+            "ativo": true,
+            "canais_processamento": 2,
+            "faces_por_segundo": 12,
+            "bancos_faces": 10,
+            "max_faces": 20000
+          }
+        },
+  
+        "rede": {
+          "ethernet": "Gigabit Ethernet",
+          "throughput_mbps": 128,
+          "onvif": true,
+          "wifi_usb": true,
+          "conexoes_simultaneas": 128
+        },
+  
+        "armazenamento": {
+          "sata": 1,
+          "capacidade_max_tb": 10
+        },
+  
+        "interfaces": {
+          "usb": 2,
+          "rs485": true,
+          "rs232": false
+        },
+  
+        "energia": {
+          "fonte": "12 Vdc / 2 A",
+          "consumo_w": "< 10 W (sem HD)"
+        },
+  
+        "fisico": {
+          "dimensoes_mm": "260 x 47,6 x 237,4",
+          "peso_kg": 0.9
+        },
+  
+        "site": "https://www.intelbras.com/pt-br/gravador-de-video-inteligente-com-8-canais-mhdx-1208",
+        "ficha": "https://backend.intelbras.com/sites/default/files/2022-04/Datasheet%20-%20MHDX%201208.pdf",
+        "manual": "https://backend.intelbras.com/sites/default/files/2025-09/Manual_MHDX_1204_1208_1216_02-25_site.pdf"
+      }
+    ]
+  }
+  

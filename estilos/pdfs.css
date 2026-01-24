@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 section#pdfs{
     display: flex;
     flex-flow: row wrap;
