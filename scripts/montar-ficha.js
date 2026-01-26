@@ -103,11 +103,11 @@ function montarFichaTecnica(produto) {
   
   function resolucoesDetalhadas(res) {
     let html = "<ul>";
-    if (res.hdcvi) html += `<li>HDCVI: ${res.hdcvi.join(", ")}</li>`;
-    if (res.ahd) html += `<li>AHD: ${res.ahd.join(", ")}</li>`;
-    if (res.hdtvi) html += `<li>HDTVI: ${res.hdtvi.join(", ")}</li>`;
-    if (res.ip) html += `<li>IP: ${res.ip.join(", ")}</li>`;
-    if (res.analogico) html += `<li>Analógico: ${res.analogico.join(", ")}</li>`;
+    if (res.hdcvi) html += `<li>HDCVI: ${res.hdcvi.join(" / ")}</li>`;
+    if (res.ahd) html += `<li>AHD: ${res.ahd.join(" / ")}</li>`;
+    if (res.hdtvi) html += `<li>HDTVI: ${res.hdtvi.join(" / ")}</li>`;
+    if (res.ip) html += `<li>IP: ${res.ip.join(" / ")}</li>`;
+    if (res.analogico) html += `<li>Analógico: ${res.analogico.join(" / ")}</li>`;
     html += "</ul>";
     return html;
   }
