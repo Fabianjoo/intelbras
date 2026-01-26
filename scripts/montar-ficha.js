@@ -81,7 +81,7 @@ function montarFichaTecnica(produto) {
           📄 Abrir Ficha Técnica
         </a>
           <a href="${produto.manual}" target="_blank" class="btn-produto-manual">
-          📄 Abrir Manual
+          📖 Abrir Manual
         </a>
       </div>
     `;
