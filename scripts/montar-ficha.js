@@ -20,7 +20,6 @@ function montarFichaTecnica(produto) {
       ${secao("Vídeo", `
         <ul>
           <li>Compressão: ${produto.video.compressao.join(", ")}</li>
-          <li>Bitrate máx: ${produto.video.bitrate_max_mbps} Mbps</li>
           <li>Saídas: ${produto.video.saidas_video.join(", ")}</li>
           <li>Resolução de saída: ${produto.video.resolucao_saida_max}</li>
         </ul>
@@ -30,17 +29,11 @@ function montarFichaTecnica(produto) {
         <ul>
           <li>Entrada: ${produto.audio.entrada}</li>
           <li>Saída: ${produto.audio.saida}</li>
-          <li>Áudio bidirecional: ${simNao(produto.audio.bidirecional)}</li>
           <li>Áudio HDCVI: ${simNao(produto.audio.hdcvi_audio)}</li>
         </ul>
       `)}
   
-      ${secao("Gravação", `
-        <ul>
-          <li>FPS máximo: ${produto.gravacao.fps_max}</li>
-          <li>Modos: ${produto.gravacao.modos.join(", ")}</li>
-        </ul>
-      `)}
+      ${secao("Gravação", gravacaoDetalhada(produto.gravacao))}
   
       ${secao("Inteligência de vídeo", inteligenciaDetalhada(produto.inteligencia))}
   
@@ -83,13 +76,14 @@ function montarFichaTecnica(produto) {
         </ul>
       `)}
   
-      <a href="${produto.ficha}" target="_blank" class="btn-produto">
-        📄 Abrir Ficha Técnica
-      </a>
-
-        <a href="${produto.manual}" target="_blank" class="btn-produto">
-        📄 Abrir Manual
-      </a>
+      <div class="btn-produto-container">
+        <a href="${produto.ficha}" target="_blank" class="btn-produto-ficha">
+          📄 Abrir Ficha Técnica
+        </a>
+          <a href="${produto.manual}" target="_blank" class="btn-produto-manual">
+          📄 Abrir Manual
+        </a>
+      </div>
     `;
   }
   
@@ -117,6 +111,52 @@ function montarFichaTecnica(produto) {
     html += "</ul>";
     return html;
   }
+
+  function gravacaoDetalhada(gravacao) {
+    let html = "";
+  
+    // HDCVI
+    if (gravacao.hdcvi && gravacao.hdcvi.length > 0) {
+      html += "<h5>HDCVI</h5><ul>";
+      gravacao.hdcvi.forEach(item => {
+        html += `
+          <li>
+            • ${item.canais ? item.canais + " canal(is) em " : ""}
+            ${item.resolucao} (${item.fps} FPS)
+          </li>
+        `;
+      });
+      html += "</ul><br>";
+    }
+  
+    // IP
+    if (gravacao.ip && gravacao.ip.length > 0) {
+      html += "<h5>IP</h5><ul>";
+      gravacao.ip.forEach(item => {
+        html += `
+          <li>
+            • ${item.resolucao} (${item.fps} FPS)
+          </li>
+        `;
+      });
+      html += "</ul><br>";
+    }
+  
+    // Analógico
+    if (gravacao.analogico && gravacao.analogico.length > 0) {
+      html += "<h5>Analógico</h5><ul>";
+      gravacao.analogico.forEach(item => {
+        html += `
+          <li>
+            • ${item.resolucao} (${item.fps} FPS)
+          </li>
+        `;
+      });
+      html += "</ul>";
+    }
+  
+    return html;
+  }
   
   function inteligenciaDetalhada(ia) {
     if (!ia) return "<p>—</p>";
@@ -124,20 +164,17 @@ function montarFichaTecnica(produto) {
     let html = "<ul>";
   
     if (ia.detecao_inteligente?.ativo)
-      html += `<li>Detecção inteligente (${ia.detecao_inteligente.canais} canais)</li>`;
-  
-    if (ia.linha_virtual?.ativo)
-      html += `<li>Linha virtual (${ia.linha_virtual.canais} canais)</li>`;
+      html += `<li>• Detecção inteligente (${ia.detecao_inteligente.canais} canais)</li>`;
   
     if (ia.linha_cerca_virtual?.ativo)
-      html += `<li>Linha e cerca virtual (Avançado: ${ia.linha_cerca_virtual.canais_avancado}, Geral: ${ia.linha_cerca_virtual.canais_geral})</li>`;
+      html += `<li>• Linha e cerca virtual (Avançado: ${ia.linha_cerca_virtual.canais_avancado}, Geral: ${ia.linha_cerca_virtual.canais_geral})</li>`;
   
     if (ia.cerca_virtual?.ativo)
-      html += `<li>Cerca virtual (${ia.cerca_virtual.canais} canais)</li>`;
+      html += `<li>• Cerca virtual (${ia.cerca_virtual.canais} canais)</li>`;
   
     if (ia.reconhecimento_facial?.ativo)
       html += `
-        <li>Reconhecimento facial
+        <li>• Reconhecimento facial
           <ul>
             <li>Canais: ${ia.reconhecimento_facial.canais_processamento}</li>
             <li>Faces/s: ${ia.reconhecimento_facial.faces_por_segundo}</li>

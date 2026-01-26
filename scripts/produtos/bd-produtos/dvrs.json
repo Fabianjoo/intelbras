@@ -31,26 +31,40 @@
   
         "video": {
           "compressao": ["H.265+", "H.265", "H.264+", "H.264"],
-          "bitrate_max_mbps": 4,
           "saidas_video": ["HDMI", "VGA", "BNC"],
-          "resolucao_saida_max": "1920x1080"
+          "resolucao_saida_max": "1920×1080, 1280×1024, 1280×720 (HDMI / VGA), 800×600 (BNC)"
         },
   
         "audio": {
           "entrada": 1,
           "saida": 1,
-          "bidirecional": true,
           "hdcvi_audio": true
         },
   
         "gravacao": {
-          "fps_max": 30,
-          "modos": [
-            "Manual",
-            "Contínua",
-            "Agendada",
-            "Detecção de movimento",
-            "Perda de vídeo"
+          "hdcvi": [
+            {
+              "resolucao": "1080p Lite / 720p",
+              "fps": 30,
+              "canais": 1
+            },
+            {
+              "resolucao": "1080p Lite / 720p",
+              "fps": 15,
+              "canais": 7
+            }
+          ],
+          "ip": [
+            {
+              "resolucao": "6MP / 5MP / 4MP / 3MP / 1080p / 720p",
+              "fps": 30
+            }
+          ],
+          "analogico": [
+            {
+              "resolucao": "960H / D1 / CIF",
+              "fps": 30
+            }
           ]
         },
   
@@ -147,14 +161,45 @@
           "hdcvi_audio": true
         },
   
-        "gravacao": {
-          "fps_max": 30,
-          "modos": [
-            "Manual",
-            "Contínua",
-            "Agendada",
-            "Detecção de movimento",
-            "Inteligência de vídeo"
+       "gravacao": {
+          "hdcvi": [
+            {
+              "resolucao": "4K",
+              "fps": 7,
+              "canais": 8
+            },
+            {
+              "resolucao": "6MP",
+              "fps": 10,
+              "canais": 8
+            },
+            {
+              "resolucao": "5MP",
+              "fps": 12,
+              "canais": 8
+            },
+            {
+              "resolucao": " 4 MP / 3MP",
+              "fps": 15,
+              "canais": 8
+            },
+            {
+              "resolucao": "1080p / 720p",
+              "fps": 30,
+              "canais": 8
+            }
+          ],
+          "ip": [
+            {
+              "resolucao": "Até 8MP",
+              "fps": 30
+            }
+          ],
+          "analogico": [
+            {
+              "resolucao": "960H / D1 / CIF",
+              "fps": 30
+            }
           ]
         },
   
@@ -206,9 +251,9 @@
           "peso_kg": 0.9
         },
   
-        "site": "https://www.intelbras.com/pt-br/gravador-de-video-inteligente-com-8-canais-mhdx-1208",
-        "ficha": "https://backend.intelbras.com/sites/default/files/2022-04/Datasheet%20-%20MHDX%201208.pdf",
-        "manual": "https://backend.intelbras.com/sites/default/files/2025-09/Manual_MHDX_1204_1208_1216_02-25_site.pdf"
+        "site": "https://www.intelbras.com/pt-br/gravador-digital-inteligente-de-video-de-8-canais-imhdx-5108",
+        "ficha": "https://backend.intelbras.com/sites/default/files/2025-05/Datasheet-iMHDX-5108%20e%20iMHDX%205116.pdf",
+        "manual": "https://backend.intelbras.com/sites/default/files/2024-05/Manual_iMHDX_5108_05-24.pdf"
       }
     ]
   }

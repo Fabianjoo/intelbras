@@ -23,6 +23,11 @@
     border-radius: 5px;
   }
 
+  tbody > tr > td > a:hover{
+    text-decoration: underline;
+    color: blue;
+  }
+
   tbody > tr > td > button:hover{
     background-color: white;
     color: blue;
@@ -66,17 +71,36 @@
   background-color: white;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding: 10px;
   }
 
 
+
+  /* POPOVER FICHA */
+
   .secao {
-    margin-bottom: 16px;
+    margin-bottom: 25px;
+    background-color: #eef0f0;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  #popover-conteudo h2{
+    background-image: linear-gradient(to right, #00995D, transparent);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
   }
   
   .secao h3 {
     border-bottom: 1px solid #ddd;
     padding-bottom: 4px;
     margin-bottom: 8px;
+    color:#068552;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 5px ;
+
   }
   
   .secao ul {
@@ -84,6 +108,41 @@
   }
   
   .descricao {
-    margin-bottom: 16px;
-    color: #444;
+    margin-bottom: 25px;
+
+  }
+
+  .btn-produto-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .btn-produto-ficha{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 2px solid black;
+  }
+
+  .btn-produto-ficha:hover{
+    background-color: white;
+    color: green;
+  }
+
+  .btn-produto-manual{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+
+  .btn-produto-manual:hover{
+    background-color: white;
+    color: blue;
   }
