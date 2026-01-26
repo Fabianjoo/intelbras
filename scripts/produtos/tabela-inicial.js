@@ -3,7 +3,7 @@ window.produtosCache = [];
 carregarProdutos(produtos => {
     console.log("Produtos recebidos:", produtos);
   
-    window.produtosCache = produtos; // 👈 GLOBAL DE VERDADE
+    window.produtosCache = produtos; 
   
     gerarTabela(produtos);
   });
