@@ -95,12 +95,13 @@
           "throughput_mbps": 48,
           "onvif": true,
           "wifi_usb": true,
+          "adaptador": "Action A1200",
           "conexoes_simultaneas": 128
         },
   
         "armazenamento": {
           "sata": 1,
-          "capacidade_max_tb": 10
+          "capacidade_max_tb": 14
         },
   
         "interfaces": {
@@ -227,12 +228,13 @@
           "throughput_mbps": 128,
           "onvif": true,
           "wifi_usb": true,
+          "adaptador": "IVA3000, IWA 3001, Action A1200",
           "conexoes_simultaneas": 128
         },
   
         "armazenamento": {
           "sata": 1,
-          "capacidade_max_tb": 10
+          "capacidade_max_tb": 18
         },
   
         "interfaces": {

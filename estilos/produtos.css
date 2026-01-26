@@ -65,9 +65,9 @@
   }
 
   #popover-conteudo{
-  height: 900px;
-  width: 800px;
-  border-radius: 5px;
+  height: 90vh;
+  width: 60vw;
+  border-radius: 10px;
   background-color: white;
   overflow-y: scroll;
   overflow-x: hidden;

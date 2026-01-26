@@ -32,6 +32,8 @@ function gerarTabela(produtos) {
         <td>${produto.tecnologias.join(" / ")}</td>
   
         <td>${produto.armazenamento.sata}× SATA / ${produto.armazenamento.capacidade_max_tb} TB</td>
+
+        <td>${produto.rede.adaptador}</td>
   
         <td>
           <a href="${produto.site}" target="_blank" class="btn-produto">
