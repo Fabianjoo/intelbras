@@ -23,27 +23,37 @@ async function geraNovoToken() {
 // Função para consultar o número de série
 async function consultarSerial(serial) {
   // Feedback enquanto consulta
-  document.getElementById('resultado').innerText =
-    "🔎 Consultando número de série...\nAguarde...";
+  document.getElementById('resultado').innerText = "🔎 Consultando número de série...\nAguarde...";
+
+  if (!token) await geraNovoToken(); // garante token
 
   try {
-    // 👉 Agora chama SUA API, não a Intelbras
-    const response = await fetch(`/api/serial?serial=${serial}`);
+    const response = await fetch(`https://api-v2.intelbras.com.br/products/1.0.0/serial-numbers/${serial}`, {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json',
+        'Authorization': `Bearer ${token.access_token}`,
+        'Content-Type': 'application/json'
+      }
+    });
 
+    // Tratamento de erros específicos
     if (response.status === 404) {
-      document.getElementById('resultado').innerText =
-        "❌ Número de série não encontrado";
+      document.getElementById('resultado').innerText = "❌ Erro 404: Número de série não encontrado";
       return;
     }
 
-    if (!response.ok) {
-      document.getElementById('resultado').innerText =
-        "⚠️ Erro ao consultar número de série";
+    if (response.status === 401) {
+      document.getElementById('resultado').innerText = "⏳ Acesso expirado. Por favor, recarregue a página.";
       return;
     }
+
+    // Outros erros
+    if (!response.ok) throw new Error(`Erro na consulta: ${response.status}`);
 
     const data = await response.json();
 
+    // Exibe resultado na div
     document.getElementById('resultado').innerHTML = `
       ✅ Modelo: ${data.name || 'Não encontrado'} <br>
       🗓️ Data de Fabricação: ${data.productionDate || 'Não informado'} <br>
@@ -51,12 +61,10 @@ async function consultarSerial(serial) {
     `;
 
   } catch (err) {
-    document.getElementById('resultado').innerText =
-      "⚠️ Erro de conexão";
+    document.getElementById('resultado').innerText = `⚠️ Erro: ${err.message}`;
     console.error(err);
   }
 }
-
 
 
 // BOTÕES HTML DO POPOVER
