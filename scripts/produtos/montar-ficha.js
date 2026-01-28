@@ -2,6 +2,15 @@ function montarFichaTecnica(produto) {
     return `
       <h2>${produto.nome}</h2>
       <p class="descricao">${produto.descricao}</p>
+
+      <div class="btn-produto-container">
+        <a href="${produto.ficha}" target="_blank" class="btn-produto-ficha">
+          📄 Abrir Ficha Técnica
+        </a>
+          <a href="${produto.manual}" target="_blank" class="btn-produto-manual">
+          📚 Abrir Manual
+        </a>
+      </div>
   
       ${secao("Canais", `
         <ul>
@@ -22,6 +31,7 @@ function montarFichaTecnica(produto) {
           <li>Compressão: ${produto.video.compressao.join(", ")}</li>
           <li>Saídas: ${produto.video.saidas_video.join(", ")}</li>
           <li>Resolução de saída: ${produto.video.resolucao_saida_max}</li>
+          <li>Tela Adicional: ${produto.video.tela_adicional}</li>
         </ul>
       `)}
   
@@ -76,14 +86,7 @@ function montarFichaTecnica(produto) {
         </ul>
       `)}
   
-      <div class="btn-produto-container">
-        <a href="${produto.ficha}" target="_blank" class="btn-produto-ficha">
-          📄 Abrir Ficha Técnica
-        </a>
-          <a href="${produto.manual}" target="_blank" class="btn-produto-manual">
-          📚 Abrir Manual
-        </a>
-      </div>
+      
     `;
   }
   

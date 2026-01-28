@@ -32,6 +32,7 @@
         "video": {
           "compressao": ["H.265+", "H.265", "H.264+", "H.264"],
           "saidas_video": ["HDMI", "VGA", "BNC"],
+          "tela_adicional": "Não",
           "resolucao_saida_max": "1920×1080, 1280×1024, 1280×720 (HDMI / VGA), 800×600 (BNC)"
         },
   
@@ -150,8 +151,8 @@
   
         "video": {
           "compressao": ["H.265+", "H.265", "H.264+", "H.264"],
-          "bitrate_max_mbps": 6,
           "saidas_video": ["HDMI", "VGA", "BNC"],
+          "tela_adicional": "Sim",
           "resolucao_saida_max": "3840x2160"
         },
   
