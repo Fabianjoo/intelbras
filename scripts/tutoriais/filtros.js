@@ -22,15 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const filtrosPermitidosCftv = {
         equip: [
             'gravadores-cftv', 'cameras-ip', 'speed-dome', 'analog-cam', 
-            'vhd-control', 'vtn', 'ballun', 'multibox', 'microfone'
+            'vhd-control', 'vtn', 'ballun', 'multibox', 'microfone','vipw'
         ],
         softwares: [
             'sim-next', 'sim-play', 'sim-plus', 'guardian', 'isic-lite',
-            'defenselite'
+            'defenselite','guardian-parceiro'
         ],
         procedimentos: [
             'cadastro', 'firmware', 'senha', 'download', 'gravacoes', 
-            'inicializacao', 'inteligencias', 'acesso-remoto', 'interface-web', 'instalacao', 'gravacao-nuvem'
+            'inicializacao', 'inteligencias', 'acesso-remoto', 'interface-web', 'instalacao', 'gravacao-nuvem', 'inicializar'
         ],
         config: [
             'data-hora', 'ftp', 'rtmp', 'smtp', 'pos', 'espelhamento', 'conta-intelbras', 
