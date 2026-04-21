@@ -722,6 +722,13 @@
       "data": null
     },
     {
+      "nome": "NVD 1532",
+      "metodos_de_recuperacao": "Recuperação por e-mail, por perguntas secretas e por botão de reset",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/gravador-digital-de-video-nvd-1532",
+      "data": null
+    },
+    {
       "nome": "NVD 3000",
       "metodos_de_recuperacao": "Usuario padrão",
       "phaseout": "09/2015",
@@ -758,14 +765,14 @@
     },
     {
       "nome": "NVD 3116",
-      "metodos_de_recuperacao": "recuperação por e-mail e por perguntas secretas.",
+      "metodos_de_recuperacao": "recuperação por e-mail, por perguntas secretas ou botão de reset",
       "phaseout": "03/2022",
       "link": "https://www.intelbras.com/pt-br/gravador-digital-de-video-em-rede-nvd-3116",
       "data": "2022-03-01T03:00:00.000Z"
     },
     {
       "nome": "NVD 3116 P",
-      "metodos_de_recuperacao": "recuperação por e-mail e por perguntas secretas.",
+      "metodos_de_recuperacao": "recuperação por e-mail, por perguntas secretas ou botão de reset",
       "phaseout": "11/2021",
       "link": "https://www.intelbras.com/pt-br/gravador-digital-de-video-em-rede-nvd-3116-p",
       "data": "2021-11-01T03:00:00.000Z"
@@ -1387,6 +1394,13 @@
       "data": null
     },
     {
+      "nome": "VHD 1230 B G9",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-infravermelho-multi-hd-vhd-1230-b-g9",
+      "data": null
+    },
+    {
       "nome": "VHD 1420 B",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2021",
@@ -1637,6 +1651,13 @@
       "phaseout": "01/2023",
       "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
       "data": "2023-01-01T03:00:00.000Z"
+    },
+    {
+      "nome": "VHD 3150 VF G7",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-infravermelho-multi-hd-vhd-3150-vf-g7",
+      "data": null
     },
     {
       "nome": "VHD 3200 MINI SD",
@@ -2143,6 +2164,13 @@
       "data": null
     },
     {
+      "nome": "VHL 1220 D G9",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-full-color-com-resolucao-full-hd-vhl-1220-d-g9",
+      "data": null
+    },
+    {
       "nome": "VIP 1020 B",
       "metodos_de_recuperacao": "Senha padrão e ferramenta Juffeng",
       "phaseout": "05/2019",
@@ -2425,9 +2453,9 @@
     {
       "nome": "VIP 1230 B G5",
       "metodos_de_recuperacao": "E-mail ou telefone",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "01/2026",
       "link": "https://www.intelbras.com/pt-br/camera-ip-full-hd-da-serie-1000-vip-1230-b-g5",
-      "data": null
+      "data": "2026-01-22T03:00:00.000Z"
     },
     {
       "nome": "VIP 1230 D",
@@ -2467,9 +2495,9 @@
     {
       "nome": "VIP 1230 D G5",
       "metodos_de_recuperacao": "E-mail ou telefone",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "01/2026",
       "link": "https://www.intelbras.com/pt-br/camera-ip-full-hd-da-serie-1000-vip-1230-d-g5",
-      "data": null
+      "data": "2026-01-22T03:00:00.000Z"
     },
     {
       "nome": "VIP 1230 D W",
@@ -2669,7 +2697,7 @@
     },
     {
       "nome": "VIP 3230 D SC IA",
-      "metodos_de_recuperacao": "E-mail ou telefone",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-dome-com-tecnologia-super-color-vip-3230-d-sc-ia",
       "data": null
@@ -2918,6 +2946,13 @@
       "phaseout": "03/2025",
       "link": "https://www.intelbras.com/pt-br/camera-bullet-com-resolucao-4k-vip-3830-b",
       "data": "2025-03-01T03:00:00.000Z"
+    },
+    {
+      "nome": "VIP 3830 IA",
+      "metodos_de_recuperacao": "E-mail ou botão reset",
+      "phaseout": "01/2025",
+      "link": "",
+      "data": "2025-01-25T03:00:00.000Z"
     },
     {
       "nome": "VIP 5180 PAN IA",
@@ -3473,6 +3508,34 @@
       "data": null
     },
     {
+      "nome": "VIPW 1220 D FC+",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-ip-wi-fi-profissional-com-full-color-e-ir-vipw-1220-d-fc",
+      "data": null
+    },
+    {
+      "nome": "VIPW 1220 D FULL COLOR",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-wi-fi-profissional-com-full-color-vipw-1220-d-fc",
+      "data": null
+    },
+    {
+      "nome": "VIPW 1230 B",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-wi-fi-profissional-vipw-1230-b",
+      "data": null
+    },
+    {
+      "nome": "VIPW 1230 D",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-dome-wi-fi-profissional-vipw-1230-d",
+      "data": null
+    },
+    {
       "nome": "VIPW 1300 MINI SD",
       "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
@@ -3491,6 +3554,13 @@
       "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-ip-wi-fi-profissional-com-4-mp-vipw-1430-b",
+      "data": null
+    },
+    {
+      "nome": "VIPW 1430 D",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-ip-wi-fi-profissional-com-4-mp-vipw-1430-d",
       "data": null
     },
     {
