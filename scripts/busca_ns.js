@@ -72,6 +72,19 @@ const btnBusca = document.getElementById('btnbusca');
 const popover = document.getElementById('popover');
 const consultarBtn = document.getElementById('consultarBtn');
 const serialInput = document.getElementById('serialInput');
+const tabelaBtn = document.getElementById('tabela-transferenciabtn');
+const popoverContents = document.querySelectorAll('.popover-content');
+const tabelaTransferencia = document.querySelector('.tabela-transferencia');
+
+// Estado inicial: esconde a tabela
+tabelaTransferencia.style.display = 'none';
+
+function resetPopover() {
+  tabelaTransferencia.style.display = 'none';
+  popoverContents.forEach(el => el.style.display = 'block');
+  tabelaBtn.innerHTML = 'Tabela de Transferência';
+  tabelaBtn.classList.remove('btn-voltar');
+}
 
 /* BUSCAR */
 btnBusca.addEventListener('click', () => {
@@ -79,12 +92,29 @@ btnBusca.addEventListener('click', () => {
   serialInput.focus();
 });
 
-/* AO CLICAR FORA FECHA */
+/* AO CLICAR FORA FECHA E RESETA */
 popover.addEventListener('click', e => {
-  if (e.target === popover) popover.style.display = 'none';
+  if (e.target === popover) {
+    popover.style.display = 'none';
+    resetPopover();
+  }
 });
 
-// Adaptando seu consultarBtn para chamar a API
+/* TABELA TRANSFERENCIA TOGGLE */
+tabelaBtn.addEventListener('click', () => {
+  const isVisible = tabelaTransferencia.style.display === 'block';
+
+  if (!isVisible) {
+    popoverContents.forEach(el => el.style.display = 'none');
+    tabelaTransferencia.style.display = 'block';
+    tabelaBtn.innerHTML = 'Voltar';
+    tabelaBtn.classList.add('btn-voltar');
+  } else {
+    resetPopover();
+  }
+});
+
+/* CONSULTAR */
 consultarBtn.addEventListener('click', () => {
   const serial = serialInput.value.trim();
   if (!serial) {
@@ -92,5 +122,5 @@ consultarBtn.addEventListener('click', () => {
     return;
   }
 
-  consultarSerial(serial); // chama função que faz fetch e exibe resultado
+  consultarSerial(serial);
 });
