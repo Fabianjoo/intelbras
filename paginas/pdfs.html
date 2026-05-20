@@ -58,24 +58,31 @@
     <img src="../imagens/favicon2.ico" alt="topo" id="btntopo">
     <img src="../imagens/favicon3.ico" alt="busca" id="btnbusca">
 
-    <!-- POPOVER BUSCA NS -->
-    <div id="popover" class="popover">
-      <div class="popover-content">
-        <h3>🔢 Consultar Número de Série</h3>
-        <input type="text" id="serialInput" placeholder="Digite o número de série">
-        <button id="consultarBtn">Consultar</button>
-        <div id="resultado" style="margin-top: 15px; color: green;"></div>
-      </div>
-
-      <div class="popover-content">
-        <h3>🛑 Consultar Phase Out</h3>
-        <input type="text" id="serialInputphaseout" autocomplete="off" placeholder="Digite o nome do Produto">
-        <ul id="sugestoes"></ul>
-        <button id="consultarBtnphaseout">Consultar</button>
-        <div id="resultadophaseout" style="margin-top: 15px; color: green;"></div>
-      </div>
+   <!-- POPOVER BUSCA NS -->
+   <div id="popover" class="popover">
+    <div class="popover-content">
+      <h3>🔢 Consultar Número de Série</h3>
+      <input type="text" id="serialInput" placeholder="Digite o número de série">
+      <button id="consultarBtn">Consultar</button>
+      <div id="resultado" style="margin-top: 15px; color: green;"></div>
     </div>
 
+    <div class="popover-content">
+      <h3>🛑 Consultar Phase Out</h3>
+      <input type="text" id="serialInputphaseout" autocomplete="off" placeholder="Digite o nome do Produto">
+      <ul id="sugestoes"></ul>
+      <button id="consultarBtnphaseout">Consultar</button>
+      <div id="resultadophaseout" style="margin-top: 15px; color: green;"></div>
+    </div>
+
+    <div class="tabela-transferencia">
+      <iframe src="https://sgi.intelbras.com.br/controles3/transfprod1.php" frameborder="0"></iframe>
+    </div>
+
+    <div class="transferencia-btn">
+      <button id="tabela-transferenciabtn">Tabela de Transferência</button>
+    </div>
+  </div>
     <!-- PDFS -->
 
      <!-- BARRA DE PESQUISA -->
