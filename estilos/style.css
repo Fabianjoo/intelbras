@@ -202,39 +202,84 @@ div.logo{
     height: 44px;
 }
 
-.ferramentas > .titulo{
+.ferramentas {
+  position: relative;
+}
+
+.ferramentas > .titulo {
   display: flex;
   cursor: pointer;
   height: 44px;
+  padding: 0 14px;
+  gap: 6px;
   justify-content: center;
   align-items: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: var(--verde-principal);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  user-select: none;
+  transition: filter 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
 }
 
-.logo > .ferramentas > ul{
-    display: flex;
-    flex-flow: column nowrap;
-    opacity: 0;
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    justify-content: center;
-    background-color: var(--verde-principal);
-    align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 0px 0px 5px 5px;
+.ferramentas > .titulo:hover {
+  filter: brightness(0.88);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-.ferramentas > ul > li{
-    margin:5px 0px;
-    padding: 5px;
-    color: white;
+.logo > .ferramentas > ul {
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  min-width: 210px;
+  background: #fff;
+  border: 0.5px solid rgba(0,0,0,0.10);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 0.22s ease, transform 0.22s ease;
+  z-index: 100;
+  padding: 0;
 }
 
-.ferramentas > ul > li > a:hover{
-    text-decoration: underline;
-    color: white;
-    cursor: pointer;
+.ferramentas.open > ul {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
 }
 
+.ferramentas > ul > li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 0.5px solid rgba(0,0,0,0.05);
+}
+
+.ferramentas > ul > li:last-child {
+  border-bottom: none;
+}
+
+.ferramentas > ul > li > a {
+  display: block;
+  padding: 10px 16px;
+  color: #1e3a28;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 13.5px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.ferramentas > ul > li > a:hover {
+  background: #eaf5f0;
+  color: var(--verde-principal);
+  text-decoration: none;
+  cursor: pointer;
+}
 #hamburguer{
   display: none;
 }
