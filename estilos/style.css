@@ -204,6 +204,7 @@ div.logo{
 
 .ferramentas {
   position: relative;
+  width: 210px;
 }
 
 .ferramentas > .titulo {
