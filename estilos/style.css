@@ -204,7 +204,7 @@ div.logo{
 
 .ferramentas {
   position: relative;
-  width: 210px;
+  width: 150px;
 }
 
 .ferramentas > .titulo {
@@ -235,7 +235,7 @@ div.logo{
   display: flex;
   flex-flow: column nowrap;
   position: absolute;
-  min-width: 210px;
+  width: 150px;
   background: #fff;
   border: 0.5px solid rgba(0,0,0,0.10);
   border-radius: 10px;
@@ -375,10 +375,7 @@ main{
       width: 145px;
       height: 44px;
     }
-
-    .ferramentas > ul > li{
-      text-align: center;
-    }
+    
 
 }
 

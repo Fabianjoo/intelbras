@@ -486,7 +486,16 @@ Nessa opção, você poderá atualizar o e-mail de recuperação.</textarea>
             
             <!-- JUFENG -->
             <details>
-               <img src="../imagens/recuperacao_senha/jufeng/equips-jufeng.png" alt="Equipamentos Jufeng" style="width: 80%;">
+               <div class="jufengcontainer">
+                <div class="container">
+                    <div id="titulo">GERAR CÓDIGO DE SEGURANÇA JUFENG</div>
+                    <label for="chave">Chave:</label>
+                    <input type="text" id="chave-jufeng" name="chave">
+                    <button onclick="consultarContraSenha()">Gerar</button>
+                    <div id="resultado-jufeng"></div>
+                </div>
+                <img src="../imagens/recuperacao_senha/jufeng/equips-jufeng.png" alt="Equipamentos Jufeng" style="width: 80%;">
+               </div>
 
                 <summary><strong>Equipamentos Jufeng</strong></summary>
                 <p><strong>🟢 Explicação do procedimento de recuperação de senha via software!</strong></p>

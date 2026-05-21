@@ -201,3 +201,56 @@ async function gerarSenhaAPI(tipo, dataDvr, ns = '') {
   const json = await response.json()
   return json.contra_senha
 }
+
+
+/* JUFENG */
+
+function consultarContraSenha() {
+  const el = document.getElementById("resultado-jufeng");
+  var chave = document.getElementById("chave-jufeng").value.trim();
+
+  if (!chave) {
+    el.style.display = "block";
+    el.innerText = "⚠️ Informe a chave!";
+    return;
+  }
+
+  var authorization = "QW1YdjAyX2dwSFVWeVZ4dUp1ZkRzZWE3RmZBYTpVMVRjblJDNWZ3Y2lzbFd1U0NaR2RzMTRMOThh";
+
+  el.style.display = "block";
+  el.innerText = "⏳ Gerando...";
+
+  fetch("https://apim.intelbras.com.br/oauth2/token", {
+    method: "POST",
+    headers: {
+      "Authorization": "Basic " + authorization,
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: "grant_type=client_credentials"
+  })
+  .then(response => {
+    if (response.ok) return response.json();
+    throw new Error("Erro na solicitação de token");
+  })
+  .then(data => {
+    var accessToken = data.access_token;
+    return fetch(`https://api-v2.intelbras.com.br/contra-senha/1.0.0/${chave}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + accessToken
+      }
+    });
+  })
+  .then(response => {
+    if (response.ok) return response.json();
+    throw new Error("Erro na solicitação da contra-senha");
+  })
+  .then(data => {
+    el.innerText = `Código de Segurança: ${data.contra_senha}`;
+  })
+  .catch(error => {
+    console.error(error);
+    el.innerText = "❌ Erro ao consultar API";
+  });
+}

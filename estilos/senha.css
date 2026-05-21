@@ -209,6 +209,94 @@ div.erros{
     color: red;
 }
 
+.jufengcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .jufengcontainer img {
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .jufengcontainer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background-color: #f0faf0;
+    border: 2px solid #28a745;
+    border-radius: 12px;
+    padding: 24px 32px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+  }
+  
+  .jufengcontainer #titulo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #1a7a30;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  
+  .jufengcontainer label {
+    font-weight: 600;
+    color: #1a7a30;
+    align-self: flex-start;
+  }
+  
+  .jufengcontainer input[type="text"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+  
+  .jufengcontainer input[type="text"]:focus {
+    border-color: #1a7a30;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
+  }
+  
+  .jufengcontainer button {
+    width: 100%;
+    padding: 11px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .jufengcontainer button:hover {
+    background-color: #1a7a30;
+  }
+  
+  .jufengcontainer #resultado-jufeng {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a7a30;
+    background-color: #d4edda;
+    border: 1px solid #28a745;
+    border-radius: 8px;
+    padding: 10px 16px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+  }
+
 @media (max-width: 1125px) {
     .img_mediaquery{
         width: 100%;
