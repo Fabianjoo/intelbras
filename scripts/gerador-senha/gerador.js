@@ -210,7 +210,8 @@ function consultarContraSenha() {
   var chave = document.getElementById("chave-jufeng").value.trim();
 
   if (!chave) {
-    el.style.display = "block";
+    el.style.display = "flex";
+    el.style.flexDirection = "column";
     el.innerText = "⚠️ Informe a chave!";
     return;
   }
@@ -247,10 +248,111 @@ function consultarContraSenha() {
     throw new Error("Erro na solicitação da contra-senha");
   })
   .then(data => {
-    el.innerText = `Código de Segurança: ${data.contra_senha}`;
+    const codigo = data.contra_senha;
+
+    const instrucao = `🔐 Código de Reset: ${codigo}
+
+📋 Passo a passo para resetar o equipamento:
+
+1️⃣ Abra o software e localize o campo "Código"
+2️⃣ Digite o código: ${codigo}
+3️⃣ Selecione a opção "Geral" na caixa de seleção
+4️⃣ Clique no botão "Reset Geral"
+
+✅ Se aparecer a mensagem "Sucesso", o equipamento foi resetado com êxito!
+
+🔑 Após o reset, utilize as credenciais padrão:
+   • Usuário: admin
+   • Senha: admin
+
+⚠️ Recomendamos alterar a senha após o primeiro acesso.`;
+
+    el.innerHTML = `
+      <div style="
+        background: #f0f8e8;
+        border: 1px solid #639922;
+        border-radius: 8px;
+        padding: 14px 16px;
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 1.7;
+        color: #1a2e10;
+        white-space: pre-wrap;
+      ">${instrucao}</div>
+
+      <div style="display:flex; gap:10px; margin-top:10px;">
+        <button onclick="copiarInstrucao()" style="
+          padding: 8px 18px;
+          background: #3B6D11;
+          color: #EAF3DE;
+          border: none;
+          border-radius: 8px;
+          font-size: 13px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background .2s;
+        " onmouseover="this.style.background='#27500A'"
+           onmouseout="this.style.background='#3B6D11'">
+          📋 Copiar instruções
+        </button>
+
+        <button onclick="limparResultado()" style="
+          padding: 8px 18px;
+          background: #fff;
+          color: #991b1b;
+          border: 1.5px solid #991b1b;
+          border-radius: 8px;
+          font-size: 13px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: background .2s, color .2s;
+        " onmouseover="this.style.background='#991b1b'; this.style.color='#fff'"
+           onmouseout="this.style.background='#fff'; this.style.color='#991b1b'">
+          🗑️ Limpar
+        </button>
+      </div>
+    `;
+
+    window._instrucaoCopiar = instrucao;
   })
   .catch(error => {
     console.error(error);
     el.innerText = "❌ Erro ao consultar API";
   });
+}
+
+function copiarInstrucao() {
+  if (!window._instrucaoCopiar) return;
+
+  const btn = document.querySelector('[onclick="copiarInstrucao()"]');
+
+  navigator.clipboard.writeText(window._instrucaoCopiar)
+    .then(() => {
+      if (btn) {
+        btn.innerText = '✅ Copiado!';
+        setTimeout(() => { btn.innerText = '📋 Copiar instruções'; }, 2000);
+      }
+    })
+    .catch(() => {
+      const textarea = document.createElement('textarea');
+      textarea.value = window._instrucaoCopiar;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+
+      if (btn) {
+        btn.innerText = '✅ Copiado!';
+        setTimeout(() => { btn.innerText = '📋 Copiar instruções'; }, 2000);
+      }
+    });
+}
+
+function limparResultado() {
+  const el = document.getElementById("resultado-jufeng");
+  el.innerHTML = '';
+  el.style.display = 'none';
+  el.style.flexDirection = '';
+  document.getElementById("chave-jufeng").value = '';
+  window._instrucaoCopiar = null;
 }

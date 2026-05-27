@@ -216,6 +216,15 @@ div.erros{
     gap: 24px;
   }
   
+  .jufeng-topo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    justify-content: center; 
+  }
+  
   .jufengcontainer img {
     width: 80%;
     max-width: 500px;
@@ -232,6 +241,7 @@ div.erros{
     padding: 24px 32px;
     width: 100%;
     max-width: 400px;
+    flex-shrink: 0;
     box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
   }
   
@@ -284,17 +294,18 @@ div.erros{
   }
   
   .jufengcontainer #resultado-jufeng {
-    font-size: 16px;
-    font-weight: bold;
-    color: #1a7a30;
-    background-color: #d4edda;
-    border: 1px solid #28a745;
-    border-radius: 8px;
-    padding: 10px 16px;
-    width: 100%;
-    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: #1a2e10;
+    background-color: #f0faf0;
+    border: 2px solid #28a745;
+    border-radius: 12px;
+    padding: 16px;
+    flex: 1;
     box-sizing: border-box;
+    align-self: stretch;
     display: none;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
   }
 
 @media (max-width: 1125px) {
