@@ -263,9 +263,7 @@ function consultarContraSenha() {
 
 🔑 Após o reset, utilize as credenciais padrão:
    • Usuário: admin
-   • Senha: admin
-
-⚠️ Recomendamos alterar a senha após o primeiro acesso.`;
+   • Senha: admin`;
 
     el.innerHTML = `
       <div style="
