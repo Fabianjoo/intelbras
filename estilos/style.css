@@ -285,6 +285,10 @@ div.logo{
   display: none;
 }
 
+header > nav{
+  z-index: 9999;
+}
+
 nav > ul{
     display: flex;
     height: 44px;
