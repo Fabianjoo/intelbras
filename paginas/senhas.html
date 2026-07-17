@@ -86,14 +86,19 @@
           <button id="tabela-transferenciabtn">Tabela de Transferência</button>
         </div>
       </div>
-  
 
-        <h1>🔐 Recuperação de Senha</h1>
+          <!-- NAV DAS ABAS -->
+          <div class="tabs-nav">
+            <button class="tab-btn" data-tab="geradores">Geradores</button>
+            <button class="tab-btn active" data-tab="dvr-nvr">DVR / NVR</button>
+            <button class="tab-btn" data-tab="camera-ip">Câmera IP</button>
+            <button class="tab-btn" data-tab="jufeng">Equipamentos Jufeng</button>
+            <button class="tab-btn" data-tab="conta-intelbras">Conta INTELBRAS</button>
+            <button class="tab-btn" data-tab="sim-next">SIM Next</button>
+        </div>
 
         <!-- GERADOR DE SENHA -->
-        <section class="gerador">
-            <details>
-                <summary><strong>Geradores</strong></summary>
+        <div class="tab-panel" id="geradores">
                 <div class="gerador-senha">
                     <div class="inputs-senha">
                       <label for="ns">🔢 Número de Série</label>
@@ -122,14 +127,12 @@
                 height="720"
                 frameborder="0">
                 </iframe>
-            </details>
-        </section>
+            </div>
 
         <!-- RESPOSTAS PRONTAS -->
         <section class="respostas">
             <!-- DVR/NVR -->
-            <details>
-                <summary><strong>DVR / NVR</strong></summary>
+            <div class="tab-panel active" id="dvr-nvr">
                 <p><strong>🟢 PASSO 1 - Solicitação de informações! (Modelo/NS/Versão)</strong></p>
                 <div class="bloco_respostas">
                     <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">Clique com o botão direito do mouse e acesse o menu principal. Se aparecer o padrão de desbloqueio, selecione a opção "Esqueci o padrão". Em seguida, envie uma foto das informações do gravador seguindo o exemplo mostrado na imagem. Para que eu possa gerar uma senha provisória que você consiga acessar!</textarea>
@@ -246,17 +249,10 @@ Em seguida, atualize o e-mail de recuperação.</textarea>
                     <img src="../imagens/recuperacao_senha/DVR-NVR/util1.png" alt="Botão de Reset DVR" class="img_copiavel" id="img_mediaquery4">
                     <img src="../imagens/recuperacao_senha/DVR-NVR/util2.png" alt="Botão de Reset NVR" class="img_copiavel" id="img_mediaquery4">
                 </div>
-              <!--   <hr>
-                <a href="../pdfs/recuperacao_senha/Como-alterar-a-senha-dos-DVRs-MHDX (1).pdf" target="_blank"><div class="pdf">📄PDF Como recuperar a senha de gravadores</div></a> -->
-            </details>
-            <!-- DVR/NVR (ANTIGOS)-->
-            <!-- <details>
-                <summary><strong>DVR / NVR (ANTIGOS)</strong></summary>
-            
-            </details> -->
+             </div>
+
             <!-- CÂMERA IP -->
-            <details>
-                <summary><strong>Câmera IP</strong></summary>
+            <div class="tab-panel" id="camera-ip">
                 <p><strong>🟢 Explicação do procedimento de recuperação de senha via e-mail!</strong></p>
                 <div class="bloco_respostas">
                     <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">🔐 Recuperação de Senha – Câmera IP Intelbras
@@ -484,12 +480,10 @@ Nessa opção, você poderá atualizar o e-mail de recuperação.</textarea>
                     <img src="../imagens/recuperacao_senha/camera_ip/passo_2.png" alt="Passo 2" class="img_copiavel" id="img_mediaquery4">
                     <img src="../imagens/recuperacao_senha/camera_ip/consultar_ns.png" alt="IP Utility" class="img_copiavel" id="img_mediaquery4">
                 </div>
-             <!--    <hr>
-                <a href="../pdfs/recuperacao_senha/recuperacao-de-senha-cameras-ip.pdf" target="_blank"><div class="pdf">📄PDF Como recuperar a senha de câmera IP</div></a> -->
-            </details>
+            </div>
             
             <!-- JUFENG -->
-            <details>
+            <div class="tab-panel" id="jufeng">
                 <div class="jufengcontainer">
                     <div class="jufeng-topo">
                       <div class="container">
@@ -503,7 +497,6 @@ Nessa opção, você poderá atualizar o e-mail de recuperação.</textarea>
                     <img src="../imagens/recuperacao_senha/jufeng/equips-jufeng.png" alt="Equipamentos Jufeng" style="width: 80%;">
                   </div>
 
-                <summary><strong>Equipamentos Jufeng</strong></summary>
                 <p><strong>🟢 Explicação do procedimento de recuperação de senha via software!</strong></p>
                 <div class="bloco_respostas">
                     <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">🛠️ 🔐 Recuperação de Senha do Equipamento
@@ -649,12 +642,10 @@ https://www.youtube.com/watch?v=aw7uCOB2Nko&t=11s</textarea>
                     <img src="../imagens/recuperacao_senha/jufeng/servico_de_plataforma.png" alt="Serviço de Plataforma de Dispositivos Conectados" class="img_copiavel" id="img_mediaquery4">
                     <img src="../imagens/recuperacao_senha/jufeng/modo_ie.png" alt="Modo IE" class="img_copiavel" id="img_mediaquery4">
                 </div>
-              <!--   <hr>
-                 <a href="../pdfs/recuperacao_senha/Tutorial reset de câmeras IP´s e NVR´S  (Antigos).pdf" target="_blank"><div class="pdf">📄PDF Como recuperar a senha de equipamentos via software</div></a> -->
-            </details>
+            </div>
+
             <!-- CONTA INTELBRAS -->
-            <details>
-                <summary><strong>Conta INTELBRAS</strong></summary>
+            <div class="tab-panel" id="conta-intelbras">
                 <p><strong>🟢 Explicação do procedimento de recuperação de senha da Conta INTELBRAS!</strong></p>
                 <div class="bloco_respostas">
                     <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">🔐 Como recuperar a senha da sua Conta Intelbras
@@ -677,10 +668,9 @@ Obs: Caso não receba o e-mail em alguns minutos, verifique sua caixa de spam ou
                     <img src="../imagens/recuperacao_senha/conta_intelbras/esqueci_a_senha.png" alt="Conta Intelbras" class="img_copiavel" id="img_mediaquery4">
                     <img src="../imagens/recuperacao_senha/conta_intelbras/esqueci_a_senha2.png" alt="Conta Intelbras 2" class="img_copiavel" id="img_mediaquery4">
                 </div>
-            </details>
+            </div>
             <!-- SIM NEXT -->
-            <details>
-                <summary><strong>SIM Next</strong></summary>
+            <div class="tab-panel" id="sim-next">
                 <p><strong>🟢 Explicação do procedimento de recuperação de senha do SIM Next!</strong></p>
                 <div class="bloco_respostas">
                     <textarea name="texto" id="texto" spellcheck="false" placeholder="Digite um texto!">🔐 Esqueceu a senha do SIM Next?
@@ -701,11 +691,11 @@ Se essa opção "Esqueceu a Senha?" não aparecer na sua tela, é provável que 
                 <div class="imagens">
                     <img src="../imagens/recuperacao_senha/sim_next/esqueci_a_senha.png" alt="Sim Next" class="img_copiavel" id="img_mediaquery4">
                 </div>
-            </details>
+            </div>
         </section>
     </main>
 
-    <script src="../scripts/botao_copiar.js"></script>
+    <script src="../scripts/copiar-abas-senhas.js"></script>
     <script src="../scripts/local_storage/local_storage_senha.js"></script>
     <script src="../scripts/botao_topo.js"></script>
     <script src="../scripts/busca_ns.js"></script>
@@ -715,3 +705,20 @@ Se essa opção "Esqueceu a Senha?" não aparecer na sua tela, é provável que 
     <script src="../scripts/menu_hamburguer.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
