@@ -375,13 +375,7 @@ div.erros{
       }
 }
 
-@media (max-width: 650px) {
-    #img_mediaquery4{
-        width: 100%;
-    }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 841px) {
     .tabs-nav {
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -396,3 +390,11 @@ div.erros{
         flex-shrink: 0;
     }
 }
+
+@media (max-width: 650px) {
+    #img_mediaquery4{
+        width: 100%;
+    }
+}
+
+
