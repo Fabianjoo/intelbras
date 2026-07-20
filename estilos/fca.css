@@ -1,17 +1,12 @@
 @charset "UTF-8";
 
-/* MAIN */
+/* FCA */
 
 .ferramenta {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     padding: 20px;
-  }
-
-  section > h1{
-      text-align: center;
-      font-size: 1.5em;
   }
 
   .ferramenta div {
@@ -136,7 +131,7 @@
       background-color: white;
       color: red;
   }
-
+  
   @media (max-width: 926px) {
     button#criar_fca{
       margin-bottom: 5px;

@@ -1,0 +1,355 @@
+@charset "UTF-8";
+
+/* ATENDIMENTO FACILITADO */
+.procedimentos .pi-procedimento{
+    padding: 4px 4px 12px 4px;
+    line-height: 1.55;
+    color: var(--pi-texto);
+  }
+  
+  .procedimentos .pi-procedimento p{
+    margin: 10px 0;
+  }
+  
+  .procedimentos .pi-procedimento hr{
+    border: none;
+    border-top: 1px solid var(--pi-borda);
+    margin: 18px 0;
+  }
+  
+  .procedimentos .pi-sub-titulo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--pi-verde-primario);
+    margin: 4px 0 10px 0;
+  }
+  
+  .procedimentos .pi-procedimento ul{
+    list-style: none;
+    margin: 6px 0 6px 0;
+    padding-left: 22px;
+  }
+  
+  .procedimentos .pi-procedimento ul ul{
+    margin-top: 4px;
+    padding-left: 20px;
+  }
+  
+  .procedimentos .pi-procedimento li{
+    position: relative;
+    margin-bottom: 6px;
+  }
+  
+  .procedimentos .pi-procedimento li::before{
+    content: "•";
+    position: absolute;
+    left: -18px;
+    color: var(--pi-verde-primario);
+    font-weight: 700;
+  }
+  
+  .procedimentos .pi-procedimento ul ul li::before{
+    content: "◦";
+    color: var(--pi-verde-medio, var(--pi-verde-primario));
+  }
+  
+  .procedimentos .pi-procedimento a{
+    color: var(--pi-verde-primario);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--pi-verde-claro);
+  }
+  
+  .procedimentos .pi-procedimento a:hover{
+    border-bottom-color: var(--pi-verde-primario);
+  }
+  
+  .procedimentos .pi-imagem-flutuante{
+    float: right;
+    max-width: 320px;
+    margin: 0 0 12px 16px;
+    border: 1px solid var(--pi-borda);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .procedimentos .pi-imagem-flutuante img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .procedimentos .pi-destaque{
+    background: var(--pi-verde-claro);
+    border-left: 3px solid var(--pi-verde-primario);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 14px 0;
+  }
+  
+  /* Caixa de texto com botão de copiar */
+  .procedimentos .pi-copiar-container{
+    margin: 14px 0;
+    clear: both;
+  }
+  
+  .procedimentos .pi-textarea{
+    width: 100%;
+    max-width: 480px;
+    min-height: 300px;
+    padding: 12px;
+    font-size: 14px;
+    font-family: "Consolas", "Courier New", monospace;
+    border: 1px solid var(--pi-borda);
+    border-radius: 8px;
+    resize: vertical;
+    background: var(--pi-branco);
+    color: var(--pi-texto);
+    display: block;
+  }
+  
+  .procedimentos .pi-btn-copiar{
+    margin-top: 10px;
+    padding: 9px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--pi-branco);
+    background: var(--pi-verde-primario);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background .15s ease;
+  }
+  
+  .procedimentos .pi-btn-copiar:hover{
+    background: var(--pi-verde-escuro);
+  }
+  
+  .procedimentos .pi-copy-alert{
+    display: none;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: var(--pi-verde-claro);
+    color: var(--pi-verde-escuro);
+    border: 1px solid var(--pi-verde-primario);
+    border-radius: 6px;
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+  
+  /* Lista de responsáveis */
+  .procedimentos .pi-contatos{
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+  }
+  
+  .procedimentos .pi-contatos li{
+    margin-bottom: 4px;
+  }
+  
+  .procedimentos .pi-rodape-info{
+    font-size: 12px;
+    color: var(--pi-texto-suave);
+  }
+  
+  @media (max-width: 640px){
+    .procedimentos .pi-imagem-flutuante{
+      float: none;
+      max-width: 100%;
+      margin: 0 0 14px 0;
+    }
+  }
+
+
+/* CHECKLIST MAU FUNCIONAMENTO */
+.procedimentos{
+    --pi-verde-escuro: #0b3d24;
+    --pi-verde-primario: #148046;
+    --pi-verde-claro: #d9f2e3;
+    --pi-verde-hover: #e6f7ec;
+    --pi-texto: #1b2b22;
+    --pi-texto-suave: #4b5d54;
+    --pi-borda: #bfe3cd;
+    --pi-branco: #ffffff;
+
+    max-width: 860px;
+    margin: 32px auto;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  .procedimentos .pi-titulo-pagina{
+    color: var(--pi-verde-escuro);
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 12px;
+    letter-spacing: .5px;
+  }
+
+  /* Aviso com link para a Wiki de Procedimentos Corporativos */
+  .procedimentos .pi-aviso-wiki{
+    display: block;
+    text-align: center;
+    background: var(--pi-verde-claro);
+    color: var(--pi-verde-escuro);
+    border: 1px solid var(--pi-verde-primario);
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin: 0 0 24px 0;
+    font-size: 14.5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .15s ease;
+  }
+
+  .procedimentos .pi-aviso-wiki:hover{
+    background: var(--pi-verde-hover);
+  }
+
+  /* Accordion principal */
+  .procedimentos details.pi-principal{
+    background: var(--pi-branco);
+    border: 1px solid var(--pi-borda);
+    border-radius: 10px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(20,128,70,0.08);
+    overflow: hidden;
+  }
+
+  .procedimentos details.pi-principal > summary{
+    background: var(--pi-verde-primario);
+    color: var(--pi-branco);
+    padding: 14px 20px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .procedimentos details.pi-principal > summary::-webkit-details-marker{ display:none; }
+
+  .procedimentos details.pi-principal > summary::after{
+    content: "▾";
+    transition: transform .2s ease;
+  }
+
+  .procedimentos details.pi-principal[open] > summary::after{
+    transform: rotate(180deg);
+  }
+
+  /* Sub-checklists (accordion interno) */
+  .procedimentos details.pi-checklist{
+    border-bottom: 1px solid var(--pi-borda);
+  }
+
+  .procedimentos details.pi-checklist:last-child{ border-bottom: none; }
+
+  .procedimentos details.pi-checklist > summary{
+    padding: 12px 20px;
+    background: var(--pi-verde-claro);
+    color: var(--pi-verde-escuro);
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .procedimentos details.pi-checklist > summary::-webkit-details-marker{ display:none; }
+
+  .procedimentos details.pi-checklist > summary::before{
+    content: "▸";
+    color: var(--pi-verde-primario);
+    transition: transform .2s ease;
+  }
+
+  .procedimentos details.pi-checklist[open] > summary::before{
+    transform: rotate(90deg);
+  }
+
+  .procedimentos .pi-conteudo{
+    padding: 12px 20px 20px 20px;
+    background: var(--pi-branco);
+  }
+
+  .procedimentos .pi-grupo-titulo{
+    margin: 18px 0 8px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--pi-verde-primario);
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    border-left: 3px solid var(--pi-verde-primario);
+    padding-left: 8px;
+  }
+  .procedimentos .pi-grupo-titulo:first-child{ margin-top: 0; }
+
+  .procedimentos ul.pi-lista{
+    list-style: none;
+    margin: 0 0 4px 0;
+    padding: 0;
+  }
+
+  .procedimentos ul.pi-lista li{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 6px;
+    border-radius: 6px;
+    transition: background .15s ease;
+  }
+
+  .procedimentos ul.pi-lista li:hover{
+    background: var(--pi-verde-hover);
+  }
+
+  .procedimentos ul.pi-lista input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 19px;
+    height: 19px;
+    min-width: 19px;
+    margin-top: 2px;
+    border: 2px solid var(--pi-verde-primario);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    background: var(--pi-branco);
+  }
+
+  .procedimentos ul.pi-lista input[type="checkbox"]:checked{
+    background: var(--pi-verde-primario);
+    border-color: var(--pi-verde-primario);
+  }
+
+  .procedimentos ul.pi-lista input[type="checkbox"]:checked::after{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .procedimentos ul.pi-lista label{
+    font-size: 14.5px;
+    line-height: 1.45;
+    color: var(--pi-texto);
+    cursor: pointer;
+  }
+
+  .procedimentos ul.pi-lista li.pi-marcado label{
+    color: var(--pi-texto-suave);
+    text-decoration: line-through;
+  }

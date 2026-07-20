@@ -1,0 +1,192 @@
+/* ==========================================================
+   PROCEDIMENTOS INTERNOS — estilo isolado (prefixo "pi-")
+   Tudo escopado dentro de .procedimentos para não colidir
+   com style.css / fca.css / senha.css já existentes no site.
+   ========================================================== */
+
+.procedimentos{
+  --pi-verde-escuro: #0b3d24;
+  --pi-verde-primario: #148046;
+  --pi-verde-claro: #d9f2e3;
+  --pi-verde-hover: #e6f7ec;
+  --pi-texto: #1b2b22;
+  --pi-texto-suave: #4b5d54;
+  --pi-borda: #bfe3cd;
+  --pi-branco: #ffffff;
+
+  max-width: 860px;
+  margin: 32px auto;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.procedimentos .pi-titulo-pagina{
+  color: var(--pi-verde-escuro);
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 12px;
+  letter-spacing: .5px;
+}
+
+.procedimentos .pi-aviso-wiki{
+  display: block;
+  text-align: center;
+  background: var(--pi-verde-claro);
+  color: var(--pi-verde-escuro);
+  border: 1px solid var(--pi-verde-primario);
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin: 0 0 24px 0;
+  font-size: 14.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .15s ease;
+}
+
+.procedimentos .pi-aviso-wiki:hover{
+  background: var(--pi-verde-hover);
+}
+
+/* Accordion principal */
+.procedimentos details.pi-principal{
+  background: var(--pi-branco);
+  border: 1px solid var(--pi-borda);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(20,128,70,0.08);
+  overflow: hidden;
+}
+
+.procedimentos details.pi-principal > summary{
+  background: var(--pi-verde-primario);
+  color: var(--pi-branco);
+  padding: 14px 20px;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.procedimentos details.pi-principal > summary::-webkit-details-marker{ display:none; }
+
+.procedimentos details.pi-principal > summary::after{
+  content: "▾";
+  transition: transform .2s ease;
+}
+
+.procedimentos details.pi-principal[open] > summary::after{
+  transform: rotate(180deg);
+}
+
+/* Sub-checklists (accordion interno) */
+.procedimentos details.pi-checklist{
+  border-bottom: 1px solid var(--pi-borda);
+}
+
+.procedimentos details.pi-checklist:last-child{ border-bottom: none; }
+
+.procedimentos details.pi-checklist > summary{
+  padding: 12px 20px;
+  background: var(--pi-verde-claro);
+  color: var(--pi-verde-escuro);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.procedimentos details.pi-checklist > summary::-webkit-details-marker{ display:none; }
+
+.procedimentos details.pi-checklist > summary::before{
+  content: "▸";
+  color: var(--pi-verde-primario);
+  transition: transform .2s ease;
+}
+
+.procedimentos details.pi-checklist[open] > summary::before{
+  transform: rotate(90deg);
+}
+
+.procedimentos .pi-conteudo{
+  padding: 12px 20px 20px 20px;
+  background: var(--pi-branco);
+}
+
+.procedimentos .pi-grupo-titulo{
+  margin: 18px 0 8px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--pi-verde-primario);
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  border-left: 3px solid var(--pi-verde-primario);
+  padding-left: 8px;
+}
+.procedimentos .pi-grupo-titulo:first-child{ margin-top: 0; }
+
+.procedimentos ul.pi-lista{
+  list-style: none;
+  margin: 0 0 4px 0;
+  padding: 0;
+}
+
+.procedimentos ul.pi-lista li{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 6px;
+  border-radius: 6px;
+  transition: background .15s ease;
+}
+
+.procedimentos ul.pi-lista li:hover{
+  background: var(--pi-verde-hover);
+}
+
+.procedimentos ul.pi-lista input[type="checkbox"]{
+  appearance: none;
+  -webkit-appearance: none;
+  width: 19px;
+  height: 19px;
+  min-width: 19px;
+  margin-top: 2px;
+  border: 2px solid var(--pi-verde-primario);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  background: var(--pi-branco);
+}
+
+.procedimentos ul.pi-lista input[type="checkbox"]:checked{
+  background: var(--pi-verde-primario);
+  border-color: var(--pi-verde-primario);
+}
+
+.procedimentos ul.pi-lista input[type="checkbox"]:checked::after{
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.procedimentos ul.pi-lista label{
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: var(--pi-texto);
+  cursor: pointer;
+}
+
+.procedimentos ul.pi-lista li.pi-marcado label{
+  color: var(--pi-texto-suave);
+  text-decoration: line-through;
+}

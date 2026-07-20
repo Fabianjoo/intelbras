@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../estilos/style.css">
   <link rel="stylesheet" href="../estilos/fca.css">
   <link rel="stylesheet" href="../estilos/senha.css">
+  <link rel="stylesheet" href="../estilos/procedimentos.css">
   <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -131,10 +132,268 @@
       <div id="resultadofca"></div>
     </section>
 
+<!--
+###################################
+      PROCEDIMENTOS INTERNOS
+###################################
+-->
+<section class="procedimentos">
+
+  <h1 class="pi-titulo-pagina">📋 Procedimentos Internos</h1>
+
+    <a class="pi-aviso-wiki" href="https://suporte.intelbras.com.br/index.php/Procedimentos_Corporativos" target="_blank">
+      📌 Todos os procedimentos completos estão na Wiki — clique aqui para abrir
+    </a>
+
+    <!-- CHECKLIST MAU FUNCIONAMENTO -->
+  <details class="pi-principal" open>
+    <summary>Check-List para Mau Funcionamento</summary>
+
+    <!-- CÂMERAS IP -->
+    <details class="pi-checklist">
+      <summary>CheckList - Câmeras IPs</summary>
+      <div class="pi-conteudo">
+        <div class="pi-grupo-titulo">Informações obrigatórias para registro do chamado</div>
+        <ul class="pi-lista" data-grupo="ip">
+          <li><input type="checkbox" id="ip-1"><label for="ip-1">Descrição detalhada do problema relatado pelo cliente</label></li>
+          <li><input type="checkbox" id="ip-2"><label for="ip-2">Descrever todos os testes feitos, sem faltar nenhum, para não gerar repetição nos testes</label></li>
+          <li><input type="checkbox" id="ip-3"><label for="ip-3">Modelo, número de série e versão de firmware dos produtos (atualizar e testar caso não esteja atualizado)</label></li>
+          <li><input type="checkbox" id="ip-4"><label for="ip-4">Como está sendo alimentado o dispositivo e, caso seja switch/injetor, qual o modelo</label></li>
+          <li><input type="checkbox" id="ip-5"><label for="ip-5">Cenário de rede do cliente, incluindo câmeras e gravadores até chegar no modem</label></li>
+          <li><input type="checkbox" id="ip-6"><label for="ip-6">Onde a câmera está conectada (gravador, software, app) e qual o modelo</label></li>
+          <li><input type="checkbox" id="ip-7"><label for="ip-7">Se o problema é recente ou sempre ocorreu, e qual a frequência</label></li>
+          <li><input type="checkbox" id="ip-8"><label for="ip-8">Quantidade de mesmo modelo e de modelos diferentes no cenário</label></li>
+          <li><input type="checkbox" id="ip-9"><label for="ip-9">Coletar logs e backup das configurações da câmera</label></li>
+          <li><input type="checkbox" id="ip-10"><label for="ip-10">Coletar vídeos, fotos, prints e demais evidências, anexando no caso</label></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- DVR/NVR -->
+    <details class="pi-checklist">
+      <summary>CheckList - DVR/NVR</summary>
+      <div class="pi-conteudo">
+        <ul class="pi-lista" data-grupo="dvr">
+          <li><input type="checkbox" id="dvr-1"><label for="dvr-1">Descrição do problema</label></li>
+          <li><input type="checkbox" id="dvr-2"><label for="dvr-2">Modelo do DVR/NVR</label></li>
+          <li><input type="checkbox" id="dvr-3"><label for="dvr-3">Versão de firmware do produto</label></li>
+          <li><input type="checkbox" id="dvr-4"><label for="dvr-4">Backup das configurações do produto</label></li>
+          <li><input type="checkbox" id="dvr-5"><label for="dvr-5">Backup dos logs (registros) do produto</label></li>
+          <li><input type="checkbox" id="dvr-6"><label for="dvr-6">Logs da porta RS232</label></li>
+          <li><input type="checkbox" id="dvr-7"><label for="dvr-7">Modelos de câmeras, quantidade e versão de firmware de cada uma usadas no cenário</label></li>
+          <li><input type="checkbox" id="dvr-8"><label for="dvr-8">Descrição da estrutura e do cenário de uso do produto (ex.: DVR MHDX 1004 com 3 câmeras HDCVI via balun passivo, cabeamento UTP, fonte centralizada de 10A, em rack)</label></li>
+          <li><input type="checkbox" id="dvr-9"><label for="dvr-9">No cenário descrito, o DVR possui aterramento ou outro equipamento conectado diretamente está aterrado</label></li>
+          <li><input type="checkbox" id="dvr-10"><label for="dvr-10">Frequência que o problema ocorre no cliente</label></li>
+          <li><input type="checkbox" id="dvr-11"><label for="dvr-11">Quantidade de clientes que reportaram a mesma falha até a abertura do atendimento</label></li>
+          <li><input type="checkbox" id="dvr-12"><label for="dvr-12">Problema acontece com outro DVR/NVR do mesmo modelo</label></li>
+          <li><input type="checkbox" id="dvr-13"><label for="dvr-13">Replicável em bancada ou somente no cenário do cliente</label></li>
+          <li><input type="checkbox" id="dvr-14"><label for="dvr-14">Qual software de monitoramento utilizado e versão</label></li>
+          <li><input type="checkbox" id="dvr-15"><label for="dvr-15">Qual aplicativo utilizado e versão</label></li>
+          <li><input type="checkbox" id="dvr-16"><label for="dvr-16">Tipo de conexão física do DVR/NVR (rádio, fibra, switch, roteador, cascateamento)</label></li>
+          <li><input type="checkbox" id="dvr-17"><label for="dvr-17">Utiliza câmera IP no local</label></li>
+          <li><input type="checkbox" id="dvr-18"><label for="dvr-18">Imagens e vídeos demonstrando o problema</label></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- CÂMERAS ANALÓGICAS -->
+    <details class="pi-checklist">
+      <summary>CheckList - Câmeras Analógicas</summary>
+      <div class="pi-conteudo">
+        <ul class="pi-lista" data-grupo="analog">
+          <li><input type="checkbox" id="an-1"><label for="an-1">Descrição do problema</label></li>
+          <li><input type="checkbox" id="an-2"><label for="an-2">Confirmar modelo exato do produto, solicitando o N/S na etiqueta da câmera</label></li>
+          <li><input type="checkbox" id="an-3"><label for="an-3">Nas câmeras HDCVI/híbridas, confirmar versão de firmware (menu de atualização no DVR ou sequência no menu OSD); nas speed domes, confirmar no menu OSD da câmera</label></li>
+          <li><input type="checkbox" id="an-4"><label for="an-4">Tipo de conexão física da câmera</label></li>
+          <li><input type="checkbox" id="an-5"><label for="an-5">Cabeamento (fabricante, especificação do cabo, distância)</label></li>
+          <li><input type="checkbox" id="an-6"><label for="an-6">Modelo do balun</label></li>
+          <li><input type="checkbox" id="an-7"><label for="an-7">Tipo de fonte (tensão e corrente) e medição da tensão que chega à câmera em funcionamento</label></li>
+          <li><input type="checkbox" id="an-8"><label for="an-8">Fonte dividida por mais câmeras: soma do consumo (com infravermelho ativado) dentro da especificação da fonte</label></li>
+          <li><input type="checkbox" id="an-9"><label for="an-9">Acontece com outro modelo de produto ou outro fabricante</label></li>
+          <li><input type="checkbox" id="an-10"><label for="an-10">Há conexões elétricas junto às conexões da câmera</label></li>
+          <li><input type="checkbox" id="an-11"><label for="an-11">Há emendas</label></li>
+          <li><input type="checkbox" id="an-12"><label for="an-12">Tipo de iluminação (quando o problema envolve interferência de imagem/acionamento do ICR e IR)</label></li>
+          <li><input type="checkbox" id="an-13"><label for="an-13">Se ruído de imagem característico de alimentação, utilizou o XHD 1000 ou fonte individual</label></li>
+          <li><input type="checkbox" id="an-14"><label for="an-14">Se questão de imagem, o problema permanece passando o cabeamento por fora da estrutura</label></li>
+          <li><input type="checkbox" id="an-15"><label for="an-15">Qual DVR a câmera está conectada (modelo)</label></li>
+          <li><input type="checkbox" id="an-16"><label for="an-16">Versão de firmware/software do DVR</label></li>
+          <li><input type="checkbox" id="an-17"><label for="an-17">Quantas câmeras estão conectadas a este dispositivo</label></li>
+          <li><input type="checkbox" id="an-18"><label for="an-18">Problema ocorre com todas conectadas ou somente algumas</label></li>
+          <li><input type="checkbox" id="an-19"><label for="an-19">Problema aconteceu logo na instalação ou depois de quanto tempo rodando</label></li>
+          <li><input type="checkbox" id="an-20"><label for="an-20">Frequência que o problema ocorre</label></li>
+          <li><input type="checkbox" id="an-21"><label for="an-21">Qual o problema encontrado</label></li>
+          <li><input type="checkbox" id="an-22"><label for="an-22">Encaminhar vídeos e fotos capturados diretamente do DVR exemplificando o problema</label></li>
+          <li><input type="checkbox" id="an-23"><label for="an-23">Frequência que o problema ocorre no cliente</label></li>
+          <li><input type="checkbox" id="an-24"><label for="an-24">Problema ocorre em bancada ou somente no cenário do cliente</label></li>
+          <li><input type="checkbox" id="an-25"><label for="an-25">Imagens e vídeos demonstrando o problema</label></li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- SIM NEXT / SIM PLAY -->
+    <details class="pi-checklist">
+      <summary>CheckList - Software SIM Next / SIM Play</summary>
+      <div class="pi-conteudo">
+
+        <div class="pi-grupo-titulo">Requisitos para abertura de Mau Funcionamento</div>
+        <ul class="pi-lista" data-grupo="sim-requisitos">
+          <li><input type="checkbox" id="sim-r1"><label for="sim-r1">Vídeo do sintoma ocorrendo</label></li>
+          <li><input type="checkbox" id="sim-r2"><label for="sim-r2">Informações do computador (placa de vídeo, processador, memória RAM)</label></li>
+          <li><input type="checkbox" id="sim-r3"><label for="sim-r3">Plataforma utilizada (Windows 10, Windows 11, MacOS Ventura, etc.)</label></li>
+          <li><input type="checkbox" id="sim-r4"><label for="sim-r4">Backup da configuração completa do SIM Next (Nova Aba > Configuração de Sistema > Exportar todos os dados)</label></li>
+          <li><input type="checkbox" id="sim-r5"><label for="sim-r5">Arquivo errorLog.txt do SIM Next (C:\ProgramData\Intelbras\SIMNext)</label></li>
+          <li><input type="checkbox" id="sim-r6"><label for="sim-r6">Arquivo SimPlay.log (C:\Users\USUÁRIO\AppData\Local)</label></li>
+          <li><input type="checkbox" id="sim-r7"><label for="sim-r7">Detalhar o passo a passo realizado pelo cliente até o problema ocorrer</label></li>
+          <li><input type="checkbox" id="sim-r8"><label for="sim-r8">Conta Intelbras (somente em casos relacionados e se o cliente permitir a coleta)</label></li>
+          <li><input type="checkbox" id="sim-r9"><label for="sim-r9">Gerar arquivo de backup dos dispositivos (SIM Play)</label></li>
+        </ul>
+
+        <div class="pi-grupo-titulo">Travamento / Delay na imagem</div>
+        <ul class="pi-lista" data-grupo="sim-travamento">
+          <li><input type="checkbox" id="sim-t1"><label for="sim-t1">Alterar a compressão do stream para H.264 (H.265 é mais pesado e gera maior uso de processamento)</label></li>
+          <li><input type="checkbox" id="sim-t2"><label for="sim-t2">Reduzir configuração do stream (resolução CIF, 7~15 FPS, bitrate 128 Kbps), priorizando Stream Extra em mosaicos com muitas câmeras</label></li>
+          <li><input type="checkbox" id="sim-t3"><label for="sim-t3">Verificar a estrutura de rede (internet lenta, switch de baixa capacidade, cabo mal crimpado)</label></li>
+          <li><input type="checkbox" id="sim-t4"><label for="sim-t4">Verificar se o computador atende aos requisitos do manual do produto (equivalências entre marcas são válidas; para Xeon, indicar Defense IA/Defense IA Lite)</label></li>
+          <li><input type="checkbox" id="sim-t5"><label for="sim-t5">Verificar os drivers do computador (em Dell, usar o Support Assist)</label></li>
+          <li><input type="checkbox" id="sim-t6"><label for="sim-t6">Testar em outro computador e outra rede para isolar a causa</label></li>
+          <li><input type="checkbox" id="sim-t7"><label for="sim-t7">Comparar desempenho entre SIM Next e SIM Play na mesma configuração</label></li>
+          <li><input type="checkbox" id="sim-t8"><label for="sim-t8">Verificar se o software está na última versão disponível no site</label></li>
+        </ul>
+
+        <div class="pi-grupo-titulo">Crash / Quebra no software</div>
+        <ul class="pi-lista" data-grupo="sim-crash">
+          <li><input type="checkbox" id="sim-c1"><label for="sim-c1">Reinstalar o software (desinstalar versão atual e instalar a última do site)</label></li>
+          <li><input type="checkbox" id="sim-c2"><label for="sim-c2">Tentar replicar o sintoma em outro computador</label></li>
+          <li><input type="checkbox" id="sim-c3"><label for="sim-c3">Verificar se o computador atende aos requisitos do manual</label></li>
+          <li><input type="checkbox" id="sim-c4"><label for="sim-c4">Verificar integridade/originalidade da instalação do sistema operacional</label></li>
+          <li><input type="checkbox" id="sim-c5"><label for="sim-c5">Verificar se o software está na última versão disponível no site</label></li>
+        </ul>
+
+        <div class="pi-grupo-titulo">Problemas na Conta Intelbras</div>
+        <ul class="pi-lista" data-grupo="sim-conta">
+          <li><input type="checkbox" id="sim-a1"><label for="sim-a1">Testar com outra conta e outra rede para isolar se é exclusivo da conta ou do sistema</label></li>
+          <li><input type="checkbox" id="sim-a2"><label for="sim-a2">Verificar data/hora e fuso horário do dispositivo</label></li>
+          <li><input type="checkbox" id="sim-a3"><label for="sim-a3">Verificar acesso ao Portal da Conta Intelbras e revogar a aplicação vinculada (avisar cliente sobre perda de dados; fazer backup antes)</label></li>
+          <li><input type="checkbox" id="sim-a4"><label for="sim-a4">Verificar se o software está na última versão disponível no site</label></li>
+        </ul>
+
+      </div>
+    </details>
+
+  </details>
+
+
+  <!-- ATENDIMENTO FACILITADO -->
+  <details class="pi-principal">
+    <summary>Atendimento Facilitado</summary>
+    <div class="pi-conteudo">
+      <div class="pi-procedimento">
+
+        <p><b>➥ Atendimento Facilitado</b><br>
+        O processo de <b>Atendimento Facilitado</b> é destinado a <b>clientes finais</b> com equipamentos <b>em garantia</b> que apresentam problemas, mas que <b>não possuem uma Assistência Técnica disponível num raio de 50 km do seu endereço</b>.</p>
+
+        <hr>
+
+        <p><b>➥ Antes de abrir um Atendimento Facilitado, o analista do Suporte Técnico deve:</b></p>
+
+        <ul>
+          <li>Realizar os <b>testes técnicos</b> necessários junto ao cliente.</li>
+          <li>Verificar se o problema persiste.
+            <ul><li>Caso não persista, encerrar o atendimento.</li></ul>
+          </li>
+          <li>Se o problema persistir, orientar o cliente a levar o produto a uma assistência técnica.
+            <ul><li>Utilizar a ferramenta <a href="https://painel-admin-app-site.intelbras.com.br/verificar-parceiro" target="_blank">Verificar Parceiro</a> para identificar a assistência mais próxima.</li></ul>
+          </li>
+          <li>Verificar se há assistência técnica na região <b>(até 50 km)</b>.
+            <ul>
+              <li>Se sim, indicar o contato e encerrar o atendimento.</li>
+              <li>Se não, prosseguir com as verificações abaixo.</li>
+            </ul>
+          </li>
+          <li>Confirmar se o produto está dentro da garantia pelo <b>NS (número de série)</b> ou pela <b>NF (nota fiscal)</b>.
+            <ul>
+              <li>Se fora da garantia, indicar a assistência mais próxima (mesmo que distante) e encerrar o atendimento.</li>
+              <li>Se dentro da garantia, seguir para os próximos passos.</li>
+            </ul>
+          </li>
+          <li>Atualizar os <b>detalhes de contato</b> do cliente, garantindo que <b>nome, CPF, e-mail e telefones</b> estejam corretos, priorizando um contato que tenha <b>WhatsApp</b>.</li>
+          <li>Preencher corretamente os <b>detalhes do atendimento</b>:
+            <ul>
+              <li><b>Tipo do Caso:</b> <i>Suporte</i></li>
+              <li><b>Motivo do Caso:</b> <i>Atendimento Facilitado</i></li>
+              <li><b>Produto:</b> <i>"Verificar de acordo com o produto do cliente"</i></li>
+              <li><b>Ação:</b> <i>Orientado Facilitado</i></li>
+            </ul>
+          </li>
+          <li>Anexar o <b>artigo (knowledge)</b> adequado ao caso, conforme o tipo de produto e problema relatado.</li>
+          <li>Solicitar a <b>NF (nota fiscal)</b> de compra do produto, caso a garantia não seja validada pelo <b>NS</b>.
+            <ul>
+              <li>Se necessária e o cliente já enviou: anexar no feed e atribuir o caso para a <b>Fila: Atendimento Facilitado</b>.</li>
+              <li>Se necessária e o cliente ainda não enviou: orientar o cliente a retornar contato assim que possuir o documento, preferencialmente via e-mail para <a href="mailto:suporte@intelbras.com.br">suporte@intelbras.com.br</a>, informando o número do protocolo no assunto. O caso deve ser encerrado no Salesforce, registrando no feed que se trata de um facilitado com pendência de NF.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <p><b>Importante:</b> O analista deve publicar as <b>informações necessárias no Feed do caso</b>, de forma clara e objetiva, podendo seguir o modelo abaixo:</p>
+
+
+        <div class="pi-copiar-container">
+          <textarea id="pi-textbox-facilitado" class="pi-textarea">====== ATENDIMENTO FACILITADO ======
+• Pessoa Solicitante: 
+
+=== Detalhes do Produto ===
+• Modelo: 
+• NS: 
+• Fato: 
+• Causa: 
+• Ação: 
+
+=== Endereço para retorno do produto ===
+• CEP: 
+• Rua: 
+• Número: 
+• Complemento: 
+• Bairro: 
+• Cidade: 
+• Estado: </textarea>
+          <button type="button" class="pi-btn-copiar" data-copiar-alvo="pi-textbox-facilitado" data-alerta-alvo="pi-copy-alert-facilitado">Copiar Texto</button>
+          <div id="pi-copy-alert-facilitado" class="pi-copy-alert">Texto copiado!</div>
+        </div>
+
+        <hr>
+
+        <p>O time responsável pela <b>Fila: Atendimento Facilitado</b> irá conduzir o caso até o fim, gerando o código de postagem que será encaminhado via e-mail ao cliente e acompanhando os status na assistência técnica, mantendo o cliente atualizado.</p>
+
+        <hr>
+
+        <div class="pi-sub-titulo">➥ Observações importantes</div>
+        <ul>
+          <li>Caso o produto esteja fora da garantia e não haja assistência técnica em um raio de 50 km, o cliente poderá encaminhá-lo a uma assistência técnica de sua confiança ou entrar em contato com a assistência autorizada Intelbras mais próxima e enviar pelos Correios por conta própria.</li>
+          <li>Se houver assistência técnica dentro de 50 km, mas o cliente insistir em não levar o equipamento e exigir código de postagem, o suporte poderá abrir um facilitado desde que a liderança aprove. Registrar no feed a motivação e a confirmação da aprovação.</li>
+          <li>Se o cliente não aceitar enviar o produto e estiver insatisfeito com a política de reparo, o caso deve ser direcionado para a fila de reclamação da unidade, para verificar a possibilidade de troca.</li>
+          <li>O sistema não aceita abrir facilitado com CNPJ, apenas com CPF.</li>
+          <li>Se a revenda solicitar um facilitado, deve ser em nome do cliente final (CPF). Se a revenda for responsável pelo produto, deixar isso claro no feed.</li>
+          <li>Se a revenda não tiver os dados do cliente e quiser abrir em nome próprio, deve procurar o RMA ou o distribuidor da região.</li>
+          <li>O NS deve ser o da etiqueta do produto — não considerar o NS da embalagem.</li>
+          <li>Baterias de nobreaks não se enquadram no atendimento facilitado (carga classificada como alto risco, não aceita pelos Correios). Tratado diretamente pela unidade responsável.</li>
+        </ul>
+
+        <hr>
+
+        <div class="pi-sub-titulo">➥ Orientação ao Cliente</div>
+        <p>Informar ao cliente que o atendimento foi encaminhado ao setor responsável e que, em até 3 (três) dias úteis, será dada uma disposição.</p>
+
+      </div>
+    </div>
+  </details>
+
+  
+</section>
+    
   </main>
 
   <script src="../scripts/gerador_fca.js"></script>
-  <script src="../scripts/botao_copiar.js"></script>
+  <script src="../scripts/copiar-abas-senhas.js"></script>
   <script src="../scripts/local_storage/local_storage_fca.js"></script>
   <script src="../scripts/botao_topo.js"></script>
   <script src="../scripts/busca_ns.js"></script>
