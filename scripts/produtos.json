@@ -332,9 +332,9 @@
     {
       "nome": "MHDX 1104 C",
       "metodos_de_recuperacao": "Recuperação por e-mail e por perguntas secretas",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "11/2025",
       "link": "https://www.intelbras.com/pt-br/gravador-de-video-multi-hd-com-4-canais-mhdx-1104-c#beneficios",
-      "data": null
+      "data": "2025-11-01T03:00:00.000Z"
     },
     {
       "nome": "MHDX 1108",
@@ -346,9 +346,9 @@
     {
       "nome": "MHDX 1108 C",
       "metodos_de_recuperacao": "Recuperação por e-mail e por perguntas secretas",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "08/2025",
       "link": "https://www.intelbras.com/pt-br/gravador-de-video-multi-hd-da-serie-1000-mhdx-1108-c",
-      "data": null
+      "data": "2025-08-01T03:00:00.000Z"
     },
     {
       "nome": "MHDX 1116",
@@ -374,9 +374,9 @@
     {
       "nome": "MHDX 1204",
       "metodos_de_recuperacao": " recuperação por e-mail, por perguntas secretas e por botão de reset",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "03/2025",
       "link": "https://www.intelbras.com/pt-br/gravador-de-video-inteligente-com-4-canais-mhdx-1204",
-      "data": null
+      "data": "2025-03-01T03:00:00.000Z"
     },
     {
       "nome": "MHDX 1204 C",
@@ -388,9 +388,9 @@
     {
       "nome": "MHDX 1208",
       "metodos_de_recuperacao": " recuperação por e-mail, por perguntas secretas e por botão de reset",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "12/2025",
       "link": "https://www.intelbras.com/pt-br/gravador-de-video-inteligente-com-8-canais-mhdx-1208",
-      "data": null
+      "data": "2025-12-01T03:00:00.000Z"
     },
     {
       "nome": "MHDX 1208 C",
@@ -402,9 +402,9 @@
     {
       "nome": "MHDX 1216",
       "metodos_de_recuperacao": "recuperação por e-mail, por perguntas secretas e por botão de reset",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "03/2025",
       "link": "https://www.intelbras.com/pt-br/gravador-de-video-inteligente-com-16-canais-mhdx-1216",
-      "data": null
+      "data": "2025-03-01T03:00:00.000Z"
     },
     {
       "nome": "MHDX 1232",
@@ -416,23 +416,23 @@
     {
       "nome": "MHDX 1304",
       "metodos_de_recuperacao": "Recuperação por e-mail, por perguntas secretas e botão de reset de senha",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "05/2026",
       "link": "https://www.intelbras.com/pt-br/gravador-de-video-multi-hd-com-4-canais-mhdx-1304",
-      "data": null
+      "data": "2026-05-01T03:00:00.000Z"
     },
     {
       "nome": "MHDX 1308",
       "metodos_de_recuperacao": "Recuperação por e-mail, por perguntas secretas e botão de reset de senha",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "05/2026",
       "link": "https://www.intelbras.com/pt-br/gravador-de-video-multi-hd-com-8-canais-mhdx-1308",
-      "data": null
+      "data": "2026-05-01T03:00:00.000Z"
     },
     {
       "nome": "MHDX 1316",
       "metodos_de_recuperacao": "Recuperação por e-mail, por perguntas secretas e botão de reset de senha",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "05/2026",
       "link": "https://www.intelbras.com/pt-br/gravador-de-video-multi-hd-com-16-canais-mhdx-1316",
-      "data": null
+      "data": "2026-05-01T03:00:00.000Z"
     },
     {
       "nome": "MHDX 1332",
@@ -675,9 +675,9 @@
     {
       "nome": "NVD 1404 P",
       "metodos_de_recuperacao": "Recuperação por e-mail, por perguntas secretas e por botão de reset",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "01/2026",
       "link": "https://www.intelbras.com/pt-br/gravador-digital-de-video-nvr-nvd-1404-p",
-      "data": null
+      "data": "2026-01-01T03:00:00.000Z"
     },
     {
       "nome": "NVD 1408",
@@ -703,9 +703,9 @@
     {
       "nome": "NVD 1432",
       "metodos_de_recuperacao": "Recuperação por e-mail, por perguntas secretas e por botão de reset",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "01/2026",
       "link": "https://www.intelbras.com/pt-br/gravador-digital-32-canais-ip-nvd-1432",
-      "data": null
+      "data": "2026-01-20T03:00:00.000Z"
     },
     {
       "nome": "NVD 1516",
@@ -801,9 +801,9 @@
     {
       "nome": "NVD 3316",
       "metodos_de_recuperacao": "Recuperação por e-mail, por perguntas secretas e por botão de reset",
-      "phaseout": "05/2025",
+      "phaseout": "05/2026",
       "link": "https://www.intelbras.com/pt-br/gravador-digital-de-video-em-rede-nvd-3316",
-      "data": "2025-05-01T03:00:00.000Z"
+      "data": "2026-05-01T03:00:00.000Z"
     },
     {
       "nome": "NVD 3316 P",
@@ -970,7 +970,7 @@
       "nome": "VD 4E 120",
       "metodos_de_recuperacao": "Senha padrão e Ferramenta",
       "phaseout": "01/2012",
-      "link": "https://www.intelbras.com/pt-br/ajuda-download/faq/gravador-digital-de-video-dvr-vd-4e-120",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/gravador-digital-de-video-dvr-vd-4e-120",
       "data": "2012-01-31T02:00:00.000Z"
     },
     {
@@ -991,7 +991,7 @@
       "nome": "VD 4S 120",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "01/2009",
-      "link": "https://www.intelbras.com/pt-br/ajuda-download/faq/gravador-digital-de-video-vd-4s-120",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/gravador-digital-de-video-vd-4s-120",
       "data": "2009-01-31T02:00:00.000Z"
     },
     {
@@ -1187,14 +1187,14 @@
       "nome": "VHD 1120 B G4",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-vhd-1120-b-g4",
       "data": "2019-10-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 1120 B G5",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-com-infravermelho-vhd-1120-b-g5",
       "data": "2021-06-30T03:00:00.000Z"
     },
     {
@@ -1222,28 +1222,28 @@
       "nome": "VHD 1120 D G2",
       "metodos_de_recuperacao": "-",
       "phaseout": "12/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-com-infravermelho-vhd-1120-d-g2",
       "data": "2016-12-31T02:00:00.000Z"
     },
     {
       "nome": "VHD 1120 D G3",
       "metodos_de_recuperacao": "-",
       "phaseout": "01/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-com-infravermelho-vhd-1120-d-g3",
       "data": "2018-01-31T02:00:00.000Z"
     },
     {
       "nome": "VHD 1120 D G4",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-vhd-1120-d-g4",
       "data": "2020-10-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 1120 D G5",
       "metodos_de_recuperacao": "-",
       "phaseout": "12/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-com-infravermelho-vhd-1120-d-g5",
       "data": "2020-12-31T03:00:00.000Z"
     },
     {
@@ -1271,15 +1271,29 @@
       "nome": "VHD 1220 B",
       "metodos_de_recuperacao": "-",
       "phaseout": "04/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/busca/?q=VHD%201220%20B&tipo_busca=pagina-resultado",
       "data": "2017-04-30T03:00:00.000Z"
+    },
+    {
+      "nome": "VHD 1220 B FC G9",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-full-color-com-full-hd-vhd-1220-b-fc-g9",
+      "data": null
     },
     {
       "nome": "VHD 1220 B Full Color",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-full-color-vhd-1220-full-color",
       "data": "2021-10-31T03:00:00.000Z"
+    },
+    {
+      "nome": "VHD 1220 B FULL COLOR +",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "http://intelbras.com/pt-br/camera-full-color-inteligente-vhd-1220-b-full-color",
+      "data": null
     },
     {
       "nome": "VHD 1220 B Full Color G7",
@@ -1299,7 +1313,7 @@
       "nome": "VHD 1220 B G3",
       "metodos_de_recuperacao": "-",
       "phaseout": "01/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-com-infravermelho-vhd-1220-b-g3",
       "data": "2018-01-31T02:00:00.000Z"
     },
     {
@@ -1324,11 +1338,25 @@
       "data": "2022-10-01T03:00:00.000Z"
     },
     {
+      "nome": "VHD 1220 D FC G9",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-full-color-vhd-1220-d-fc-g9",
+      "data": null
+    },
+    {
       "nome": "VHD 1220 D Full Color",
       "metodos_de_recuperacao": "-",
       "phaseout": "09/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-full-color-vhd-1220-d-full-color",
       "data": "2021-09-30T03:00:00.000Z"
+    },
+    {
+      "nome": "VHD 1220 D FULL COLOR +",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-full-color-inteligente-vhd-1220-d-full-color",
+      "data": null
     },
     {
       "nome": "VHD 1220 D Full Color G7",
@@ -1348,29 +1376,29 @@
       "nome": "VHD 1220 D G3",
       "metodos_de_recuperacao": "-",
       "phaseout": "09/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-com-infravermelho-vhd-1220-d-g3",
       "data": "2017-09-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 1220 D G4",
       "metodos_de_recuperacao": "-",
       "phaseout": "11/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-vhd-1220-d-g4",
       "data": "2019-11-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 1220 D G5",
       "metodos_de_recuperacao": "-",
       "phaseout": "01/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-vhd-1220-d-g5",
       "data": "2021-01-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 1220 D G8",
       "metodos_de_recuperacao": "-",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "05/2026",
       "link": "https://www.intelbras.com/pt-br/camera-infravermelho-multi-hd-vhd-1220-d-g8",
-      "data": null
+      "data": "2026-05-01T03:00:00.000Z"
     },
     {
       "nome": "VHD 1220 D MIC G8",
@@ -1384,6 +1412,13 @@
       "metodos_de_recuperacao": "-",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-dome-full-hd-com-microfone-embutido-vhd-1220-d-mic-g9",
+      "data": null
+    },
+    {
+      "nome": "VHD 1230 B FULL COLOR MIC",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-bullet-full-color-com-microfone-vhd-1230-b-full-color-mic",
       "data": null
     },
     {
@@ -1401,31 +1436,38 @@
       "data": null
     },
     {
+      "nome": "VHD 1230 D FULL COLOR MIC",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-dome-full-color-vhd-1230-d-full-color-mic",
+      "data": null
+    },
+    {
       "nome": "VHD 1420 B",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-vhd-vhd-1420-b",
       "data": "2021-06-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 1420 B G6",
       "metodos_de_recuperacao": "-",
       "phaseout": "11/2023",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/vhd-1420-b-g6-vhd-1420-b-g6",
       "data": "2023-11-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 1420 D",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-vhd-vhd-1420-d",
       "data": "2021-10-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 1420 D G6",
       "metodos_de_recuperacao": "-",
       "phaseout": "05/2023",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-infravermelho-hdcvi-4mp-vhd-1420-d-g6",
       "data": "2023-05-01T03:00:00.000Z"
     },
     {
@@ -1446,77 +1488,77 @@
       "nome": "VHD 3012 SD",
       "metodos_de_recuperacao": "-",
       "phaseout": "08/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-speed-dome-vhd-3012-sd",
       "data": "2016-08-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3020 B",
       "metodos_de_recuperacao": "-",
       "phaseout": "09/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-com-infravermelho-vhd-3020-b-vhd-3120-b",
       "data": "2015-09-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3020 D",
       "metodos_de_recuperacao": "-",
       "phaseout": "09/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://suporte.intelbras.com.br/index.php/VHD_3020_D",
       "data": "2015-09-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3020 SD",
       "metodos_de_recuperacao": "-",
       "phaseout": "08/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-speed-dome-vhd-3020-sd",
       "data": "2016-08-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3030 B",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://suporte.intelbras.com.br/index.php/VHD_3030_B",
       "data": "2015-10-31T02:00:00.000Z"
     },
     {
       "nome": "VHD 3030 B VF",
       "metodos_de_recuperacao": "-",
       "phaseout": "01/0001",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-varifocal-com-infravermelho-vhd-3030-vf-vhd-3130-vf",
       "data": "0001-01-01T03:06:28.000Z"
     },
     {
       "nome": "VHD 3115 SD",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-speed-dome-vhd-3115-sd",
       "data": "2016-10-31T02:00:00.000Z"
     },
     {
       "nome": "VHD 3120 B",
       "metodos_de_recuperacao": "-",
       "phaseout": "12/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-com-infravermelho-vhd-3020-b-vhd-3120-b",
       "data": "2015-12-31T02:00:00.000Z"
     },
     {
       "nome": "VHD 3120 B G3",
       "metodos_de_recuperacao": "-",
       "phaseout": "09/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-com-infravermelho-vhd-3120-b-g3",
       "data": "2017-09-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3120 B G4",
       "metodos_de_recuperacao": "-",
       "phaseout": "01/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-infravermelho-multi-hd-vhd-3120-b-g4",
       "data": "2020-01-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3120 B G6",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2022",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-infravermelho-multi-hd-vhd-3120-b-g6",
       "data": "2022-10-31T03:00:00.000Z"
     },
     {
@@ -1537,28 +1579,28 @@
       "nome": "VHD 3120 D G3",
       "metodos_de_recuperacao": "-",
       "phaseout": "09/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-com-infravermelho-vhd-3120-d-g3",
       "data": "2017-09-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3120 D G4",
       "metodos_de_recuperacao": "-",
       "phaseout": "12/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-vhd-3120-d-g4",
       "data": "2019-12-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3120 D G5",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-multi-hd-com-infravermelho-vhd-3120-d-g5",
       "data": "2020-10-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3120 D G6",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2022",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-multi-hd-com-infravermelho-vhd-3120-d-g6",
       "data": "2022-10-28T03:00:00.000Z"
     },
     {
@@ -1572,14 +1614,14 @@
       "nome": "VHD 3130 B G3",
       "metodos_de_recuperacao": "-",
       "phaseout": "02/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-com-infravermelho-vhd-3130-b-g3",
       "data": "2018-02-28T03:00:00.000Z"
     },
     {
       "nome": "VHD 3130 B G4",
       "metodos_de_recuperacao": "-",
       "phaseout": "12/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-vhd-3130-b-g4",
       "data": "2019-12-31T03:00:00.000Z"
     },
     {
@@ -1593,7 +1635,7 @@
       "nome": "VHD 3130 B G6",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2022",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-multi-hd-com-infravermelho-vhd-3130-b-g6",
       "data": "2022-10-31T03:00:00.000Z"
     },
     {
@@ -1614,42 +1656,42 @@
       "nome": "VHD 3130 VF",
       "metodos_de_recuperacao": "-",
       "phaseout": "09/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-varifocal-com-infravermelho-vhd-3030-vf-vhd-3130-vf",
       "data": "2016-09-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3140 VF",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-varifocal-com-infravermelho-vhd-3140-vf",
       "data": "2017-06-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3140 VF G3",
       "metodos_de_recuperacao": "-",
       "phaseout": "07/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-varifocal-com-infravermelho-vhd-3140-vf-g3",
       "data": "2018-07-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3140 VF G4",
       "metodos_de_recuperacao": "-",
       "phaseout": "12/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-bullet-infravermelho-vhd-3140-vf-g4",
       "data": "2019-12-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3140 VF G5",
       "metodos_de_recuperacao": "-",
       "phaseout": "03/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-varifocal-infravermelho-multi-hd-vhd-3140-vf-g5",
       "data": "2020-03-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3140 VF G6",
       "metodos_de_recuperacao": "-",
       "phaseout": "01/2023",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-varifocal-infravermelho-multi-hd-vhd-3140-vf-g6",
       "data": "2023-01-01T03:00:00.000Z"
     },
     {
@@ -1684,7 +1726,7 @@
       "nome": "VHD 3220 B FULL COLOR",
       "metodos_de_recuperacao": null,
       "phaseout": "03/2022",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/busca/?q=VHD%203220%20B%20FULL%20COLOR&tipo_busca=pagina-resultado",
       "data": "2022-03-01T03:00:00.000Z"
     },
     {
@@ -1698,7 +1740,7 @@
       "nome": "VHD 3220 D A G4.0",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-vhd-3220-d-a-g40",
       "data": "2019-06-30T03:00:00.000Z"
     },
     {
@@ -1712,7 +1754,7 @@
       "nome": "VHD 3220 D Full Color",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2022",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-infravermelho-multi-hdr-full-color-vhd-3220-d-full-color",
       "data": "2022-06-01T03:00:00.000Z"
     },
     {
@@ -1726,28 +1768,28 @@
       "nome": "VHD 3220 D G3",
       "metodos_de_recuperacao": "-",
       "phaseout": "09/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-com-infravermelho-vhd-3220-d-g3",
       "data": "2017-09-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3220 D G4",
       "metodos_de_recuperacao": "-",
       "phaseout": "11/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-vhd-3220-d-g4",
       "data": "2019-11-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3220 D G5",
       "metodos_de_recuperacao": "-",
       "phaseout": "12/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-dome-multi-hd-2-megapixel-vhd-3220-d-g5",
       "data": "2020-12-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3220 D G6",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2022",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-dome-multi-hd-2-megapixels-vhd-3220-d-g6",
       "data": "2022-10-01T03:00:00.000Z"
     },
     {
@@ -1768,28 +1810,28 @@
       "nome": "VHD 3230 B G3",
       "metodos_de_recuperacao": "-",
       "phaseout": "09/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-com-infravermelho-vhd-3230-b-g3",
       "data": "2017-09-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3230 B G4",
       "metodos_de_recuperacao": "-",
       "phaseout": "11/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-vhd-3230-b-g4",
       "data": "2019-11-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3230 B G5",
       "metodos_de_recuperacao": "-",
       "phaseout": "01/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-multi-hd-vhd-3230-b-g5",
       "data": "2021-01-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3230 B G6",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2022",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-infravermelho-multi-hd-vhd-3230-b-g6",
       "data": "2022-10-01T03:00:00.000Z"
     },
     {
@@ -1816,30 +1858,30 @@
     {
       "nome": "VHD 3230 D SL",
       "metodos_de_recuperacao": "-",
-      "phaseout": "08/2025",
+      "phaseout": "03/2026",
       "link": "https://www.intelbras.com/pt-br/camera-dome-com-tecnologia-starlight-vhd-3230-d-sl",
-      "data": "2025-08-01T03:00:00.000Z"
+      "data": "2026-03-01T03:00:00.000Z"
     },
     {
       "nome": "VHD 3230 D VF",
       "metodos_de_recuperacao": "-",
       "phaseout": "01/0001",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-varifocal-com-infravermelho-vhd-3230-d-vf",
       "data": "0001-01-01T03:06:28.000Z"
     },
     {
       "nome": "VHD 3230 D VF G3",
       "metodos_de_recuperacao": "-",
       "phaseout": "01/0001",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-varifocal-com-infravermelho-vhd-3230-d-vf-g3",
       "data": "0001-01-01T03:06:28.000Z"
     },
     {
       "nome": "VHD 3230 D Z G5",
       "metodos_de_recuperacao": "-",
-      "phaseout": "07/2020",
+      "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-infravermelho-multi-hd-vhd-3230-d-z-g5",
-      "data": "2020-07-01T03:00:00.000Z"
+      "data": null
     },
     {
       "nome": "VHD 3240 D DUAL AUDIO",
@@ -1858,15 +1900,15 @@
     {
       "nome": "VHD 3240 D VF G8",
       "metodos_de_recuperacao": "-",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "03/2026",
       "link": "https://www.intelbras.com/pt-br/camera-infravermelho-multi-hd-vhd-3240-d-vf-g8",
-      "data": null
+      "data": "2026-03-01T03:00:00.000Z"
     },
     {
       "nome": "VHD 3240 FULL COLOR",
       "metodos_de_recuperacao": null,
       "phaseout": "09/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-full-color-vhd-3240-full-color",
       "data": "2021-09-30T03:00:00.000Z"
     },
     {
@@ -1874,6 +1916,13 @@
       "metodos_de_recuperacao": "-",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-full-color-ir-full-hd-vhd-3240-full-color",
+      "data": null
+    },
+    {
+      "nome": "VHD 3240 FULL COLOR + G8",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-multi-hd-full-color-vhd-3240-full-color-g8-0",
       "data": null
     },
     {
@@ -1887,21 +1936,21 @@
       "nome": "VHD 3240 VF G4",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-vhd-3240-vf-g4",
       "data": "2019-10-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3240 VF G6",
       "metodos_de_recuperacao": "-",
       "phaseout": "11/2022",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-varifocal-infravermelho-multi-hd-vhd-3240-vf-g6",
       "data": "2022-11-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3240 Z G5",
       "metodos_de_recuperacao": "-",
       "phaseout": "04/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-multi-hd-varifocal-vhd-3240-z-g5",
       "data": "2021-04-30T03:00:00.000Z"
     },
     {
@@ -1915,21 +1964,28 @@
       "nome": "VHD 3420 D",
       "metodos_de_recuperacao": "-",
       "phaseout": "10/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-hdcvi-4mp-vhd-3420-d",
       "data": "2019-10-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 3430 D",
       "metodos_de_recuperacao": "-",
       "phaseout": "09/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-hdcvi-4mp-vhd-3430-b",
       "data": "2019-09-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 3520 D",
       "metodos_de_recuperacao": "-",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "02/2026",
       "link": "https://www.intelbras.com/pt-br/camera-infravermelho-hdcvi-5-mp-vhd-3520-d",
+      "data": "2026-02-01T03:00:00.000Z"
+    },
+    {
+      "nome": "VHD 3520 D FULL COLOR +",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-full-color-inteligente-vhd-3520-d-full-color",
       "data": null
     },
     {
@@ -1950,42 +2006,42 @@
       "nome": "VHD 5020 D",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-com-infravermelho-vhd-5020-d",
       "data": "2016-06-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 5020 SD IR",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelhttps://www.intelbras.com/pt-br/ajuda-download/download/camera-speed-dome-hdcvi-com-infravermelho-vhd-5020-sd-irbras.com/pt-br/seguranca-eletronica",
       "data": "2016-06-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 5030 B",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-com-infravermelho-vhd-5030-b",
       "data": "2016-06-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 5040 VF",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-varifocal-com-infravermelho-vhd-5040-vf",
       "data": "2016-06-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 5040 VF G2",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-varifocal-com-infravermelho-vhd-5040-vf-g2",
       "data": "2016-06-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 5130 SD",
       "metodos_de_recuperacao": "-",
       "phaseout": "11/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-speed-dome-vhd-5130-sd",
       "data": "2019-11-30T03:00:00.000Z"
     },
     {
@@ -2013,28 +2069,28 @@
       "nome": "VHD 5230 D SL",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-vhd-5230-d-sl",
       "data": "2016-06-30T03:00:00.000Z"
     },
     {
       "nome": "VHD 5230 SD",
       "metodos_de_recuperacao": "-",
       "phaseout": "02/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-speed-dome-com-starlight-vhd-5230-sd",
       "data": "2021-02-28T03:00:00.000Z"
     },
     {
       "nome": "VHD 5240 B FULL COLOR",
       "metodos_de_recuperacao": "-",
       "phaseout": "01/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-full-color-hdcvi-2mp-vhd-5240-b-full-color",
       "data": "2021-01-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 5240 B SL",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-hdcvi-vhd-5240-b-sl",
       "data": "2016-06-30T03:00:00.000Z"
     },
     {
@@ -2045,10 +2101,17 @@
       "data": null
     },
     {
+      "nome": "VHD 5250 SUPER COLOR",
+      "metodos_de_recuperacao": "-",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-full-hd-com-tecnologia-super-color-vhd-5250-super-color",
+      "data": null
+    },
+    {
       "nome": "VHD 5250 Z",
       "metodos_de_recuperacao": "-",
       "phaseout": "06/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-varifocal-com-infravermelho-vhd-5250-z",
       "data": "2016-06-30T03:00:00.000Z"
     },
     {
@@ -2076,21 +2139,21 @@
       "nome": "VHD 5840 B 4K",
       "metodos_de_recuperacao": "-",
       "phaseout": "07/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/camera-hdcvi-vhd-5840-b-4k",
       "data": "2020-07-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 5880 Z 4K",
       "metodos_de_recuperacao": "-",
       "phaseout": "08/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-hdcvi-varifocal-motorizada-com-infravermelho-vhd-5880-z-4k",
       "data": "2020-08-31T03:00:00.000Z"
     },
     {
       "nome": "VHD 7880 4K",
       "metodos_de_recuperacao": "-",
       "phaseout": "08/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-infravermelho-hdcvi-4k-8mp-vhd-7880-z-4k",
       "data": "2020-08-31T03:00:00.000Z"
     },
     {
@@ -2202,28 +2265,28 @@
       "nome": "VIP 1120 B",
       "metodos_de_recuperacao": "Senha padrão (Versão lançamento), ferramenta Juffeng, pergunta de segurança e email",
       "phaseout": "01/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-bullet-1-mp-vip-1120-b",
       "data": "2019-01-31T02:00:00.000Z"
     },
     {
       "nome": "VIP 1120 B G2",
       "metodos_de_recuperacao": "Senha padrão (Versão lançamento), ferramenta Juffeng, pergunta de segurança e email",
       "phaseout": "01/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-bullet-vip-1120-b-g2",
       "data": "2019-01-31T02:00:00.000Z"
     },
     {
       "nome": "VIP 1120 D",
       "metodos_de_recuperacao": "Senha padrão (Versão lançamento), ferramenta Juffeng, pergunta de segurança e email",
       "phaseout": "11/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-dome-1-mp-vip-1120-d",
       "data": "2018-11-30T02:00:00.000Z"
     },
     {
       "nome": "VIP 1120 D G2",
       "metodos_de_recuperacao": "Senha padrão (Versão lançamento), ferramenta Juffeng, pergunta de segurança e email",
       "phaseout": "11/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-dome-vip-1120-d-g2",
       "data": "2018-11-30T02:00:00.000Z"
     },
     {
@@ -2286,35 +2349,35 @@
       "nome": "VIP 1130 D VF",
       "metodos_de_recuperacao": "Senha padrão (Versão lançamento), ferramenta Juffeng, pergunta de segurança e email",
       "phaseout": "04/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-dome-varifocal-vip-1130-d-vf",
       "data": "2019-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP 1130 D VF G2",
       "metodos_de_recuperacao": "Senha padrão e ferramenta Juffeng",
       "phaseout": "01/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-1130-d-vf-g2",
       "data": "2020-01-31T03:00:00.000Z"
     },
     {
       "nome": "VIP 1130 VF",
       "metodos_de_recuperacao": "Senha padrão (Versão lançamento), ferramenta Juffeng, pergunta de segurança e email",
       "phaseout": "08/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-bullet-varifocal-vip-1130-vf",
       "data": "2019-08-31T03:00:00.000Z"
     },
     {
       "nome": "VIP 1130 VF G2",
       "metodos_de_recuperacao": "Senha padrão e ferramenta Juffeng",
       "phaseout": "01/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-1130-vf-g2",
       "data": "2020-01-31T03:00:00.000Z"
     },
     {
       "nome": "VIP 1220 B",
       "metodos_de_recuperacao": "Senha padrão (Versão lançamento), ferramenta Juffeng, pergunta de segurança e email",
       "phaseout": "02/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-minibullet-full-hd-vip-1220-b",
       "data": "2018-02-28T03:00:00.000Z"
     },
     {
@@ -2349,21 +2412,21 @@
       "nome": "VIP 1220 B G2",
       "metodos_de_recuperacao": "Senha padrão (Versão lançamento), ferramenta Juffeng, pergunta de segurança e email",
       "phaseout": "11/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-minibullet-full-hd-vip-1220-b-g2",
       "data": "2018-11-30T02:00:00.000Z"
     },
     {
       "nome": "VIP 1220 B G3",
       "metodos_de_recuperacao": "Senha padrão e ferramenta Juffeng",
       "phaseout": "12/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-1220-b-g3",
       "data": "2019-12-31T03:00:00.000Z"
     },
     {
       "nome": "VIP 1220 D",
       "metodos_de_recuperacao": "Senha padrão (Versão lançamento), ferramenta Juffeng, pergunta de segurança e email",
       "phaseout": "02/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-minidome-full-hd-vip-1220-d",
       "data": "2018-02-28T03:00:00.000Z"
     },
     {
@@ -2405,14 +2468,14 @@
       "nome": "VIP 1220 D G2",
       "metodos_de_recuperacao": "Senha padrão (Versão lançamento), ferramenta Juffeng, pergunta de segurança e email",
       "phaseout": "11/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "http://intelbras.com/pt-br/ajuda-download/download/camera-ip-minidome-full-hd-vip-1220-d-g2",
       "data": "2018-11-30T02:00:00.000Z"
     },
     {
       "nome": "VIP 1220 D G3",
       "metodos_de_recuperacao": "Senha padrão e ferramenta Juffeng",
       "phaseout": "08/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-1220-d-g3",
       "data": "2019-08-31T03:00:00.000Z"
     },
     {
@@ -2536,7 +2599,7 @@
     },
     {
       "nome": "VIP 1300 MINI SD",
-      "metodos_de_recuperacao": "E-mail",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-mini-speed-dome-profissional-vip-1300-mini-sd",
       "data": null
@@ -2556,6 +2619,13 @@
       "data": null
     },
     {
+      "nome": "VIP 1430 B G3",
+      "metodos_de_recuperacao": "E-mail ou telefone",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-ip-full-hd-da-serie-1000-vip-1430-b-g3",
+      "data": null
+    },
+    {
       "nome": "VIP 1430 D",
       "metodos_de_recuperacao": "email",
       "phaseout": "05/2021",
@@ -2572,8 +2642,15 @@
     {
       "nome": "VIP 1430 D G2",
       "metodos_de_recuperacao": "E-mail ou telefone",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "04/2026",
       "link": "https://www.intelbras.com/pt-br/camera-dome-vip-1430-d-g2",
+      "data": "2026-04-01T03:00:00.000Z"
+    },
+    {
+      "nome": "VIP 1430 D G3",
+      "metodos_de_recuperacao": "E-mail ou telefone",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-ip-full-hd-da-serie-1000-vip-1430-b-g3",
       "data": null
     },
     {
@@ -2601,14 +2678,14 @@
       "nome": "VIP 3220 B",
       "metodos_de_recuperacao": "email e sms",
       "phaseout": "12/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-3220-b",
       "data": "2020-12-31T03:00:00.000Z"
     },
     {
       "nome": "VIP 3220 D",
       "metodos_de_recuperacao": "email e sms",
       "phaseout": "12/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-3220-d",
       "data": "2020-12-31T03:00:00.000Z"
     },
     {
@@ -2650,7 +2727,7 @@
       "nome": "VIP 3230 B",
       "metodos_de_recuperacao": "email e sms",
       "phaseout": "04/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-full-hd-vip-3230-b",
       "data": "2021-04-30T03:00:00.000Z"
     },
     {
@@ -2678,19 +2755,19 @@
       "nome": "VIP 3230 D",
       "metodos_de_recuperacao": "email e sms",
       "phaseout": "10/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-full-hd-vip-3230-d",
       "data": "2021-10-31T03:00:00.000Z"
     },
     {
       "nome": "VIP 3230 D FC+ AP IA",
-      "metodos_de_recuperacao": "E-mail ou telefone",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-ip-dome-com-full-color-inteligente-vip-3230-d-fc-ap-ia",
       "data": null
     },
     {
       "nome": "VIP 3230 D FC+ IA",
-      "metodos_de_recuperacao": "E-mail ou telefone",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-dome-com-full-color-inteligente-vip-3230-d-fc-ia",
       "data": null
@@ -2727,7 +2804,7 @@
       "nome": "VIP 3230 D W",
       "metodos_de_recuperacao": "Botão de reset, email e sms",
       "phaseout": "11/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/passo-a-passo/camera-ip-wi-fi-vip-3230-d-w",
       "data": "2020-11-30T03:00:00.000Z"
     },
     {
@@ -2739,7 +2816,7 @@
     },
     {
       "nome": "VIP 3230 FC+ IA",
-      "metodos_de_recuperacao": "E-mail ou telefone",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-bullet-com-full-color-inteligente-vip-3230-fc-ia",
       "data": null
@@ -2748,12 +2825,12 @@
       "nome": "VIP 3230 IK",
       "metodos_de_recuperacao": "email",
       "phaseout": "11/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-dome-full-hd-vip-3230-ik",
       "data": "2020-11-30T03:00:00.000Z"
     },
     {
       "nome": "VIP 3230 SC IA",
-      "metodos_de_recuperacao": "E-mail ou telefone",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-bullet-com-tecnologia-super-color-vip-3230-sc-ia",
       "data": null
@@ -2762,21 +2839,21 @@
       "nome": "VIP 3230 VF",
       "metodos_de_recuperacao": "Usuario e senha padrão, juffeng, email e perguntas de segurança",
       "phaseout": "11/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-full-hd-varifocal-vip-3230-vf",
       "data": "2018-11-30T02:00:00.000Z"
     },
     {
       "nome": "VIP 3230 VF G2",
       "metodos_de_recuperacao": "Senha padrão e ferramenta Juffeng",
       "phaseout": "11/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-3230-vf-g2",
       "data": "2019-11-30T03:00:00.000Z"
     },
     {
       "nome": "VIP 3230 W",
       "metodos_de_recuperacao": "Botão de reset, email e sms",
       "phaseout": "11/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-wi-fi-vip-3230-w",
       "data": "2020-11-30T03:00:00.000Z"
     },
     {
@@ -2789,9 +2866,9 @@
     {
       "nome": "VIP 3240 D IA",
       "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
-      "phaseout": "03/2025",
+      "phaseout": "02/2026",
       "link": "https://www.intelbras.com/pt-br/camera-dome-com-inteligencia-artificial-vip-3240-d-ia",
-      "data": "2025-03-30T03:00:00.000Z"
+      "data": "2026-02-01T03:00:00.000Z"
     },
     {
       "nome": "VIP 3240 D IA G2",
@@ -2825,7 +2902,7 @@
       "nome": "VIP 3240 Z",
       "metodos_de_recuperacao": "email e sms",
       "phaseout": "10/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-bullet-full-hd-vip-3240-z",
       "data": "2020-10-31T03:00:00.000Z"
     },
     {
@@ -2853,14 +2930,14 @@
       "nome": "VIP 3250 MIC",
       "metodos_de_recuperacao": "email e sms",
       "phaseout": "12/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-dome-full-hd-vip-3250-mic",
       "data": "2020-12-31T03:00:00.000Z"
     },
     {
       "nome": "VIP 3260 Z",
       "metodos_de_recuperacao": "Botão de reset, email e sms",
       "phaseout": "11/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-3260-z",
       "data": "2020-11-30T03:00:00.000Z"
     },
     {
@@ -2888,7 +2965,7 @@
       "nome": "VIP 3430 B",
       "metodos_de_recuperacao": "email e sms",
       "phaseout": "01/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-3430-b",
       "data": "2021-01-31T03:00:00.000Z"
     },
     {
@@ -2909,7 +2986,7 @@
       "nome": "VIP 3430 D",
       "metodos_de_recuperacao": "email e sms",
       "phaseout": "12/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-3430-d",
       "data": "2020-12-31T03:00:00.000Z"
     },
     {
@@ -2930,14 +3007,14 @@
       "nome": "VIP 3430 D W",
       "metodos_de_recuperacao": "Botão de reset, email e sms",
       "phaseout": "02/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-dome-ip-com-wi-fi-vip-3430-d-w",
       "data": "2021-02-28T03:00:00.000Z"
     },
     {
       "nome": "VIP 3430 W",
       "metodos_de_recuperacao": "Botão de reset, email e sms",
       "phaseout": "02/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-wi-fi-vip-3430-w",
       "data": "2021-02-28T03:00:00.000Z"
     },
     {
@@ -2950,20 +3027,20 @@
     {
       "nome": "VIP 3830 IA",
       "metodos_de_recuperacao": "E-mail ou botão reset",
-      "phaseout": "01/2025",
-      "link": "",
-      "data": "2025-01-25T03:00:00.000Z"
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-ip-bullet-com-resolucao-4k-vip-3830-ia",
+      "data": null
     },
     {
       "nome": "VIP 5180 PAN IA",
-      "metodos_de_recuperacao": "Recuperação via email",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-ip-bullet-panoramica-vip-5180-pan-ia",
       "data": null
     },
     {
       "nome": "VIP 5203 T IA",
-      "metodos_de_recuperacao": "Recuperação via email",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-ip-bullet-termografica-vip-5203-t-ia",
       "data": null
@@ -2972,14 +3049,14 @@
       "nome": "VIP 5220 SD",
       "metodos_de_recuperacao": "Senha padrão, pergunta de segurança e botão de reset",
       "phaseout": "07/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-speed-dome-ip-vip-5220-sd",
       "data": "2020-07-31T03:00:00.000Z"
     },
     {
       "nome": "VIP 5220 SD IR",
       "metodos_de_recuperacao": "Senha padrão, pergunta de segurança e botão de reset",
       "phaseout": "04/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-speed-dome-ip-vip-5220-sd-ir",
       "data": "2020-04-30T03:00:00.000Z"
     },
     {
@@ -3014,7 +3091,7 @@
       "nome": "VIP 5230 SD",
       "metodos_de_recuperacao": "botão de reset, recuperação por e-mail e telefone",
       "phaseout": "02/2023",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "http://intelbras.com/pt-br/ajuda-download/download/camera-speed-dome-ip-vip-5230-sd",
       "data": "2023-02-28T03:00:00.000Z"
     },
     {
@@ -3026,7 +3103,7 @@
     },
     {
       "nome": "VIP 5232 SD IA G2",
-      "metodos_de_recuperacao": "Recuperação por E-mail ou por botão de reset",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-ip-speed-dome-com-32x-de-zoom-optico-vip-5232-sd-ia-g2",
       "data": null
@@ -3040,14 +3117,14 @@
     },
     {
       "nome": "VIP 5430 D TL IA",
-      "metodos_de_recuperacao": "E-mail",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-dome-com-triple-light-e-ia-vip-5430-d-tl-ia",
       "data": null
     },
     {
       "nome": "VIP 5430 TL IA",
-      "metodos_de_recuperacao": "E-mail",
+      "metodos_de_recuperacao": "E-mail ou telefone",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-bullet-com-triple-light-e-ia-vip-5430-tl-ia",
       "data": null
@@ -3070,14 +3147,14 @@
       "nome": "VIP 5450 D Z",
       "metodos_de_recuperacao": "Botão de reset e email",
       "phaseout": "10/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-dome-vip-5450-d-z",
       "data": "2018-10-31T03:00:00.000Z"
     },
     {
       "nome": "VIP 5450 D Z G2",
       "metodos_de_recuperacao": "botão de reset e recuperação por e-mail",
       "phaseout": "11/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-5450-d-z-g2",
       "data": "2020-11-30T03:00:00.000Z"
     },
     {
@@ -3091,7 +3168,7 @@
       "nome": "VIP 5450 Z G2",
       "metodos_de_recuperacao": "botão de reset e recuperação por e-mail",
       "phaseout": "02/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-5450-z-g2",
       "data": "2021-02-28T03:00:00.000Z"
     },
     {
@@ -3133,301 +3210,301 @@
       "nome": "VIP 5850 B",
       "metodos_de_recuperacao": "recuperação por e-mail",
       "phaseout": "01/2021",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-bullet-de-alta-performance-vip-5850-b",
       "data": "2021-01-31T03:00:00.000Z"
     },
     {
       "nome": "VIP 7208 LPR",
       "metodos_de_recuperacao": null,
       "phaseout": "01/0001",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-bullet-2mp-com-lpr-vip-7208-lpr",
       "data": "0001-01-01T03:06:28.000Z"
     },
     {
       "nome": "VIP 7208 LPR G2",
       "metodos_de_recuperacao": "botão de reset, recuperação por e-mail e telefone",
       "phaseout": "12/2020",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-7208-lpr-g2",
       "data": "2020-12-31T03:00:00.000Z"
     },
     {
       "nome": "VIP BX1M",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "12/2014",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-bx1m",
       "data": "2014-12-31T02:00:00.000Z"
     },
     {
       "nome": "VIP CB1M",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "09/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-cb1m",
       "data": "2015-09-30T03:00:00.000Z"
     },
     {
       "nome": "VIP DM1MIRVF",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "09/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-dm1m-irvf",
       "data": "2015-09-30T03:00:00.000Z"
     },
     {
       "nome": "VIP E2100",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "05/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-e2100",
       "data": "2015-05-31T03:00:00.000Z"
     },
     {
       "nome": "VIP E2200",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "06/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-e2200",
       "data": "2015-06-30T03:00:00.000Z"
     },
     {
       "nome": "VIP E3130 Z",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "02/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-bullet-hd-varifocal-motorizado-vip-e3130-z",
       "data": "2016-02-28T03:00:00.000Z"
     },
     {
       "nome": "VIP E3220",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "10/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-e3220",
       "data": "2015-10-31T02:00:00.000Z"
     },
     {
       "nome": "VIP E3250 Z",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "04/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-bullet-full-hd-vip-e3250-z",
       "data": "2017-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP E3330 Z",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "04/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-bullet-3-mp-varifocal-motorizada-vip-e3330-z",
       "data": "2017-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP E4120",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "09/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-e4120",
       "data": "2016-09-30T03:00:00.000Z"
     },
     {
       "nome": "VIP E4120 Z",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "02/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-dome-hd-varifocal-motorizada-vip-e4120-z",
       "data": "2016-02-28T03:00:00.000Z"
     },
     {
       "nome": "VIP E4220 Z",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "04/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-e4220-z",
       "data": "2016-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP E4320 Z",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "04/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-dome-3mp-varifocal-motorizada-vip-e4320-z",
       "data": "2017-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP E5120",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "04/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-speed-dome-ip-vip-e5120",
       "data": "2017-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP E5120 IR",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "04/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-speed-dome-vip-e5120-ir",
       "data": "2017-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP E5212",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "03/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-speed-dome-ip-vip-e5212",
       "data": "2017-03-31T03:00:00.000Z"
     },
     {
       "nome": "VIP E5212 I",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "08/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-speed-dome-ip-vip-e5212-i",
       "data": "2016-08-31T03:00:00.000Z"
     },
     {
       "nome": "VIP E5220",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "06/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-speed-dome-vip-e5220",
       "data": "2016-06-30T03:00:00.000Z"
     },
     {
       "nome": "VIP E5230",
       "metodos_de_recuperacao": "Senha padrão, pergunta de segurança e botão de reset",
       "phaseout": "03/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-speed-dome-ip-vip-e5230",
       "data": "2017-03-31T03:00:00.000Z"
     },
     {
       "nome": "VIP E6400",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "08/2018",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-fisheye-vip-e6400",
       "data": "2018-08-31T03:00:00.000Z"
     },
     {
       "nome": "VIP E6400 G2",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "01/0001",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-fisheye-4-mp-vip-e6400-g2",
       "data": "0001-01-01T03:06:28.000Z"
     },
     {
       "nome": "VIP S3020",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "07/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s3020",
       "data": "2016-07-31T03:00:00.000Z"
     },
     {
       "nome": "VIP S3020 G2",
       "metodos_de_recuperacao": "Senha padrão e pergunta de segurança",
       "phaseout": "12/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-bullet-ip-vip-s3020-g2",
       "data": "2017-12-31T02:00:00.000Z"
     },
     {
       "nome": "VIP S3020 G3",
       "metodos_de_recuperacao": "Senha padrão e pergunta de segurança",
       "phaseout": "06/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s3020-g3",
       "data": "2019-06-30T03:00:00.000Z"
     },
     {
       "nome": "VIP S3120",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "04/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s3120",
       "data": "2015-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP S3130 VF",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "04/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-bullet-hd-varifocal-vip-s3130-vf",
       "data": "2017-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP S3230",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "05/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s3230",
       "data": "2016-05-31T03:00:00.000Z"
     },
     {
       "nome": "VIP S3330",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "11/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-mini-bullet-3-mp-vip-s3330",
       "data": "2016-11-30T02:00:00.000Z"
     },
     {
       "nome": "VIP S3330 G2",
       "metodos_de_recuperacao": "Senha padrão e pergunta de segurança",
       "phaseout": "12/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-bullet-3mp-vip-s3330-g2",
       "data": "2017-12-31T02:00:00.000Z"
     },
     {
       "nome": "VIP S4000",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "05/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s4000",
       "data": "2016-05-31T03:00:00.000Z"
     },
     {
       "nome": "VIP S4020",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "04/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s4020",
       "data": "2016-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP S4020 G2",
       "metodos_de_recuperacao": "Senha padrão e pergunta de segurança",
       "phaseout": "12/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s4020-g2",
       "data": "2017-12-31T02:00:00.000Z"
     },
     {
       "nome": "VIP S4020 G3",
       "metodos_de_recuperacao": "Senha padrão e pergunta de segurança",
       "phaseout": "05/2019",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s4020-g3",
       "data": "2019-05-31T03:00:00.000Z"
     },
     {
       "nome": "VIP S4020 IK",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "03/2017",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-dome-hd-vip-s4020-ik",
       "data": "2017-03-31T03:00:00.000Z"
     },
     {
       "nome": "VIP S4100",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "04/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s4100",
       "data": "2015-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP S4120",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "04/2015",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s4120",
       "data": "2015-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP S4120 VF",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "04/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-dome-hd-varifocal-vip-s4120-vf",
       "data": "2016-04-30T03:00:00.000Z"
     },
     {
       "nome": "VIP S4200",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "05/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s4200",
       "data": "2016-05-31T03:00:00.000Z"
     },
     {
       "nome": "VIP S4220",
       "metodos_de_recuperacao": "Senha padrão",
       "phaseout": "07/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-vip-s4220",
       "data": "2016-07-31T03:00:00.000Z"
     },
     {
       "nome": "VIP S4220 IK",
       "metodos_de_recuperacao": "Senha padrão e botão de reset",
       "phaseout": "09/2016",
-      "link": "https://www.intelbras.com/pt-br/seguranca-eletronica",
+      "link": "https://www.intelbras.com/pt-br/ajuda-download/download/camera-ip-dome-full-hd-vip-s4220-ik",
       "data": "2016-09-30T03:00:00.000Z"
     },
     {
@@ -3459,6 +3536,20 @@
       "data": "2014-04-30T03:00:00.000Z"
     },
     {
+      "nome": "VIPC 1220 D FC+",
+      "metodos_de_recuperacao": "E-mail ou telefone",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-ip-da-serie-1000-com-full-color-e-ir-vip-1220-d-fc",
+      "data": null
+    },
+    {
+      "nome": "VIPC 1220 FC+",
+      "metodos_de_recuperacao": "E-mail ou telefone",
+      "phaseout": "Equipamento em linha",
+      "link": "https://www.intelbras.com/pt-br/camera-ip-bullet-full-color-inteligente-vipc-1220-fc",
+      "data": null
+    },
+    {
       "nome": "VIPC 1230 B",
       "metodos_de_recuperacao": "E-mail ou telefone",
       "phaseout": "12/2024",
@@ -3488,7 +3579,7 @@
     },
     {
       "nome": "VIPC 1430 B",
-      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
+      "metodos_de_recuperacao": "E-mail ou telefone",
       "phaseout": "Equipamento em linha",
       "link": "https://www.intelbras.com/pt-br/camera-ip-custo-beneficio-com-poe-vipc-1430-b",
       "data": null
@@ -3503,9 +3594,9 @@
     {
       "nome": "VIPW 1210 C",
       "metodos_de_recuperacao": "E-mail ou telefone",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "02/2026",
       "link": "https://www.intelbras.com/pt-br/camera-interna-wi-fi-profissional-vipw-1210-c",
-      "data": null
+      "data": "2026-02-01T03:00:00.000Z"
     },
     {
       "nome": "VIPW 1220 D FC+",
@@ -3517,9 +3608,9 @@
     {
       "nome": "VIPW 1220 D FULL COLOR",
       "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
-      "phaseout": "Equipamento em linha",
+      "phaseout": "05/2026",
       "link": "https://www.intelbras.com/pt-br/camera-wi-fi-profissional-com-full-color-vipw-1220-d-fc",
-      "data": null
+      "data": "2026-05-01T03:00:00.000Z"
     },
     {
       "nome": "VIPW 1230 B",
@@ -3544,10 +3635,10 @@
     },
     {
       "nome": "VIPW 1410 MINI",
-      "metodos_de_recuperacao": "E-mail",
-      "phaseout": "Equipamento em linha",
+      "metodos_de_recuperacao": "E-mail, telefone ou botão reset",
+      "phaseout": "02/2026",
       "link": "https://www.intelbras.com/pt-br/camera-ip-wi-fi-vipw-1410-mini",
-      "data": null
+      "data": "2026-02-01T03:00:00.000Z"
     },
     {
       "nome": "VIPW 1430 B",
