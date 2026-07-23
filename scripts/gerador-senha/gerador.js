@@ -98,19 +98,20 @@ btnCopiar.addEventListener('click', async () => {
   const texto = resultadoSenha.innerText.trim()
   if (!texto) return
 
-  try {
-    await navigator.clipboard.writeText(texto)
+ try {
+  await copiarTexto(texto)
 
-    btnCopiar.innerHTML = '✅ Texto copiado!'
-    btnCopiar.classList.add('copiado')
-    btnCopiar.disabled = true
+  btnCopiar.innerHTML = '✅ Texto copiado!'
+  btnCopiar.classList.add('copiado')
+  btnCopiar.disabled = true
 
-    setTimeout(() => {
-      btnCopiar.innerHTML = textoOriginalBotao
-      btnCopiar.classList.remove('copiado')
-      btnCopiar.disabled = false
-    }, 2000)
-  } catch (err) {
+  setTimeout(() => {
+    btnCopiar.innerHTML = textoOriginalBotao
+    btnCopiar.classList.remove('copiado')
+    btnCopiar.disabled = false
+  }, 2000)
+
+} catch (err) {
     console.error('Erro ao copiar:', err)
   }
 })
