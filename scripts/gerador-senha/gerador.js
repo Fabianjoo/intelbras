@@ -94,6 +94,39 @@ btnGerar.addEventListener('click', async () => {
   }
 })
 
+// ================= COPIAR TEXTO =================
+
+async function copiarTexto(texto) {
+  try {
+
+    // Funciona em HTTPS e localhost
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(texto);
+      return;
+    }
+
+    // Fallback para servidor interno HTTP (10.x.x.x:8055)
+    const textarea = document.createElement("textarea");
+
+    textarea.value = texto;
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+
+    document.body.appendChild(textarea);
+
+    textarea.focus();
+    textarea.select();
+
+    document.execCommand("copy");
+
+    document.body.removeChild(textarea);
+
+  } catch (erro) {
+    console.error("Erro ao copiar:", erro);
+    throw erro;
+  }
+}
+
 btnCopiar.addEventListener('click', async () => {
   const texto = resultadoSenha.innerText.trim()
   if (!texto) return
@@ -320,31 +353,39 @@ function consultarContraSenha() {
   });
 }
 
-function copiarInstrucao() {
+async function copiarInstrucao() {
+
   if (!window._instrucaoCopiar) return;
+
 
   const btn = document.querySelector('[onclick="copiarInstrucao()"]');
 
-  navigator.clipboard.writeText(window._instrucaoCopiar)
-    .then(() => {
-      if (btn) {
-        btn.innerText = '✅ Copiado!';
-        setTimeout(() => { btn.innerText = '📋 Copiar instruções'; }, 2000);
-      }
-    })
-    .catch(() => {
-      const textarea = document.createElement('textarea');
-      textarea.value = window._instrucaoCopiar;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textarea);
 
-      if (btn) {
-        btn.innerText = '✅ Copiado!';
-        setTimeout(() => { btn.innerText = '📋 Copiar instruções'; }, 2000);
-      }
-    });
+  try {
+
+    await copiarTexto(window._instrucaoCopiar);
+
+
+    if (btn) {
+
+      btn.innerText = '✅ Copiado!';
+
+
+      setTimeout(() => {
+
+        btn.innerText = '📋 Copiar instruções';
+
+      }, 2000);
+
+    }
+
+
+  } catch (erro) {
+
+    console.error("Erro ao copiar instruções:", erro);
+
+  }
+
 }
 
 function limparResultado() {
